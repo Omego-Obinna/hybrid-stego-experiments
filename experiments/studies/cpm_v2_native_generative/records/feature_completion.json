@@ -1,0 +1,30 @@
+{
+  "completed_at": "2026-10-18T14:10:27.620937+00:00",
+  "counts": {
+    "128": {
+      "train": 94,
+      "validation": 36,
+      "test": 55
+    },
+    "256": {
+      "train": 92,
+      "validation": 35,
+      "test": 53
+    },
+    "384": {
+      "train": 74,
+      "validation": 34,
+      "test": 45
+    }
+  },
+  "evaluable": {
+    "128": true,
+    "256": true,
+    "384": true
+  },
+  "dimensions": 504,
+  "feature_sha256": "b25b44959fa7c4151c18525235a98314126346ad34f2814e61a2ac427e479e81",
+  "metadata_sha256": "20b47d0bd6d198a3da5e226281e49937084b8aa7aa70a5f620998cb603ec7d77",
+  "all_attempts": 1200,
+  "complete_groups": 518
+}

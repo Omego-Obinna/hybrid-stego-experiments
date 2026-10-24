@@ -1,0 +1,71 @@
+--- frozen/source/image_hsm_train.py
++++ resume_20261021_v1/image_hsm_train_resume.py
+@@ -3,6 +3,7 @@
+ import numpy as np,torch
+ from PIL import Image
+ from torch.utils.data import Dataset,DataLoader
++sys.path.insert(0,str(Path(os.environ['CPM_IMAGE_RUN'])/'source'))
+ from image_common import *
+ sys.path.insert(0,str(ROOT/'source/HSMNet/src'))
+ from models.HSMNet import HSMNet
+@@ -32,9 +33,23 @@
+             x=x.flatten(0,1).cuda();y=y.flatten().cuda();o=model(x);s=(o[:,1]-o[:,0]).detach().cpu().numpy();l=torch.nn.functional.cross_entropy(o,y,reduction='none').detach().cpu().numpy()
+             scores.extend(s);labels.extend(y.cpu().numpy());losses.extend(l);ids.extend(np.repeat(cs.numpy(),2));methods.extend(np.repeat(ms,2))
+     return dict(scores=np.asarray(scores),labels=np.asarray(labels),loss=float(np.mean(losses)),cover_ids=np.asarray(ids),methods=np.asarray(methods))
++def restore_epoch_rng(model,train,completed_epochs,hc):
++    # The original checkpoints omitted RNG state. No native image or gradient is replayed.
++    # HSMNet has one default dropout call on a contiguous [batch,256] float tensor.
++    # Training loader uses a private seeded generator; only validation loader iterators
++    # consume the main CPU generator. All native augmentation uses per-item local RNGs.
++    small={n:torch.ones((2*min(hc['paired_batch_size'],n),256),device='cuda') for n in [hc['paired_batch_size'],len(train)%hc['paired_batch_size']] if n}
++    for epoch in range(completed_epochs):
++        for start in range(0,len(train),hc['paired_batch_size']):
++            n=min(hc['paired_batch_size'],len(train)-start)
++            torch.nn.functional.dropout(small[n],p=model.dropout.p,training=True,inplace=False)
++        if (epoch+1)%hc['validation_every']==0 or epoch==0:
++            torch.empty((),dtype=torch.int64).random_()
++    return dict(completed_epochs=completed_epochs,dropout_calls=completed_epochs*((len(train)+hc['paired_batch_size']-1)//hc['paired_batch_size']),validation_loader_rng_draws=sum(e==0 or (e+1)%hc['validation_every']==0 for e in range(completed_epochs)),method='Replay RNG calls on feature-shaped constant tensors only; no native image, forward pass, gradient or completed epoch repeated')
++
+ def main():
+     cfg=config();hc=cfg['hsmnet'];assert torch.cuda.is_available();torch.set_num_threads(1)
+-    assert not (ROOT/'hsm_selection.json').exists();blocks=complete_blocks(records());d=ROOT/'models_hsm';d.mkdir();selections=[]
++    assert not (ROOT/'hsm_selection.json').exists();blocks=complete_blocks(records());d=ROOT/'models_hsm';d.mkdir(exist_ok=True);selections=[]
+     for pay in cfg['payloads']:
+         val=Pairs(blocks,pay,'validation');vl=DataLoader(val,batch_size=hc['paired_batch_size'],shuffle=False,num_workers=2,pin_memory=True)
+         paths=[];vs=[]
+@@ -44,8 +59,23 @@
+             model=HSMNet().cuda();opt=torch.optim.Adamax(model.parameters(),lr=hc['lr'],eps=hc['eps'],weight_decay=hc['weight_decay'])
+             scheduler=torch.optim.lr_scheduler.MultiStepLR(opt,milestones=hc['milestones'],gamma=hc['gamma'])
+             train=Pairs(blocks,pay,'train',seed);best=float('inf');best_path=d/f'{pay}_{seed}_best.pt';last=d/f'{pay}_{seed}_last.pt';hist=d/f'{pay}_{seed}_history.jsonl';t0=time.monotonic()
+-            with hist.open('x') as log:
+-                for epoch in range(hc['epochs']):
++            completed=0;old_history=[]
++            if last.exists():
++                assert hist.exists()
++                old_history=[json.loads(line) for line in hist.read_text().splitlines()]
++                ck=torch.load(last,map_location='cpu',weights_only=True);completed=ck['epoch']
++                assert [r['epoch'] for r in old_history]==list(range(1,completed+1))
++                assert ck['payload_bpp']==pay and ck['seed']==seed
++                model.load_state_dict(ck['state_dict']);opt.load_state_dict(ck['optimizer']);scheduler.load_state_dict(ck['scheduler'])
++                if best_path.exists():best=torch.load(best_path,map_location='cpu',weights_only=True)['validation_loss']
++                if 'cpu_rng_state' in ck:
++                    torch.set_rng_state(ck['cpu_rng_state']);torch.cuda.set_rng_state_all(ck['cuda_rng_states'])
++                    rng_note=dict(method='Restore saved CPU/CUDA generator state',completed_epochs=completed)
++                else:rng_note=restore_epoch_rng(model,train,completed,hc)
++                save(ROOT/'resume_20261021_v1'/f'rng_resume_{pay}_{seed}.json',dict(payload_bpp=pay,seed=seed,**rng_note))
++                t0-=old_history[-1]['elapsed_sec']
++            with hist.open('a' if completed else 'x') as log:
++                for epoch in range(completed,hc['epochs']):
+                     train.epoch=epoch;g=torch.Generator().manual_seed(seed+10000*epoch)
+                     loader=DataLoader(train,batch_size=hc['paired_batch_size'],shuffle=True,generator=g,num_workers=2,pin_memory=True)
+                     model.train();total=0.;n=0
+@@ -57,7 +87,8 @@
+                         ev=evaluate(model,vl);row['validation_loss']=ev['loss']
+                         if ev['loss']<best:
+                             best=ev['loss'];torch.save(dict(state_dict=model.state_dict(),epoch=epoch+1,validation_loss=best,payload_bpp=pay,seed=seed),best_path)
+-                    torch.save(dict(state_dict=model.state_dict(),optimizer=opt.state_dict(),scheduler=scheduler.state_dict(),epoch=epoch+1,payload_bpp=pay,seed=seed),last)
++                    checkpoint=dict(state_dict=model.state_dict(),optimizer=opt.state_dict(),scheduler=scheduler.state_dict(),epoch=epoch+1,payload_bpp=pay,seed=seed,cpu_rng_state=torch.get_rng_state(),cuda_rng_states=torch.cuda.get_rng_state_all())
++                    temporary=last.with_suffix('.pt.tmp');torch.save(checkpoint,temporary);temporary.replace(last)
+                     append(log,row);print(json.dumps(dict(payload=pay,seed=seed,**row)),flush=True)
+             ck=torch.load(best_path,map_location='cpu',weights_only=True);model.load_state_dict(ck['state_dict']);ev=evaluate(model,vl);np.savez_compressed(d/f'{pay}_{seed}_validation.npz',**ev);paths.append(str(best_path));vs.append(ev['scores']);del model;torch.cuda.empty_cache()
+         avg=np.mean(vs,axis=0);orient=1 if roc_auc_score(ev['labels'],avg)>=.5 else -1;threshold=choose_threshold(ev['labels'],orient*avg)

@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-17T21:50:27.447276+00:00",
+  "same_public_feature_extractor": true,
+  "all_synthetic_tags_valid": true,
+  "tags_checked": 1872,
+  "implanted_signal": "SHA256(canonical public parameter pair) prefix in first eight pixels",
+  "models": [
+    {
+      "classifier": "logistic",
+      "auc": 0.9583333333333333
+    },
+    {
+      "classifier": "extra_trees",
+      "auc": 0.9583333333333333
+    }
+  ],
+  "known_leak_detected": true,
+  "metadata_balance_passed": true,
+  "independent_diagonal_retained": true,
+  "maximum_auc_due_to_diagonal_overlap": 0.9583333333333334,
+  "limitation": "Separate synthetic coupling only; not a proof of sensitivity to every real leakage or a native CPM recovery sample"
+}

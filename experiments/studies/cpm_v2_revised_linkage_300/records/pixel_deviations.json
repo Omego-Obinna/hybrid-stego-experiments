@@ -1,0 +1,22 @@
+{
+  "all_recovered_images_checked": 10794,
+  "deviations": [
+    {
+      "epoch": 1901,
+      "cover_id": "7718",
+      "partition": "train",
+      "payload_bpp": 0.4,
+      "pair_id": "ext3_pride_sherlock_to_alice_selected_seed42",
+      "max_abs_pixel_change": 2,
+      "pixels_exceeding_one_level": 1,
+      "pixel_change_limit_deviation": true,
+      "pixel_change_histogram": {
+        "-1": 10509,
+        "0": 231195,
+        "1": 20439,
+        "2": 1
+      }
+    }
+  ],
+  "rule": "Author-approved retention of exactly recovered images; pixel-limit deviations are reported, not silently excluded"
+}

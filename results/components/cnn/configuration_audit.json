@@ -1,0 +1,240 @@
+{
+  "passed": true,
+  "method": "Static pickle opcode inspection and saved summary/epoch-count checks; no unpickling, forward pass, training diagnosis, or model execution.",
+  "rows": [
+    {
+      "detector": "Ye-Net",
+      "payload_bpp": 0.1,
+      "initial_lr": 0.005,
+      "gamma": 0.5,
+      "milestones": [
+        50,
+        70
+      ],
+      "training_seed": 20260605,
+      "num_workers": 4,
+      "batch_pairs": 16,
+      "completed_epochs": 80,
+      "selected_epoch": 80,
+      "test_auc": 0.5016516512383256,
+      "primitive_args": {
+        "epochs": 80,
+        "batch_size": 16,
+        "num_workers": 4,
+        "allow_resize": false,
+        "optimizer": "sgd",
+        "lr": 0.005,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "scheduler": "multistep",
+        "milestones": "50,70",
+        "gamma": 0.5,
+        "seed": 20260605,
+        "deterministic": false
+      },
+      "checkpoint": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/checkpoints/best_yenet.pt",
+      "summary": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/logs/yenet_summary.csv",
+      "sha256": {
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/checkpoints/best_yenet.pt": "1b196dc652f20febf3aaa791cf7bb096e4b30c7af503ef2c7e30939a2a7a36d6",
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/logs/yenet_summary.csv": "ee8387fff9a61c70d30169307b29ad23dc312c8445adbd0c3926979110e8b687",
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/logs/yenet_epoch_log.csv": "efa71dc3d14c6d1ce8d5606d0269d9f4262e469e72838fce0426bfc76ab35ad0"
+      },
+      "directory_label_is_not_used_as_a_configuration_value": true
+    },
+    {
+      "detector": "Ye-Net",
+      "payload_bpp": 0.2,
+      "initial_lr": 0.003,
+      "gamma": 0.8,
+      "milestones": [
+        50,
+        70
+      ],
+      "training_seed": 20260606,
+      "num_workers": 4,
+      "batch_pairs": 16,
+      "completed_epochs": 80,
+      "selected_epoch": 80,
+      "test_auc": 0.5423816210256204,
+      "primitive_args": {
+        "epochs": 80,
+        "batch_size": 16,
+        "num_workers": 4,
+        "allow_resize": false,
+        "optimizer": "sgd",
+        "lr": 0.003,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "scheduler": "multistep",
+        "milestones": "50,70",
+        "gamma": 0.8,
+        "seed": 20260606,
+        "deterministic": false
+      },
+      "checkpoint": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/checkpoints/best_yenet.pt",
+      "summary": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/logs/yenet_summary.csv",
+      "sha256": {
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/checkpoints/best_yenet.pt": "2f75e7d22b2000c76eef7f4a11d4d56a40c6e516040a7aea01dd15628fdf376e",
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/logs/yenet_summary.csv": "61c4f041a20672686e9c20a81288b9e41dd913c36f62219075f21e90c99c4c97",
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/logs/yenet_epoch_log.csv": "2d893b72253bf1e9d4c542b962001ba66b9b67a698e3baa323f207a489edb101"
+      },
+      "directory_label_is_not_used_as_a_configuration_value": true
+    },
+    {
+      "detector": "Ye-Net",
+      "payload_bpp": 0.4,
+      "initial_lr": 0.005,
+      "gamma": 0.5,
+      "milestones": [
+        50,
+        70
+      ],
+      "training_seed": 20260605,
+      "num_workers": 4,
+      "batch_pairs": 16,
+      "completed_epochs": 80,
+      "selected_epoch": 12,
+      "test_auc": 0.5811328625793637,
+      "primitive_args": {
+        "epochs": 80,
+        "batch_size": 16,
+        "num_workers": 4,
+        "allow_resize": false,
+        "optimizer": "sgd",
+        "lr": 0.005,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "scheduler": "multistep",
+        "milestones": "50,70",
+        "gamma": 0.5,
+        "seed": 20260605,
+        "deterministic": false
+      },
+      "checkpoint": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/checkpoints/best_yenet.pt",
+      "summary": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/logs/yenet_summary.csv",
+      "sha256": {
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/checkpoints/best_yenet.pt": "986c7198073297db153c9d07a70167552e5487bb57352ebfe3524d133154a607",
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/logs/yenet_summary.csv": "011976c03723922ace8562e0a6b9e9c2063f13c8dc67f195d31204d0b6d8e9aa",
+        "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/logs/yenet_epoch_log.csv": "554be75b0878cf2676c17e77a85ed4bda78c9e80abcf0aea925b3365f39233fa"
+      },
+      "directory_label_is_not_used_as_a_configuration_value": true
+    },
+    {
+      "detector": "Yedroudj-Net",
+      "payload_bpp": 0.1,
+      "initial_lr": 0.001,
+      "gamma": 0.3,
+      "milestones": [
+        50,
+        70
+      ],
+      "training_seed": 20260605,
+      "num_workers": 6,
+      "batch_pairs": 16,
+      "completed_epochs": 80,
+      "selected_epoch": 59,
+      "test_auc": 0.5041846836374666,
+      "primitive_args": {
+        "epochs": 80,
+        "batch_size": 16,
+        "num_workers": 6,
+        "allow_resize": false,
+        "optimizer": "sgd",
+        "lr": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "scheduler": "multistep",
+        "milestones": "50,70",
+        "gamma": 0.3,
+        "seed": 20260605,
+        "deterministic": false
+      },
+      "checkpoint": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/checkpoints/best_yedroudj.pt",
+      "summary": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/logs/yedroudj_summary.csv",
+      "sha256": {
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/checkpoints/best_yedroudj.pt": "1384cfb891842721e99b26f20a8c8793f2aa4bbde04b8396c7de54e340448545",
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/logs/yedroudj_summary.csv": "25975252904c159f000896086bb125e3c93eb443a1f2435c80c57c06370e4e9c",
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/logs/yedroudj_epoch_log.csv": "eba9134bb2a1e302ec5128eeb0c796db868ce1be25bf5a352d56b863c5a5c86e"
+      },
+      "directory_label_is_not_used_as_a_configuration_value": true
+    },
+    {
+      "detector": "Yedroudj-Net",
+      "payload_bpp": 0.2,
+      "initial_lr": 0.001,
+      "gamma": 0.3,
+      "milestones": [
+        50,
+        70
+      ],
+      "training_seed": 20260605,
+      "num_workers": 6,
+      "batch_pairs": 16,
+      "completed_epochs": 80,
+      "selected_epoch": 79,
+      "test_auc": 0.5678383213617815,
+      "primitive_args": {
+        "epochs": 80,
+        "batch_size": 16,
+        "num_workers": 6,
+        "allow_resize": false,
+        "optimizer": "sgd",
+        "lr": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "scheduler": "multistep",
+        "milestones": "50,70",
+        "gamma": 0.3,
+        "seed": 20260605,
+        "deterministic": false
+      },
+      "checkpoint": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/checkpoints/best_yedroudj.pt",
+      "summary": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/logs/yedroudj_summary.csv",
+      "sha256": {
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/checkpoints/best_yedroudj.pt": "cd53a32d0d1620a8b5dab754e7179f3f3fb3bcc5ef34102102e7c2fa1d042425",
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/logs/yedroudj_summary.csv": "66925049ef1f41db71742b8bc15daa4495eff72da443dfb10d2c9708bf36ad32",
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/logs/yedroudj_epoch_log.csv": "316211ede93adec8ec4b309333e4a8a7747babb2ba645a680ba168652b1f07e8"
+      },
+      "directory_label_is_not_used_as_a_configuration_value": true
+    },
+    {
+      "detector": "Yedroudj-Net",
+      "payload_bpp": 0.4,
+      "initial_lr": 0.001,
+      "gamma": 0.3,
+      "milestones": [
+        50,
+        70
+      ],
+      "training_seed": 20260605,
+      "num_workers": 6,
+      "batch_pairs": 16,
+      "completed_epochs": 80,
+      "selected_epoch": 71,
+      "test_auc": 0.9302282456886272,
+      "primitive_args": {
+        "epochs": 80,
+        "batch_size": 16,
+        "num_workers": 6,
+        "allow_resize": false,
+        "optimizer": "sgd",
+        "lr": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "scheduler": "multistep",
+        "milestones": "50,70",
+        "gamma": 0.3,
+        "seed": 20260605,
+        "deterministic": false
+      },
+      "checkpoint": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/checkpoints/best_yedroudj.pt",
+      "summary": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/logs/yedroudj_summary.csv",
+      "sha256": {
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/checkpoints/best_yedroudj.pt": "a7fecf9a75d5b4f4f7ca4eb52ee0d92e67294082dc64c94ba61698aea9f8de80",
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/logs/yedroudj_summary.csv": "d5fcda396d59f31b6c837fedc245863813bebe2b9ad4e4ca1a4094129bc309c8",
+        "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/logs/yedroudj_epoch_log.csv": "f72c80bcd7a318a8416e7aca739e882343e5fc17b87b590af77e3540ed93f0c2"
+      },
+      "directory_label_is_not_used_as_a_configuration_value": true
+    }
+  ]
+}

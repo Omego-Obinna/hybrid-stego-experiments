@@ -1,0 +1,60 @@
+{
+  "native": {
+    "completed_at": "2026-10-17T08:18:57.637141+00:00",
+    "attempted": 12,
+    "exact_recoveries": 12,
+    "sender_preflight_failures": 0,
+    "wrong_accepted_plaintexts": 0,
+    "elapsed_sec": 35.89185112999985
+  },
+  "features": {
+    "all_generation_artifact_checks_passed": true,
+    "counts": [
+      {
+        "payload_bpp": 0.2,
+        "partition": "train",
+        "attempted": 12,
+        "valid": 12,
+        "failed": 0,
+        "primary_images": 12,
+        "complete_covers": 1
+      },
+      {
+        "payload_bpp": 0.2,
+        "partition": "val",
+        "attempted": 0,
+        "valid": 0,
+        "failed": 0,
+        "primary_images": 0,
+        "complete_covers": 0
+      },
+      {
+        "payload_bpp": 0.2,
+        "partition": "test",
+        "attempted": 0,
+        "valid": 0,
+        "failed": 0,
+        "primary_images": 0,
+        "complete_covers": 0
+      }
+    ],
+    "attempted": 12,
+    "recovered": 12,
+    "preflight_failures": 0,
+    "wrong_accepted_plaintexts": 0,
+    "complete_blocks": 1,
+    "primary_images": 12,
+    "valid_images_excluded_in_incomplete_blocks": 0,
+    "excluded_valid_epochs": [],
+    "failure_epochs": [],
+    "intentional_header_control": "Within each complete block, the true pair frames match the C3 epoch/header; other candidate frames do not",
+    "header_control_correct": true
+  },
+  "artificial_evaluation": {
+    "passed": true,
+    "artificial_inputs_only": true,
+    "small_tree_count_for_smoke_only": 5,
+    "full_24_panel_flow_checked": true
+  },
+  "development_data_path": "${WORKSPACE_ROOT}/revision_work/experimental_phase/phase4_revised_linkage/development_smoke"
+}

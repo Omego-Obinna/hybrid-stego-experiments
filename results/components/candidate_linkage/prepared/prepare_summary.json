@@ -1,0 +1,34 @@
+{
+  "version": "2026-07-17-matched-linkability-prepare-v1",
+  "merged_log": "${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/logs/embed_log_ours_qim_multi_gamma.jsonl",
+  "payloads": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "n_gamma_pairs": 12,
+  "gamma_pair_ids": [
+    "alice_selected_seed42",
+    "alice_selected_seed43",
+    "alice_selected_seed44",
+    "ext1_alice_pride_to_sherlock_selected_seed42",
+    "ext2_alice_sherlock_to_pride_selected_seed42",
+    "ext3_pride_sherlock_to_alice_selected_seed42",
+    "pride_selected_seed42",
+    "pride_selected_seed43",
+    "pride_selected_seed44",
+    "sherlock_selected_seed42",
+    "sherlock_selected_seed43",
+    "sherlock_selected_seed44"
+  ],
+  "n_complete_covers": 1000,
+  "n_sessions": 36000,
+  "n_binary_rows": 72000,
+  "n_negatives_per_positive": 1,
+  "hash_dim": 32,
+  "feature_counts": {
+    "image": 59,
+    "gamma": 157,
+    "cross": 68
+  }
+}

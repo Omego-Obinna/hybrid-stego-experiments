@@ -1,0 +1,8 @@
+{
+  "completed_at": "2026-10-17T21:36:29.871759+00:00",
+  "attempted": 9600,
+  "recovered": 9572,
+  "preflight_failures": 28,
+  "wrong_accepted_plaintexts": 0,
+  "elapsed_sec": 10179.449025549999
+}

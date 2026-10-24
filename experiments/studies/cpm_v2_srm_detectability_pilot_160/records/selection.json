@@ -1,0 +1,72 @@
+{
+  "selected_at": "2026-10-20T04:33:23.153688+00:00",
+  "panels": [
+    {
+      "method": "cpm",
+      "payload_bpp": 0.1,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/cpm_0.1_801.joblib",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/cpm_0.1_802.joblib"
+      ],
+      "orientation": 1,
+      "threshold": -0.2,
+      "validation_auc": 0.5475
+    },
+    {
+      "method": "suniward",
+      "payload_bpp": 0.1,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/suniward_0.1_801.joblib",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/suniward_0.1_802.joblib"
+      ],
+      "orientation": 1,
+      "threshold": -0.15000000000000002,
+      "validation_auc": 0.60375
+    },
+    {
+      "method": "cpm",
+      "payload_bpp": 0.2,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/cpm_0.2_801.joblib",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/cpm_0.2_802.joblib"
+      ],
+      "orientation": 1,
+      "threshold": 0.0,
+      "validation_auc": 0.95375
+    },
+    {
+      "method": "suniward",
+      "payload_bpp": 0.2,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/suniward_0.2_801.joblib",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/suniward_0.2_802.joblib"
+      ],
+      "orientation": 1,
+      "threshold": 0.0,
+      "validation_auc": 0.96125
+    },
+    {
+      "method": "cpm",
+      "payload_bpp": 0.4,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/cpm_0.4_801.joblib",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/cpm_0.4_802.joblib"
+      ],
+      "orientation": 1,
+      "threshold": 0.0,
+      "validation_auc": 0.965
+    },
+    {
+      "method": "suniward",
+      "payload_bpp": 0.4,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/suniward_0.4_801.joblib",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_srm_detectability_pilot_160/models/suniward_0.4_802.joblib"
+      ],
+      "orientation": 1,
+      "threshold": -0.04999999999999999,
+      "validation_auc": 1.0
+    }
+  ],
+  "rule": "Fixed model budget; orientation and threshold use validation only; no hyperparameter search."
+}

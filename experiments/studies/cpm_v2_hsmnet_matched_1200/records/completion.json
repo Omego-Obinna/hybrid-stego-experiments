@@ -1,0 +1,15 @@
+{
+  "completed_at": "2026-10-22T10:42:46.077240+00:00",
+  "verified": true,
+  "report_sha256": "9b00931f81801d7ccfdf2c65144bc103c8cd2e6b94c0e446375c7a865b057036",
+  "selected_checkpoints_checked": 6,
+  "detectability_panels": 15,
+  "fresh_attempts": 450,
+  "report_quality_pass": "report_quality_v1/provenance.json",
+  "report_quality_passed": true,
+  "operational_continuation": "resume_20261021_v1/provenance.json",
+  "final_checked_at": "2026-10-22T10:47:01.341201+00:00",
+  "independent_review_passed": true,
+  "verified_summary_sha256": "a2a8bf9e76d66abb519b75f182b1464c068af004e49c01f4bd86abd60740c933",
+  "checked_review": "checked_review_v1/provenance.json"
+}

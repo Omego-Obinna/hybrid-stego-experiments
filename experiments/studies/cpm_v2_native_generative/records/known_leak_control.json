@@ -1,0 +1,8 @@
+{
+  "auc": {
+    "logistic": 1.0,
+    "extra_trees": 1.0
+  },
+  "feature_map": "same 504 native statistics",
+  "native_images_used": false
+}

@@ -1,0 +1,126 @@
+{
+  "run_id": "cpm_v2_matched_image_1200",
+  "created_at": "2026-10-18T08:57:56.384331+00:00",
+  "cover_counts": {
+    "train": 700,
+    "validation": 200,
+    "test": 300
+  },
+  "payloads": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "methods": [
+    "cpm",
+    "suniward",
+    "mipod",
+    "wow",
+    "hill"
+  ],
+  "generation_workers": 3,
+  "feature_workers": 3,
+  "native_attempts": 3600,
+  "reused_baseline_attempts": 14400,
+  "detector_minimum_complete_counts": {
+    "train": 600,
+    "validation": 150,
+    "test": 240
+  },
+  "common_valid_policy": "All five methods must have a valid native image for a cover/payload. Remove incomplete blocks symmetrically from detector and paired-fidelity panels; retain all attempts in recovery/accounting. Never replace a cover.",
+  "srm": {
+    "feature": "sealwatch 2025.9 full SRM, 34671 dimensions",
+    "L": 40,
+    "d_sub_candidates": [
+      256,
+      512,
+      1024
+    ],
+    "seeds": [
+      801,
+      802
+    ],
+    "selection": "validation AUC only; average the two seed scores; validation chooses d_sub, orientation and balanced-error threshold per method/payload"
+  },
+  "hsmnet": {
+    "source_commit": "2c9f57be9c24753308931ee7e016c9cb2958813d",
+    "seeds": [
+      801,
+      802
+    ],
+    "epochs": 100,
+    "paired_batch_size": 2,
+    "optimizer": "Adamax",
+    "lr": 0.001,
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "milestones": [
+      60,
+      85
+    ],
+    "gamma": 0.1,
+    "validation_every": 5,
+    "input": "native 512x512 grayscale, float values in [0,255], no resizing; paired random D4 augmentation in training",
+    "training": "One equal-method mixture detector per payload/seed. Each cover supplies one uniformly cycling method per epoch. Same observer scores all methods. Official architecture unchanged, new bounded training protocol; not a reproduction of published HSMNet scores.",
+    "selection": "minimum equal-method mean validation cross-entropy; then average seeds; orientation/threshold fixed on validation only"
+  },
+  "bootstrap": {
+    "seed": 61018,
+    "draws": 3000,
+    "unit": "test cover, shared across all methods and payloads",
+    "ci": "95% pointwise plus Bonferroni 12-way CPM-vs-baseline contrasts per detector; no cryptographic epsilon estimate"
+  },
+  "scientific_limits": [
+    "Recorded classical implementations, including the original study MiPOD variance approximation, are explicitly labelled; not certified upstream reference implementations.",
+    "Historical exact recovery is source-reported, not independently reconstructed; a separate fresh known-message panel supplies independent comparative recovery and runtime.",
+    "Main historical baseline payload bytes differ from revised CPM payloads but all are keyed pseudorandom and have matched net lengths and byte/header padding.",
+    "No CP-UNL score is assigned to a single-carrier baseline without the required interface.",
+    "No test tuning, failed-trial retries or silent source replacement."
+  ],
+  "source_hashes": {
+    "source/HSMNet/README.md": "dae55350709f7934dd44898f7c3f55b8de00a1a3473831bc031b9bb634344835",
+    "source/HSMNet/provenance.json": "4032baf47ecfa0055b5d9cc4b15dd0d4de03bddd8815d259b18358094c61993e",
+    "source/HSMNet/src/__init__.py": "0c6f5755818205a71f1fffcf3008a1da9b07741f614fde1ce2088dc596e01185",
+    "source/HSMNet/src/data/__init__.py": "dea80abe383de73bea32747e9fc82e0f6ee03c79e376cf08ae70f70dd9dd335a",
+    "source/HSMNet/src/data/dataloader.py": "9ac3af4d4a395fd2ed1bfcf9313992354fa58a8698004e4803fd0df1bf293af9",
+    "source/HSMNet/src/data/dataset.py": "e7fc98588a03c4b6e28079321fb1221dd49936bc07c46b4e17878df668c1948e",
+    "source/HSMNet/src/data/transform.py": "08730fb287bc5f28f3db4ec0608d8583c91d0cbdb670aed6ceb815dc4aa59082",
+    "source/HSMNet/src/models/HSMNet.py": "0add74eb142f80a9446d4b4ed047ba6cdd66874ba0a1b91330fdfe92ecaca8e1",
+    "source/HSMNet/src/models/SRM_Kernels.npy": "c53ad3a849fa64db1244152a3030c80a4d3b11fec0af81b4196d8e6dfb3db4b9",
+    "source/HSMNet/src/models/__init__.py": "bcfa72ef9912e05c5b20786dad1b84ab85c436b17a514a91144e0b27693bc038",
+    "source/HSMNet/src/models/losses.py": "29ce679fa4159ea484ba82290fa878a554d40f78a91b3c62d76c86cbb6a343a3",
+    "source/HSMNet/src/models/modules.py": "973e1e2c51576a5156e99866ef4f74fb76d116177061eb760057d9c8cb24b57d",
+    "source/HSMNet/src/utils/__init__.py": "65f2c81e620b7dd30ec91bbc2969b6c3d6df9ba98538b588f2884b62491e016c",
+    "source/HSMNet/src/utils/env.py": "5f1a13545a5b3a03d5495d20d6d6ff2d51ce22b87f066c69d9f45cd49bf5ae0e",
+    "source/HSMNet/src/utils/log.py": "036c83689a75b7639fe9a1775b2351c6e690269ea48dfd35fa2c0acbdb5ab725",
+    "source/HSMNet/test.py": "77944955f46724052968d77f842ff3948dc27f3d70b04a6a3a4dd6e9a55c5649",
+    "source/HSMNet/train.py": "9680df2a6af85e34483613d9b4ada169c01d2395ba6041e790ba1eb3f71fdd1e",
+    "source/HSMNet/tree.json": "a49881df701c5bc05ab8f5e4810bad9dcaf7e2ed086a8e2d053a2de905a41a66",
+    "source/epoch_protocol.py": "3ffd0afbb6ee220c3530ed09fe7818c10f705867fb7597f0ae666f99122f7027",
+    "source/fresh_baseline_worker.py": "710f2b5c15ad09f5c5c739aaf2fbb3dd4d72cbb10c7ec38047aba60d3d1e724e",
+    "source/hill_baseline.py": "5193a24c2890d3796b8971e75fd3cee2fc36518e2082a82b477a45835e77bf47",
+    "source/image_common.py": "c91e8f3e7bc8331d6d9bff4f34f6072ffe682d63980a3de0ac1390ebc89ef752",
+    "source/image_features.py": "2e240e4eba5845b9cbd500f9566546e770fa463c4fae69ed80bc16506b0e18ae",
+    "source/image_fresh.py": "a57421560365fbb9f297083aab29031c08ccef42bdc616ad0ff7c3752e2575a6",
+    "source/image_generate.py": "e97d6c214690b5ab1d64bc3079f41f97a09c0c08a10f419341c02917691c9908",
+    "source/image_hsm_train.py": "e79e1d519ec3b21ade12f125c74ec07ad5ca4e0b938ca36bcf15b496d90863a8",
+    "source/image_report.py": "50b929ce6141f1305cf689b6d45e16910a93a21ce82ff2a6c3c497b0841dea68",
+    "source/image_score.py": "f59839b4ef755f8251f313e2f40e81a9d84146cfd6faaa8f399118510d37f37f",
+    "source/image_srm_train.py": "258b2582577d10fed08b7bbbd995876183ef5da001e1ec27000396fe00570fa4",
+    "source/image_verify.py": "d47e5cab7a7feb928708cf53473c4792a8c15eec6533c6c66b9916df3424ee59",
+    "source/image_worker.py": "24ae81317705496fe449824e56a8934a7aa1a1b038a9b48e0585a0e4f10c4569",
+    "source/legacy_embedder.py": "2d418213b19373ed77f1b07e7c8cfe4b7d5ba73c0091f7ef71be965c69acaa92",
+    "source/mipod_baseline.py": "69252213d94e26fe8fdbddf3c99b83fc72a2ead51612d1d8350c1a36cf748294",
+    "source/run_image_pipeline.py": "cec28851b0b26c31408ed9871a8e6473363fca3978ca86d201b8e9ba62c68dcf",
+    "source/suniward_baseline.py": "581a05c3c7cf3d8a50cd71d5144ea51fbc70d556dcd4787bb32f0fc94adb2f86",
+    "source/wow_baseline.py": "7db1dd69ac3ade828ca22c816117c81a175f258cec502a9f3d01bb1ce9f69686",
+    "source/DESIGN.md": "4e3503027098af6a8eb3ee925739b3cea5e5ed2b2f4b6a8ad8c8b3a48b38efd0"
+  },
+  "input_hashes": {
+    "covers.csv": "44903bc013db235c049cdfdf7e5b8cc511953020bd7a2382dc1aff37d55b13e7",
+    "cases.json": "beff720ae9c637681cb7a97e80b63dcff46b2c86d3b3176620eb5857bcfbf9d6",
+    "fresh_cases.json": "19d516bfd29d6d22429d33a64576c4e7fde88f73fcccc49ae265d70ddf23388a",
+    "parameter_bank.json": "10b1411c783ff0c1b6d74a85b30620cb53901ed158454e57cbac784dd2110f5b",
+    "historical_inputs.json": "fada8865eb5c1d640278293332045bd66024ea65b984cf02eaa6d3003a62f8e9"
+  }
+}

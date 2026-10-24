@@ -1,0 +1,6 @@
+{
+  "project_root": "${ARTIFACT_ROOT}",
+  "files_with_mask_layer_terms": 28,
+  "files_with_cost_modulation_terms": 55,
+  "interpretation": "Mask-layer terms were found; inspect them before equating the current image-cost QIM with the formal F_mask construction."
+}

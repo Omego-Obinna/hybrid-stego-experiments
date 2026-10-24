@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-10-21T09:40:42.566272+00:00",
+  "author_directive": "Proceed to HSMNet five-method comparison; preserve all current settings; no training diagnosis; enable dashboard monitoring.",
+  "parent_run": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_matched_image_1200",
+  "original_run_config_sha256": "c31a4e6fcd2c0920359df8938e301df63d7b40ca58584238a74cdbf8c767fa22",
+  "active_run_config_sha256": "6fe316169f479bf8f45e700f9950152c58b78fe7c87e9782e8d805a3016ab5c9",
+  "scope_change": "Execute previously unattempted HSMNet branch only; omit SRM extraction/training/scoring; preserve all original sample/settings.",
+  "hsmnet_training_source_byte_identical": true,
+  "architecture_and_training_settings_unchanged": true,
+  "sample_selection_uncertainty_settings_unchanged": true,
+  "training_diagnosis_performed": false,
+  "native_generation_repeated": false,
+  "parent_raw_results_hashes": {
+    "image_results.jsonl": "a878f5330aea6968d8313fdf70aded9efdc4ae6cf1a6291b369e4a46ecd919aa",
+    "fresh_results.jsonl": "6ab9637d2851b523f0ab350f41b214517ca43256b66df46d9c56db87d6f42959"
+  },
+  "parent_srm_processes": [
+    {
+      "pid": 19888,
+      "state": "T",
+      "identity_matches": true
+    },
+    {
+      "pid": 19893,
+      "state": "T",
+      "identity_matches": true
+    },
+    {
+      "pid": 19902,
+      "state": "T",
+      "identity_matches": true
+    },
+    {
+      "pid": 19903,
+      "state": "T",
+      "identity_matches": true
+    },
+    {
+      "pid": 19904,
+      "state": "T",
+      "identity_matches": true
+    }
+  ],
+  "operational_diff_hashes": {
+    "image_hsm_train.py.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "image_report.py.diff": "115beff0257f82770428d51a9312c80801887faeeb2f2d9d2db225351746abdd",
+    "image_common.py.diff": "a9228aa88bc4d668eddb682d63266eba0377ad59ba87e757046770a13a317c63",
+    "image_score.py.diff": "40cfe212cbdb56b674555f8abc56b133967a8406c79b22e7e56105a7037a92bc",
+    "image_verify.py.diff": "5b8aef53cbd4a9024ce4026cdcc42a81c07f9ae845a2cb1b0f2ed033194b45db"
+  },
+  "report_quality_helper": "Same saved-measurement report correction; run-name dispatch extended to HSM-only sibling."
+}

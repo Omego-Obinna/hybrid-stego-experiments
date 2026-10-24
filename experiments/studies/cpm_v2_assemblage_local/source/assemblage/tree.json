@@ -1,0 +1,162 @@
+{
+  "sha": "ce16a471ea0ae8c7dac284d38fedb8b090be23dd",
+  "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/trees/ce16a471ea0ae8c7dac284d38fedb8b090be23dd",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bd37e61ecad1752b16cc6acf65dae6316aece3f",
+      "size": 4710,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/7bd37e61ecad1752b16cc6acf65dae6316aece3f"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22b9112ebdebf2178ea0be7219783a5874435052",
+      "size": 102,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/22b9112ebdebf2178ea0be7219783a5874435052"
+    },
+    {
+      "path": ".tool-versions",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a802277031aa47641e18b27375f4566eb9122964",
+      "size": 15,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/a802277031aa47641e18b27375f4566eb9122964"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b060eb134a23eb39a469d9753cb92745787a4c6c",
+      "size": 1089,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/b060eb134a23eb39a469d9753cb92745787a4c6c"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16a4517bec531ed56553e6d5f3f95475c213a511",
+      "size": 2471,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/16a4517bec531ed56553e6d5f3f95475c213a511"
+    },
+    {
+      "path": "benchmark_raptor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44f6ec22b7f81448e46505199d4a268b9a1a3fad",
+      "size": 2561,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/44f6ec22b7f81448e46505199d4a268b9a1a3fad"
+    },
+    {
+      "path": "benchmark_vector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24fb3caa37d9f3aa33a4b120449ac0a8b26499cd",
+      "size": 1682,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/24fb3caa37d9f3aa33a4b120449ac0a8b26499cd"
+    },
+    {
+      "path": "benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77327635415afd940c56f7f01c13c5d5ecb50205",
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/trees/77327635415afd940c56f7f01c13c5d5ecb50205"
+    },
+    {
+      "path": "benchmarks/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7219288fd1bf66d26a3ca75d668522e4d5ad5908",
+      "size": 62,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/7219288fd1bf66d26a3ca75d668522e4d5ad5908"
+    },
+    {
+      "path": "benchmarks/json2csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f1065ed656b0de098d7921b9f44e04f25dcef45",
+      "size": 2210,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/4f1065ed656b0de098d7921b9f44e04f25dcef45"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ee5b78884ff281eb847a1eb5bafc29f6d19e781",
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/trees/7ee5b78884ff281eb847a1eb5bafc29f6d19e781"
+    },
+    {
+      "path": "images/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f808e1938a2c17a73313e65715496651fe29fcbc",
+      "size": 62,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/f808e1938a2c17a73313e65715496651fe29fcbc"
+    },
+    {
+      "path": "offline-states",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fac47a73fe1855f3bf5821d51fb7819760f953ab",
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/trees/fac47a73fe1855f3bf5821d51fb7819760f953ab"
+    },
+    {
+      "path": "offline-states/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c726cea0492fabae49754c9aadc6116044e95b33",
+      "size": 74,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/c726cea0492fabae49754c9aadc6116044e95b33"
+    },
+    {
+      "path": "offline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2eb3aa0d712a09d2b42c66351e4f471c06e882b",
+      "size": 3358,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/b2eb3aa0d712a09d2b42c66351e4f471c06e882b"
+    },
+    {
+      "path": "pulsar",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "ae39c51440b5925107d30c756cf3005701dba951"
+    },
+    {
+      "path": "raptor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1c4e36ef7bd8aaf5ee2c15c8adb797be870ac7c",
+      "size": 5626,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/d1c4e36ef7bd8aaf5ee2c15c8adb797be870ac7c"
+    },
+    {
+      "path": "receive.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "714d4f9a4f71f3628fbd447fc6e31379538031f4",
+      "size": 4278,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/714d4f9a4f71f3628fbd447fc6e31379538031f4"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a74185e9bb6810947a2de5927e23975cfa56e5b",
+      "size": 2315,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/1a74185e9bb6810947a2de5927e23975cfa56e5b"
+    },
+    {
+      "path": "send.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7442a3cee45298afd06f3048ec3d85d7c5c161c",
+      "size": 4171,
+      "url": "https://api.github.com/repos/spacelab-ccny/assemblage/git/blobs/d7442a3cee45298afd06f3048ec3d85d7c5c161c"
+    }
+  ],
+  "truncated": false
+}

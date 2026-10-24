@@ -1,0 +1,11 @@
+--- original_source/image_common.py
++++ source/image_common.py
+@@ -17,7 +17,7 @@
+     try:s=json.loads((ROOT/'status.json').read_text())
+     except FileNotFoundError:s={}
+     s.update(kw,updated_at=now(),run_id=ROOT.name);save(ROOT/'status.json',s)
+-    save(REV/'status/comparison.json',dict(s,panel='image',scope='Phase 6 matched comparisons',generative_status_file=str(REV/'runs/cpm_v2_native_generative/status.json')))
++    save(REV/'status/hsmcomparison.json',dict(s,panel='hsm_only',scope='Author-prioritised HSMNet five-method comparison',generative_status_file=str(REV/'runs/cpm_v2_native_generative/status.json')))
+ def records():return [json.loads(l) for l in (ROOT/'image_results.jsonl').open()]
+ def complete_blocks(rows):
+     methods=['cpm','suniward','mipod','wow','hill'];groups={}

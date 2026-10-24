@@ -1,0 +1,11 @@
+{
+  "auc": 1.0,
+  "training_loss": [
+    0.35261071380227804,
+    0.09034820483066142,
+    0.03939732909202576,
+    0.02390441799070686,
+    0.017808949982281774
+  ],
+  "scope": "32 synthetic texture pairs for training, 16 independent pairs for control evaluation; fixed checkerboard bias, not native-image security or detector completeness."
+}

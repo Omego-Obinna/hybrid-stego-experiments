@@ -1,0 +1,2 @@
+epoch,cover_id,partition,payload_bpp,pair_id,max_abs_pixel_change,pixels_exceeding_one_level,pixel_change_limit_deviation,pixel_change_histogram
+1901,7718,train,0.4,ext3_pride_sherlock_to_alice_selected_seed42,2,1,True,"{'-1': 10509, '0': 231195, '1': 20439, '2': 1}"

@@ -1,0 +1,492 @@
+{
+  "selected_at": "2026-10-18T14:11:04.781043+00:00",
+  "panels": [
+    {
+      "method": "cpm",
+      "message_bytes": 128,
+      "primary_family": "logistic",
+      "families": {
+        "logistic": {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_lr_1.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5100308641975309,
+          "threshold": -0.4983413024806293
+        },
+        "extra_trees": {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5003858024691359,
+          "threshold": 0.4951111111111109
+        }
+      },
+      "all_candidates": [
+        {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_lr_0.01.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5007716049382716,
+          "threshold": -0.4997974618058357
+        },
+        {
+          "family": "logistic",
+          "C": 0.1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_lr_0.1.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5046296296296297,
+          "threshold": -0.49985828069412186
+        },
+        {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_lr_1.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5100308641975309,
+          "threshold": -0.4983413024806293
+        },
+        {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_lr_10.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5092592592592593,
+          "threshold": -0.5259591053622039
+        },
+        {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5003858024691359,
+          "threshold": 0.4951111111111109
+        }
+      ]
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 128,
+      "primary_family": "logistic",
+      "families": {
+        "logistic": {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_lr_1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5887345679012346,
+          "threshold": 0.8881268327496661
+        },
+        "extra_trees": {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5594135802469136,
+          "threshold": 0.5037777777777778
+        }
+      },
+      "all_candidates": [
+        {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_lr_0.01.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5192901234567902,
+          "threshold": 0.5173702776933896
+        },
+        {
+          "family": "logistic",
+          "C": 0.1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_lr_0.1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.554783950617284,
+          "threshold": 0.5255013923871493
+        },
+        {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_lr_1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5887345679012346,
+          "threshold": 0.8881268327496661
+        },
+        {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_lr_10.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5378086419753086,
+          "threshold": 0.9959525015642908
+        },
+        {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5594135802469136,
+          "threshold": 0.5037777777777778
+        }
+      ]
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 256,
+      "primary_family": "extra_trees",
+      "families": {
+        "logistic": {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_lr_1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5118367346938775,
+          "threshold": 0.4936499604799903
+        },
+        "extra_trees": {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5285714285714286,
+          "threshold": 0.5061111111111111
+        }
+      },
+      "all_candidates": [
+        {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_lr_0.01.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5053061224489797,
+          "threshold": 0.5000113242369914
+        },
+        {
+          "family": "logistic",
+          "C": 0.1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_lr_0.1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5061224489795918,
+          "threshold": 0.5000027303103539
+        },
+        {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_lr_1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5118367346938775,
+          "threshold": 0.4936499604799903
+        },
+        {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_lr_10.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.510204081632653,
+          "threshold": 0.48265496938141583
+        },
+        {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5285714285714286,
+          "threshold": 0.5061111111111111
+        }
+      ]
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 256,
+      "primary_family": "extra_trees",
+      "families": {
+        "logistic": {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_lr_0.01.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5738775510204082,
+          "threshold": -0.4606901739760602
+        },
+        "extra_trees": {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.6114285714285714,
+          "threshold": 0.5383333333333332
+        }
+      },
+      "all_candidates": [
+        {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_lr_0.01.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5738775510204082,
+          "threshold": -0.4606901739760602
+        },
+        {
+          "family": "logistic",
+          "C": 0.1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_lr_0.1.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5559183673469387,
+          "threshold": -0.3392681030150095
+        },
+        {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_lr_1.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5526530612244898,
+          "threshold": -0.060157853333632015
+        },
+        {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_lr_10.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5526530612244898,
+          "threshold": -0.5142999392016009
+        },
+        {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.6114285714285714,
+          "threshold": 0.5383333333333332
+        }
+      ]
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 384,
+      "primary_family": "logistic",
+      "families": {
+        "logistic": {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_lr_0.01.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5051903114186851,
+          "threshold": -0.49990511894226247
+        },
+        "extra_trees": {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5021626297577855,
+          "threshold": 0.517888888888889
+        }
+      },
+      "all_candidates": [
+        {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_lr_0.01.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5051903114186851,
+          "threshold": -0.49990511894226247
+        },
+        {
+          "family": "logistic",
+          "C": 0.1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_lr_0.1.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5051903114186851,
+          "threshold": -0.49962487653424165
+        },
+        {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_lr_1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5,
+          "threshold": 0.5037631288803569
+        },
+        {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_lr_10.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5008650519031141,
+          "threshold": -0.47339321233695625
+        },
+        {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_903.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5021626297577855,
+          "threshold": 0.517888888888889
+        }
+      ]
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 384,
+      "primary_family": "logistic",
+      "families": {
+        "logistic": {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_lr_10.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5320069204152249,
+          "threshold": 0.9999999984145667
+        },
+        "extra_trees": {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_903.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5155709342560554,
+          "threshold": -0.5127777777777778
+        }
+      },
+      "all_candidates": [
+        {
+          "family": "logistic",
+          "C": 0.01,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_lr_0.01.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5173010380622838,
+          "threshold": 0.4966919399446097
+        },
+        {
+          "family": "logistic",
+          "C": 0.1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_lr_0.1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5173010380622837,
+          "threshold": 0.2655535435502761
+        },
+        {
+          "family": "logistic",
+          "C": 1,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_lr_1.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5250865051903114,
+          "threshold": 0.9999302990667901
+        },
+        {
+          "family": "logistic",
+          "C": 10,
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_lr_10.joblib"
+          ],
+          "orientation": 1,
+          "validation_auc": 0.5320069204152249,
+          "threshold": 0.9999999984145667
+        },
+        {
+          "family": "extra_trees",
+          "paths": [
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_901.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_902.joblib",
+            "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_903.joblib"
+          ],
+          "orientation": -1,
+          "validation_auc": 0.5155709342560554,
+          "threshold": -0.5127777777777778
+        }
+      ]
+    }
+  ],
+  "heldout_used": false
+}

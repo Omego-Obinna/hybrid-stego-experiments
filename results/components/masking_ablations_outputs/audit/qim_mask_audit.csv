@@ -1,0 +1,83 @@
+path,mask_layer_hits,cost_modulation_hits
+${ARTIFACT_ROOT}/ours_qim_embed_SAFE_v3_3_acr.py,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_embed_SAFE_v1.py,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/make_ours_qim_v32_publication_tables.py,,qim_base_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_embed_SAFE_v3.py,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_embed_SAFE_v3_1.py,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/juniward_pystc_embed_SAFE_v1.py,,rho_p1; rho_m1
+${ARTIFACT_ROOT}/wow_pystc_embed_SAFE_v2.py,,rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_embed_SAFE_v3_2.py,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/wow_pystc_embed_SAFE_v1.py,,rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_embed_SAFE_v2.py,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/suniward_pystc_embed_SAFE_v1.py,,rho_p1; rho_m1
+${ARTIFACT_ROOT}/mipod_pystc_embed_SAFE_v1.py,,rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/ext2_alice_sherlock_to_pride_selected_seed42/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/sherlock_selected_seed43/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/pride_selected_seed43/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/sherlock_selected_seed42/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/sherlock_selected_seed44/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/alice_selected_seed42/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/pride_selected_seed44/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/pride_selected_seed42/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/ext1_alice_pride_to_sherlock_selected_seed42/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/alice_selected_seed44/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/alice_selected_seed43/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_multi_gamma_12pairs/ext3_pride_sherlock_to_alice_selected_seed42/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/masking_ablations/00_audit_qim_mask_layer.py,F_mask; F_unmask,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/tests/test_nanops.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/tests/arithmetic/test_numeric.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/tests/arrays/integer/test_arithmetic.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/tests/frame/indexing/test_where.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/core/indexes/multi.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/core/ops/missing.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/core/ops/array_ops.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/pandas/core/ops/mask_ops.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/sklearn/neighbors/_base.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/networkx/algorithms/coloring/equitable_coloring.py,\bb_prime\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/torch/_refs/__init__.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/torch/_inductor/codegen/triton.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/torch/_inductor/fx_passes/serialized_patterns/_sfdp_pattern_16.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/torch/_inductor/runtime/triton_helpers.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/torch/_higher_order_ops/utils.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/torchvision/datasets/_stereo_matching.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/numpy/ma/core.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/numpy/ma/tests/test_core.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/sympy/physics/mechanics/tests/test_kane2.py,\bb_prime\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/scipy/spatial/transform/tests/test_rigid_transform.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/scipy/stats/_tukeylambda_stats.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/scipy/stats/_mstats_basic.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/scipy/special/_testutils.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/scipy/integrate/_cubature.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/matplotlib/collections.py,\bunmask\b,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/matplotlib/tests/test_triangulation.py,F_mask,
+${ARTIFACT_ROOT}/myenv/lib/python3.12/site-packages/matplotlib/axes/_axes.py,\bunmask\b,
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_cf_light/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_cf_light/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_results_pystc_test/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_results_pystc_test/logs/embed_log_ours_qim_V1.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha
+${ARTIFACT_ROOT}/ours_qim_v2_smoke/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v2_smoke/logs/embed_log_ours_qim_V2.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0011_cf712c3313/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0011_cf712c3313/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0010_3ea3e0875a/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0010_3ea3e0875a/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0006_b21b33ab16/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0006_b21b33ab16/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0002_7a557962f1/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0002_7a557962f1/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0003_0c135234e9/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0003_0c135234e9/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0007_ec396de469/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0007_ec396de469/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0008_83f61d827b/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0008_83f61d827b/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0000_a723a97155/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0000_a723a97155/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0009_168ca09e4a/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0009_168ca09e4a/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0001_00d9f3ba0a/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0001_00d9f3ba0a/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0005_e84787beec/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0005_e84787beec/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0004_ea20bf3087/logs/embed_log_ours_qim.jsonl,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1
+${ARTIFACT_ROOT}/ours_qim_v3_tune_smoke/trials/trial_0004_ea20bf3087/logs/embed_log_ours_qim.csv,,qim_base_cost; qim_modulated_cost; qim_texture_alpha; qim_dither_alpha; rho_p1; rho_m1

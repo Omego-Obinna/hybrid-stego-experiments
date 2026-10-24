@@ -1,0 +1,6 @@
+{
+  "new_world_ratio_and_overlap_checked": true,
+  "bootstrap_weighted_auc_and_balanced_accuracy_match_sklearn": true,
+  "signed_and_absolute_gap_checked": true,
+  "all_tied_chance_baseline_checked": true
+}

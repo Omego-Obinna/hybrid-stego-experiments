@@ -1,0 +1,4 @@
+payload_bpp,images,embed_mean_s,embed_std_s,extract_mean_s,extract_std_s,rss_mean_mb,rss_std_mb,peak_rss_mean_mb,peak_rss_std_mb,gpu_alloc_mean_mb,gpu_alloc_std_mb,gpu_reserved_mean_mb,gpu_reserved_std_mb
+0.1,10000,2.788,0.034,0.0813,0.0036,643.6,25.4,677.3,28.0,0.0,0.0,0.0,0.0
+0.2,10000,2.79,0.028,0.0829,0.0034,727.8,23.9,762.1,26.1,0.0,0.0,0.0,0.0
+0.4,10000,2.801,0.027,0.0864,0.0041,808.4,24.2,842.5,27.3,0.0,0.0,0.0,0.0

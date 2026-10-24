@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-20T06:24:20.636393+00:00",
+  "selected_checkpoint_predictions_checked": 6,
+  "image_records_retained": 1800,
+  "cohorts": {
+    "0.1": {
+      "train": 200,
+      "validation": 40,
+      "test": 60
+    },
+    "0.2": {
+      "train": 200,
+      "validation": 40,
+      "test": 60
+    },
+    "0.4": {
+      "train": 200,
+      "validation": 40,
+      "test": 60
+    }
+  },
+  "full_study_validation_or_test_covers_used": 0,
+  "srm_pilot_covers_used": 0,
+  "original_sources_and_input_image_hashes_checked": true,
+  "native_images_generated": 0,
+  "independent_numeric_audit_passed": true,
+  "independent_numeric_audit_sha256": "a9193d9a826f1d6eb86c49298d058b8972aa5c0f377110cba4dce60bbe753539",
+  "report_only_continuation": "report_repair_v1/provenance.json"
+}

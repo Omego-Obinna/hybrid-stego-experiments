@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-10-17T06:52:30.988384+00:00",
+  "traces": 110,
+  "elapsed_sec": 465.54362801800016,
+  "all_checks_passed": true,
+  "accepted_epoch_events": 2920,
+  "unauthorised_accepts": 0,
+  "wrong_plaintexts": 0,
+  "repeated_accepts": 0
+}

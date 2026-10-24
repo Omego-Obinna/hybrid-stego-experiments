@@ -1,0 +1,76 @@
+--- original/pulsar/pulsar.py
++++ operational/pulsar/pulsar.py
+@@ -26,7 +26,7 @@
+     "google/ddpm-cat-256",
+ ]
+ 
+-DEFAULT_KEY = b"E" * 64
++DEFAULT_KEY = bytes.fromhex(os.environ["CPM_NATIVE_KEY_HEX"])
+ DEFAULT_SEED = b"seed"
+ 
+ 
+@@ -59,11 +59,11 @@
+         torch.set_grad_enabled(False)
+ 
+         # Load model
+-        self.model = UNet2DModel.from_pretrained(repo)
++        self.model = UNet2DModel.from_pretrained(os.environ["CPM_NATIVE_MODEL"])
+         self.model.to(self.device)
+ 
+         # Load scheduler
+-        self.scheduler = scheduler.from_config(repo)
++        self.scheduler = scheduler.from_config(os.environ["CPM_NATIVE_MODEL"])
+         self.scheduler.set_timesteps(num_inference_steps=num_inference_steps)
+ 
+         self._time_benchmark("model_loading")
+@@ -419,7 +419,7 @@
+             encoded_message = generate_results["encoded_message"]
+ 
+             if end_to_end:
+-                tmp_file = "/tmp/pulsar_estimate.png"
++                tmp_file = os.environ["CPM_NATIVE_TEMP"]
+                 self.save_sample(hidden_sample, tmp_file)
+                 hidden_sample = self.load_sample(tmp_file)
+                 # self.save_sample(all0_sample.reshape(
+@@ -446,7 +446,7 @@
+         all1_sample = reveal_results["pulsar"]["samples"]["all1"]
+ 
+         if end_to_end:
+-            tmp_file = "/tmp/pulsar_estimate.png"
++            tmp_file = os.environ["CPM_NATIVE_TEMP"]
+             self.save_sample(all0_sample.reshape((1, 3, 256, 256)), tmp_file)
+             all0_sample = self.load_sample(
+                 tmp_file)[0]  # Need shape (3, 256, 256)
+--- original/pulsar/coding.py
++++ operational/pulsar/coding.py
+@@ -95,7 +95,7 @@
+     a = bitarray(len(x))
+     assert len(x) == len(p)
+     for i in range(0, len(p)):
+-        a[i] = x[p[i]]
++        a[i] = int(x[p[i]])
+     return a
+ 
+ 
+--- original/offline.py
++++ operational/offline.py
+@@ -64,7 +64,7 @@
+         # Pulsar stores a PNG of the estimated offline state
+         # We use this PNG to create a PDQ hash for the state
+         hash_start = time.time()
+-        image = cv2.imread("/tmp/pulsar_estimate.png")
++        image = cv2.imread(os.environ["CPM_NATIVE_TEMP"])
+         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+         hash_vector, quality = pdqhash.compute(image)
+         hash_end = time.time()
+--- original/send.py
++++ operational/send.py
+@@ -47,7 +47,7 @@
+     # Add the model back
+     # We removed it in the offline step to save storage space
+     load_start = time.time()
+-    unpickled_instance.model = UNet2DModel.from_pretrained(model_repo)
++    unpickled_instance.model = UNet2DModel.from_pretrained(os.environ["CPM_NATIVE_MODEL"])
+     unpickled_instance.model.to(unpickled_instance.device)
+     load_end = time.time()
+     experiment_result["model_load"] = load_end - load_start

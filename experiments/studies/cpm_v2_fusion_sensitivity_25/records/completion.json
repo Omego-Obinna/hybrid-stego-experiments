@@ -1,0 +1,8 @@
+{
+  "completed_at": "2026-10-17T07:21:13.920715+00:00",
+  "attempted": 375,
+  "exact_recoveries": 374,
+  "failed": 1,
+  "elapsed_sec": 401.56538230500155,
+  "interpretation": "Validation-only sensitivity; no detector evaluation or optimal-security weight claim"
+}

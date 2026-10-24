@@ -1,0 +1,184 @@
+[
+  {
+    "study": "cpm_v2_pilot_100",
+    "path": "secrets",
+    "files": 1,
+    "bytes": 32,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_pilot_100",
+    "path": "epochs",
+    "files": 3600,
+    "bytes": 110239819,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_fusion_sensitivity_25",
+    "path": "secrets",
+    "files": 1,
+    "bytes": 32,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_fusion_sensitivity_25",
+    "path": "inputs",
+    "files": 225,
+    "bytes": 583537,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_revised_linkage_300",
+    "path": "secrets",
+    "files": 1,
+    "bytes": 32,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_revised_linkage_300",
+    "path": "inputs",
+    "files": 900,
+    "bytes": 6881700,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_revised_linkage_300",
+    "path": "epochs",
+    "files": 118748,
+    "bytes": 8653277762,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_revised_linkage_300",
+    "path": "parameter_bank",
+    "files": 24,
+    "bytes": 1618476,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_fullview_cpunl_200",
+    "path": "secrets",
+    "files": 601,
+    "bytes": 148761,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_fullview_cpunl_200",
+    "path": "cases",
+    "files": 114948,
+    "bytes": 7703131481,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_fullview_cpunl_200",
+    "path": "blocks",
+    "files": 600,
+    "bytes": 365416,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_fullview_cpunl_200",
+    "path": "parameter_bank",
+    "files": 24,
+    "bytes": 1572864,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_native_generative",
+    "path": "models",
+    "files": 84,
+    "bytes": 81895098,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_native_generative",
+    "path": "secrets",
+    "files": 0,
+    "bytes": 0,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_native_generative",
+    "path": "inputs",
+    "files": 1200,
+    "bytes": 192000,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_native_generative",
+    "path": "cases",
+    "files": 21308,
+    "bytes": 1410610896,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_assemblage_local",
+    "path": "secrets",
+    "files": 0,
+    "bytes": 0,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_assemblage_local",
+    "path": "inputs",
+    "files": 60,
+    "bytes": 73600,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_assemblage_local",
+    "path": "cases",
+    "files": 2088,
+    "bytes": 1926143327,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_hsmnet_matched_1200",
+    "path": "models_hsm",
+    "files": 24,
+    "bytes": 139958072,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_srm_detectability_pilot_160",
+    "path": "models",
+    "files": 36,
+    "bytes": 542238,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_hsmnet_detectability_pilot_300",
+    "path": "models",
+    "files": 24,
+    "bytes": 139805186,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_matched_image_1200",
+    "path": "secrets",
+    "files": 1200,
+    "bytes": 38400,
+    "reason": "private fixture material"
+  },
+  {
+    "study": "cpm_v2_matched_image_1200",
+    "path": "inputs",
+    "files": 3600,
+    "bytes": 27526800,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_matched_image_1200",
+    "path": "cases",
+    "files": 39555,
+    "bytes": 2863776645,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  },
+  {
+    "study": "cpm_v2_matched_image_1200",
+    "path": "parameter_bank",
+    "files": 24,
+    "bytes": 1572864,
+    "reason": "large/external runtime artifacts; see records and saved digests"
+  }
+]

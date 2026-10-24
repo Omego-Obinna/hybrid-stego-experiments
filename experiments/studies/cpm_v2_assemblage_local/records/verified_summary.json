@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-18T10:01:26.379105+00:00",
+  "message_groups": 30,
+  "erasure_traces_checked": 1200,
+  "all_saved_packet_and_image_hashes_checked": true,
+  "all_saved_decoded_packets_used_without_oracle_filtering": true,
+  "source_scope": "Finite local native-carrier and per-object iid-erasure comparison; repeated loss seeds and zero-loss repetitions are not independent trials",
+  "cpm_pixel_deviation_images": 0,
+  "report_quality_provenance": "report_quality_v1/provenance.json"
+}

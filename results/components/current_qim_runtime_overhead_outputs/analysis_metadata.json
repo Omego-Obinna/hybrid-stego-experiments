@@ -1,0 +1,21 @@
+{
+  "no_embedding_performed": true,
+  "runtime_summary_csv": "${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_payloads_FULL/logs/publication_tables/table_ours_qim_v32_runtime.csv",
+  "raw_logs_discovered": [
+    "${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_payloads_FULL/logs/embed_log_ours_qim.csv"
+  ],
+  "raw_payloads": [
+    0.3
+  ],
+  "layout": {
+    "epoch_index_bytes": 8,
+    "epoch_auth_bytes": 32,
+    "nonce_bytes": 16,
+    "mac_bytes": 32,
+    "channel_id_bytes": 1,
+    "version_flags_bytes": 1,
+    "length_field_bytes": 4,
+    "heartbeat_cadence_epochs": 10,
+    "network_overhead_per_frame": 0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-17T18:46:49.216557+00:00",
+  "development_source": "${WORKSPACE_ROOT}/revision_work/experimental_phase/phase5_fullview_cpunl/development_v1/source",
+  "native": {
+    "completed_at": "2026-10-17T18:39:36.968042+00:00",
+    "attempted": 16,
+    "recovered": 16,
+    "preflight_failures": 0,
+    "wrong_accepted_plaintexts": 0,
+    "elapsed_sec": 47.67568759499409
+  },
+  "control": {
+    "checked_at": "2026-10-17T18:41:17.109555+00:00",
+    "same_public_feature_extractor": true,
+    "all_synthetic_tags_valid": true,
+    "tags_checked": 1872,
+    "implanted_signal": "SHA256(canonical public parameter pair) prefix in first eight pixels",
+    "models": [
+      {
+        "classifier": "logistic",
+        "auc": 0.9583333333333333
+      },
+      {
+        "classifier": "extra_trees",
+        "auc": 0.9583333333333333
+      }
+    ],
+    "known_leak_detected": true,
+    "metadata_balance_passed": true,
+    "independent_diagonal_retained": true,
+    "maximum_auc_due_to_diagonal_overlap": 0.9583333333333334,
+    "limitation": "Separate synthetic coupling only; not a proof of sensitivity to every real leakage or a native CPM recovery sample"
+  },
+  "full_public_export_hash_verified": true,
+  "final_integrity_hardening": "Input/private manifests and receiver-nonce-state equality added after training-only core smoke; no feature, model, world or source protocol change",
+  "production_test_scores_not_observed": true
+}

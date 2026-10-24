@@ -1,0 +1,24 @@
+{
+  "completed_at": "2026-10-18T10:13:11.228248+00:00",
+  "attempts": 18000,
+  "new_native": 3600,
+  "common_valid_counts": {
+    "0.1": {
+      "train": 681,
+      "validation": 195,
+      "test": 288
+    },
+    "0.2": {
+      "train": 684,
+      "validation": 196,
+      "test": 289
+    },
+    "0.4": {
+      "train": 671,
+      "validation": 195,
+      "test": 294
+    }
+  },
+  "pixel_deviation_images": 1,
+  "wrong_accepted_plaintexts": 0
+}

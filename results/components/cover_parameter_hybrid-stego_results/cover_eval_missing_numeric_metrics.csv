@@ -1,0 +1,1 @@
+corpus,seed,stream,comparison_type,run_id,mauve,roberta_accuracy,roberta_auc,notes,source_logs,p_file,q_file,js_char_1,js_word_1,js_char_2,js_word_2,js_char_3,js_word_3,pos_chi2,pos_pvalue,pos_dof,pos_cramers_v,p_n_lines,q_n_lines,file_status

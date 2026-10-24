@@ -1,0 +1,39 @@
+{
+  "experiment": "scheduling-footprint-controlled-simulator",
+  "worlds": [
+    "cover",
+    "unshaped",
+    "shaped"
+  ],
+  "notes": [
+    "No image embedding was performed.",
+    "KS/MMD should be interpreted as empirical footprint proxies, not direct TV estimates.",
+    "Cover and shaped worlds use independent draws from the same bounded-delay model."
+  ],
+  "config": {
+    "epochs": 10000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epoch_period_ms": 1000.0,
+    "rho_ms": 100.0,
+    "skew_delta_ms": 100.0,
+    "timeout_ms": 200.0,
+    "window_w": 5,
+    "heartbeat_h": 10,
+    "cover_phi": 0.8,
+    "cover_noise_ms": 18.0,
+    "channel_jitter_ms": 5.0,
+    "unshaped_jitter_ms": 0.4,
+    "network_delay_ms": 20.0,
+    "network_jitter_ms": 5.0,
+    "c1_bytes": 127,
+    "c2_bytes": 127,
+    "c3_bytes": 262253,
+    "heartbeat_bytes": 40,
+    "include_heartbeats": true
+  },
+  "rows": 297000
+}

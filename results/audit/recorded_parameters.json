@@ -1,0 +1,747 @@
+{
+  "scope": "Reviewer 4 documentation-only pass; no experiment rerun or source/result correction",
+  "archive": {
+    "name": "hybrid-stego.tar.xz",
+    "bytes": 2076612456,
+    "sha256": "574232f10a36807bc82018eb06c4b1644c8accb458059b588b2340f4c98ff9eb",
+    "source_unchanged": true
+  },
+  "public_experiment_source": {
+    "commit": "e25ef2ea4cd2a53ea4161497adce1587470c45a7",
+    "tree": "523732d1b1c667b2eeb6a906a022649299d5938b",
+    "files": [
+      {
+        "path": "experiments/Multi_robustness/multichannel_qim_resync_sim.py",
+        "git_blob": "7c1b6f40bf54bb124d82ba94a7b52420cbc703d1",
+        "sha256": "67a6517b937be588bd14580adf60abba1c66908ac3313036a737e231189a6f65",
+        "bytes": 36041,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/analyze_streams.py",
+        "git_blob": "e2f2c49062cf941559f271abc82196e658a89bb5",
+        "sha256": "a260fae0d80849abff940ef7133623bef5726d0ffd5546704cbe35e46a021692",
+        "bytes": 13859,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/compute_mauve.py",
+        "git_blob": "677884483cf45f509f93616e16a6addbb7cf88d4",
+        "sha256": "84207f8a735180a8d590102a74a2cc02d8d997969e339eb08461fcbad238c1cd",
+        "bytes": 1105,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/extract_cover_metrics_from_logs.py",
+        "git_blob": "accd30006c8946dbc63e71fd6fbcbb13f2bcc870",
+        "sha256": "71d53cd8e465f7db706a27fbe43d1d5914d8a60a193d15f3ce3275f896a1bb3b",
+        "bytes": 4341,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/extract_external_metrics_from_logs.py",
+        "git_blob": "6ab68ee3bc223bfdf1d760b4f2879e2d767d8027",
+        "sha256": "422f1f088e2122b08c107944a5f15edfd30fc2d62494166b238ab5594f602b67",
+        "bytes": 6298,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/split_text.py",
+        "git_blob": "39742c9844422277c62251f4613727a5be2138a6",
+        "sha256": "234cd9190ae8bbb5dfab1125e58f49f7fdef9322b816cafaaf40297d9cadc81e",
+        "bytes": 1001,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/synth_streams_a.py",
+        "git_blob": "dc8f76210118b7b4f55b7a0e4815952ab112f5a6",
+        "sha256": "278641316d102c2bd2e779a7d1fd2e58726a1bc0cb54a627c5c248ab5fc9f9e9",
+        "bytes": 2903,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/cover_generation/train_roberta_detector.py",
+        "git_blob": "c6dae94daac8c3b670518204770a6906184f8229",
+        "sha256": "0bfa2f422a6054900c6a8e2d4cc470b1ee986c947d316e183c275e3ee953e534",
+        "bytes": 3419,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/embeddings/hill_pystc_embed_SAFE_v1.py",
+        "git_blob": "8797aa28d42c447d97b132aa6da885b4d8121025",
+        "sha256": "5193a24c2890d3796b8971e75fd3cee2fc36518e2082a82b477a45835e77bf47",
+        "bytes": 45066,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/embeddings/mipod_pystc_embed_SAFE_v1.py",
+        "git_blob": "ed6429c18518a4a63d00e52524203d2a031fe365",
+        "sha256": "69252213d94e26fe8fdbddf3c99b83fc72a2ead51612d1d8350c1a36cf748294",
+        "bytes": 52071,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/embeddings/ours_qim_embed_SAFE_v3_2.py",
+        "git_blob": "0973b4f352ee51f6bd8894d6332679fefb882088",
+        "sha256": "f6decd35999e0d51f8e8682da814a9f337989192347ae8d09f1dc8af7a21e576",
+        "bytes": 105688,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/embeddings/suniward_pystc_embed_SAFE_v1.py",
+        "git_blob": "82fd50add74d3643a49ecd8141c12fec73ea2c53",
+        "sha256": "581a05c3c7cf3d8a50cd71d5144ea51fbc70d556dcd4787bb32f0fc94adb2f86",
+        "bytes": 45728,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/embeddings/wow_pystc_embed_SAFE_v2.py",
+        "git_blob": "b77ab97d47e0212fb27ea80cad234c5e1064f2a2",
+        "sha256": "7db1dd69ac3ade828ca22c816117c81a175f258cec502a9f3d01bb1ce9f69686",
+        "bytes": 46000,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/linkability_probes/01_prepare_matched_linkability_dataset.py",
+        "git_blob": "4764c81db1999fc26b6a0bab79678737f72cb7e0",
+        "sha256": "a72f030eef492941e15753685563a4696869d937db251c94e4b3ff67a4a09656",
+        "bytes": 20040,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/linkability_probes/02_train_eval_linkability_warden.py",
+        "git_blob": "5dd91893dc3b2652efff5510f68e9e4306fdc1f3",
+        "sha256": "0164bb61db334a7cb7eec1e9e7ddef949abca0664cc9fa0fa0cf9490ccdbbb31",
+        "bytes": 10052,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/linkability_probes/03_rank_linkability_candidates.py",
+        "git_blob": "0293140a837d7c093f0a184eda97cec8a8ecb7e8",
+        "sha256": "fd7bce9b7327b068546eb8a369e55aceeab3d65ce9fae8f9b2d072647f02af7d",
+        "bytes": 11613,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/linkability_probes/README.md",
+        "git_blob": "d3a01974600dbe0ae6720efb2cd1165774d6c8c8",
+        "sha256": "f3e367a1996ea2a0a0edad47f0570d4e0a650773009d357ac2fcf9ec8349d030",
+        "bytes": 1330,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/linkability_probes/linkability_panel_style_config.json",
+        "git_blob": "41819fde631b4c7bc744aff95022eaaf8bdd4678",
+        "sha256": "80d890952ba731b823b5740248f8845835b33da801895bc1af2514c648abdeca",
+        "bytes": 2029,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/00_audit_qim_mask_layer.py",
+        "git_blob": "55887266fd2c48199916d782f4a856972239f1f0",
+        "sha256": "b413f29f0f8abb89e760eed5e6f974f968f81cea9d4861861bacc7b5a5a4fd6f",
+        "bytes": 2602,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/01_generate_qim_mask_ablations.py",
+        "git_blob": "76863012c61cf7329467e96244d5e0d47f790110",
+        "sha256": "eaf61a7ab319d2183c98f133692d002de82b94736554ecb4cc3a48e2b8a27be0",
+        "bytes": 12099,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/02_analyze_qim_mask_ablations.py",
+        "git_blob": "4307ac0c14859dc81bf671608501461054cf68c7",
+        "sha256": "a4dbaf0a37129159213ea75126fce080d5a96573a5375abe8e85a9914c3a5f1b",
+        "bytes": 11404,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/03_summarise_existing_qim_recovery.py",
+        "git_blob": "ece67c86b94b18be0edde3e431179bdcb5b0528f",
+        "sha256": "431f703d4114b2f8af63ea502d34b871c910149cd9fe1d514485936ca4eb0c70",
+        "bytes": 3195,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/04_export_nist_sts_ascii.py",
+        "git_blob": "2f258e933157887e06563b39e3cf58fe42a9f14a",
+        "sha256": "d1f837d177b21bfc1c0078f6d27a657ff30de6b4a482dce60b07d849f1b5571e",
+        "bytes": 1662,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/README_masking_ablations.md",
+        "git_blob": "2cac4c608e74b24bb9d87674c1694aecbb2d4843",
+        "sha256": "f089ede696baa17a8ba10494c24a0d7de72de792cf82990af31af88c79d29f20",
+        "bytes": 3917,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/requirements_masking_ablations.txt",
+        "git_blob": "3d1111834bda5f2cd3e8a46c2b732d577340adc8",
+        "sha256": "92e116d7cea16cc4ea2665665f19120236d007fe379c509b51c71656fc4cdb26",
+        "bytes": 82,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/masking_ablations/run_masking_ablations.sh",
+        "git_blob": "710772fa5e38a5102225c339104e9981fdf83b28",
+        "sha256": "a16fc48f5838afd5611992f351a8ed3eed7d8812624d91f70b2967becdc778de",
+        "bytes": 2887,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/CNN/create_cnn_steganalysis_split.py",
+        "git_blob": "1910f6044dcbf9dccbf9240d5e06c5c4c8019007",
+        "sha256": "ac4a23b036ecbc29d6e4f0845f1dd400385118d614360fe338a930afd31aa1ed",
+        "bytes": 9203,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/CNN/yedroudj_qim.py",
+        "git_blob": "9ebc67d46209ec0c2398e5d1c0dbaa067c6d049d",
+        "sha256": "fad382988b5a6d11f00ab8e629f279c383ee60a7ba2301aec54351c86fb26b33",
+        "bytes": 24827,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/CNN/yenet_qim.py",
+        "git_blob": "6b18765ef25e3cfe15b56d9e7ab9b87b6ba43ba3",
+        "sha256": "9bbb7f998922fa78f428ea6048c965a348296e1d6e633c54aff6e996fe9f7f60",
+        "bytes": 32409,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/00_setup_env.sh",
+        "git_blob": "6e5a8c4f16a3bab787ed4f7f0d9c146644217daa",
+        "sha256": "381e8cb2a39fe11a83c95b198874f1d67038ffc7a8f4a66ea3b96ebd130964c7",
+        "bytes": 494,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/01_build_pairs_cover_stego_dirs.py",
+        "git_blob": "46df9063f9094d176487cee42f24d183e7898693",
+        "sha256": "6aeb1172f73d5942068ed9c68f442c3985ab28e292eca2a9461e5e61e3559a0c",
+        "bytes": 4924,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/02_maxsrm_ec_train_eval.py",
+        "git_blob": "578a57653b3aac7eebdfb0e06ed7cabe1afbfe12",
+        "sha256": "fe1872627b6e9675370bdbaf4f85e7cc42fe565983768f4581699c6ad78937f5",
+        "bytes": 13229,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/03_run_all_payloads.sh",
+        "git_blob": "5f9199e9b7201637ea91ba227d3331245d0965fe",
+        "sha256": "9425a621d8ea229b56dfe459cadb4c9e87bc84234f9c47bfcf428662a7810d9c",
+        "bytes": 1755,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/make_srm_ec_tables_plots.py",
+        "git_blob": "13be0417e792a340eb691883e5b939d770e1ca69",
+        "sha256": "6f222d08660cd0a3162dfdd76cdd926d9e436ec4bc6e3082d8a015d3d318a434",
+        "bytes": 19038,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/make_srm_ec_tables_plots_old.py",
+        "git_blob": "7a41ab45b1c206a208df8b4a4a7864e052be0368",
+        "sha256": "3b2e1401ba42ebcb1bc2f74b47994af989a42df881887cea5ac8d02ceca7a339",
+        "bytes": 15107,
+        "matches_local_upload": true
+      },
+      {
+        "path": "experiments/steganalysis/SRM_EC/make_srm_ec_tables_plots_old_a.py",
+        "git_blob": "2aa1d3cd2614814b3d338fe44b3e317f89c779b5",
+        "sha256": "67a70ed0c3e71034528bb7151c6ddf8adbe8524109e5d835e911e40de04c85bb",
+        "bytes": 18440,
+        "matches_local_upload": true
+      }
+    ]
+  },
+  "stc": {
+    "package": "pystcstego",
+    "version": "0.1.0",
+    "constraint_height": 10,
+    "native_max_trials": 10,
+    "ternary_changes": [
+      -1,
+      0,
+      1
+    ],
+    "pixel_bounds": [
+      0,
+      255
+    ],
+    "payload_length_header_bits": 32,
+    "header_pixels": 64,
+    "byte_packing": true,
+    "package_sdist_sha256": "bc3e4750cae53cc55d90516ccc1f96e77d81a24d0fe1c64629e3cc36896ecd54",
+    "historical_binary_hash_available": false,
+    "ternary_changes_scope": "Intended directional-cost interface, not an unconditional bound on native output; retained two-level deviations are disclosed in the manuscript/supplement."
+  },
+  "image": {
+    "recorded_run": "ours-qim-v3-2-20260606T204306-d220f9",
+    "attempts_per_payload": 10000,
+    "payloads_bpp": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "fusion_weight": 0.75,
+    "fusion_weight_selection": "fixed design setting; validation tuning not established",
+    "wet_cost": 10000000000000.0,
+    "mipod_variance_window": 7,
+    "mipod_smoothing_window": 7,
+    "mipod_variance_floor": 0.01,
+    "mipod_power": 0.75,
+    "suniward_sigma": 1.0,
+    "qim_modulation": [
+      0.08,
+      0.08,
+      0.01
+    ],
+    "modulation_clip": [
+      0.85,
+      1.2
+    ],
+    "geometric_mean_normalisation": true,
+    "slic_enabled": true,
+    "slic_segments": 256,
+    "slic_region_percentile": 50,
+    "outside_region_penalty": 1.02,
+    "cost_spreading_window": [
+      3,
+      3
+    ],
+    "cost_spreading_blend": 0.05,
+    "source_defaults_not_saved_launch_overrides": {
+      "slic_compactness": 10.0,
+      "slic_sigma": 0.0
+    }
+  },
+  "additional_cnn_details": {
+    "native_resolution": [
+      512,
+      512
+    ],
+    "resize": false,
+    "crop": false,
+    "train_val_test_pairs": [
+      6997,
+      1000,
+      1999
+    ],
+    "split_seed": 20260605,
+    "epochs": 80,
+    "batch_pairs": 16,
+    "batch_images": 32,
+    "loss": "cross entropy",
+    "optimizer": "SGD",
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "scheduler_milestones": [
+      50,
+      70
+    ],
+    "ye_augmentation": false,
+    "yedroudj_augmentation": "joint rotations by multiples of90 degrees and horizontal flip",
+    "checkpoint_selection": "maximum validation AUC; ties by validation accuracy",
+    "learning_rate_and_worker_edits": "Reconciled 24 October 2026 using static primitive checkpoint arguments and matching saved summaries; no model execution.",
+    "per_run_configuration": [
+      {
+        "detector": "Ye-Net",
+        "payload_bpp": 0.1,
+        "initial_lr": 0.005,
+        "gamma": 0.5,
+        "milestones": [
+          50,
+          70
+        ],
+        "training_seed": 20260605,
+        "num_workers": 4,
+        "batch_pairs": 16,
+        "completed_epochs": 80,
+        "selected_epoch": 80,
+        "test_auc": 0.5016516512383256,
+        "checkpoint": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/checkpoints/best_yenet.pt",
+        "summary": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_010/logs/yenet_summary.csv",
+        "directory_label_is_not_used_as_a_configuration_value": true
+      },
+      {
+        "detector": "Ye-Net",
+        "payload_bpp": 0.2,
+        "initial_lr": 0.003,
+        "gamma": 0.8,
+        "milestones": [
+          50,
+          70
+        ],
+        "training_seed": 20260606,
+        "num_workers": 4,
+        "batch_pairs": 16,
+        "completed_epochs": 80,
+        "selected_epoch": 80,
+        "test_auc": 0.5423816210256204,
+        "checkpoint": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/checkpoints/best_yenet.pt",
+        "summary": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_020/logs/yenet_summary.csv",
+        "directory_label_is_not_used_as_a_configuration_value": true
+      },
+      {
+        "detector": "Ye-Net",
+        "payload_bpp": 0.4,
+        "initial_lr": 0.005,
+        "gamma": 0.5,
+        "milestones": [
+          50,
+          70
+        ],
+        "training_seed": 20260605,
+        "num_workers": 4,
+        "batch_pairs": 16,
+        "completed_epochs": 80,
+        "selected_epoch": 12,
+        "test_auc": 0.5811328625793637,
+        "checkpoint": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/checkpoints/best_yenet.pt",
+        "summary": "${ARTIFACT_ROOT}/yenet_main_results_v3_2_fused075_lr0003_gamma08_noearly_seed20260605/payload_040/logs/yenet_summary.csv",
+        "directory_label_is_not_used_as_a_configuration_value": true
+      },
+      {
+        "detector": "Yedroudj-Net",
+        "payload_bpp": 0.1,
+        "initial_lr": 0.001,
+        "gamma": 0.3,
+        "milestones": [
+          50,
+          70
+        ],
+        "training_seed": 20260605,
+        "num_workers": 6,
+        "batch_pairs": 16,
+        "completed_epochs": 80,
+        "selected_epoch": 59,
+        "test_auc": 0.5041846836374666,
+        "checkpoint": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/checkpoints/best_yedroudj.pt",
+        "summary": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_010/logs/yedroudj_summary.csv",
+        "directory_label_is_not_used_as_a_configuration_value": true
+      },
+      {
+        "detector": "Yedroudj-Net",
+        "payload_bpp": 0.2,
+        "initial_lr": 0.001,
+        "gamma": 0.3,
+        "milestones": [
+          50,
+          70
+        ],
+        "training_seed": 20260605,
+        "num_workers": 6,
+        "batch_pairs": 16,
+        "completed_epochs": 80,
+        "selected_epoch": 79,
+        "test_auc": 0.5678383213617815,
+        "checkpoint": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/checkpoints/best_yedroudj.pt",
+        "summary": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_020/logs/yedroudj_summary.csv",
+        "directory_label_is_not_used_as_a_configuration_value": true
+      },
+      {
+        "detector": "Yedroudj-Net",
+        "payload_bpp": 0.4,
+        "initial_lr": 0.001,
+        "gamma": 0.3,
+        "milestones": [
+          50,
+          70
+        ],
+        "training_seed": 20260605,
+        "num_workers": 6,
+        "batch_pairs": 16,
+        "completed_epochs": 80,
+        "selected_epoch": 71,
+        "test_auc": 0.9302282456886272,
+        "checkpoint": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/checkpoints/best_yedroudj.pt",
+        "summary": "${ARTIFACT_ROOT}/yedroudj_main_results_v3_2_fused075_payload_020_lr0001_gamma03_seed20260605/payload_040/logs/yedroudj_summary.csv",
+        "directory_label_is_not_used_as_a_configuration_value": true
+      }
+    ]
+  },
+  "parameter_inputs": {
+    "pairs": [
+      {
+        "pair_id": "alice_selected_seed42",
+        "stream_split_seed": 42,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_alice_selected_seed42.txt",
+          "sha256": "eba760cbd129e3285dd8e8068cd4a4194f0e1b2f9b6ba62f3bc4b87bb5feb426",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_alice_selected_seed42.txt",
+          "sha256": "59acd9138ad09664520a7373bac2b16c6e75bd35171ff1d833b9e33e05623f0c",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "alice_selected_seed43",
+        "stream_split_seed": 43,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_alice_selected_seed43.txt",
+          "sha256": "106fd893a6752ae7e184a110ba302cd6c7015574e21da8518dded1991fa3d790",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_alice_selected_seed43.txt",
+          "sha256": "ea20775416cefacd61f9186eb08fb6b2e02a2931511b15af602ff9d69645355d",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "alice_selected_seed44",
+        "stream_split_seed": 44,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_alice_selected_seed44.txt",
+          "sha256": "a50df1e56a81e44878a0a10fa373b25bc75b53838137c93c1cbb45efd4ce0ff3",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_alice_selected_seed44.txt",
+          "sha256": "b8c878ed47e19d8dee9c386888e88fd0fac03f4a51d5630a13a97f2f3a74d1d7",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "ext1_alice_pride_to_sherlock_selected_seed42",
+        "stream_split_seed": 42,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_ext1_alice_pride_to_sherlock_selected_seed42.txt",
+          "sha256": "e4df5e4d138826de2686108d7ff81c1e6b6f132e6874633904fe65fd1029203c",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_ext1_alice_pride_to_sherlock_selected_seed42.txt",
+          "sha256": "b785811d2a4cc32f2e2ab0836a7d0e92165dcc292dab024eb54d4a879d0abcfb",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "ext2_alice_sherlock_to_pride_selected_seed42",
+        "stream_split_seed": 42,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_ext2_alice_sherlock_to_pride_selected_seed42.txt",
+          "sha256": "8492948627a72eae9789af4c986523a9a30011979fd91ff1238b1a599a84c55b",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_ext2_alice_sherlock_to_pride_selected_seed42.txt",
+          "sha256": "cb2f6e757a22e6c186c04d278cf0392a88c7110422ebe8a6e874e0bdd3e78f58",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "ext3_pride_sherlock_to_alice_selected_seed42",
+        "stream_split_seed": 42,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_ext3_pride_sherlock_to_alice_selected_seed42.txt",
+          "sha256": "022a50ecc7f7fe2c02e6ccd0ca8010da06701e3c4588e99662cd32931b08c9a7",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_ext3_pride_sherlock_to_alice_selected_seed42.txt",
+          "sha256": "a1d2457755fd2b03e064d102fd713776643a86a22fb0eaeb368580a51dd6fab0",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "pride_selected_seed42",
+        "stream_split_seed": 42,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_pride_selected_seed42.txt",
+          "sha256": "0f844f79763d2736ff8588aff4ccfaa71b925e99d68b88eab61475d7146c47c4",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_pride_selected_seed42.txt",
+          "sha256": "fea9d90e534483e97f623f557b0aba1b7ef3dc10cf4694593c5b508b9a7a837e",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "pride_selected_seed43",
+        "stream_split_seed": 43,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_pride_selected_seed43.txt",
+          "sha256": "6283eaa61a0a55b51c49779098b0e6778bf3ab9b9cee36fc3e9e0de1d0a4a728",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_pride_selected_seed43.txt",
+          "sha256": "7400d329eb3b0eb3d27bc9e54f7ea580374a7b22d7c50f615506960d2e25208e",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "pride_selected_seed44",
+        "stream_split_seed": 44,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_pride_selected_seed44.txt",
+          "sha256": "b56377eb1f4901aeeee7cd81619cd1d005b6045922f1e7f9191a257aa3ac42fb",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_pride_selected_seed44.txt",
+          "sha256": "d08c31b4d6cc266ea14352d4c8ae9764bc3519ec0721ddbcde7525c07865bbd0",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "sherlock_selected_seed42",
+        "stream_split_seed": 42,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_sherlock_selected_seed42.txt",
+          "sha256": "4e9d686fa1373aeb3ea54e87942a4ba7f3873cc9abc377518942ced6438fbf38",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_sherlock_selected_seed42.txt",
+          "sha256": "117865a46fe1090ba730bff94c4c4f944698bc270694a29ed12470e1ffbcabf7",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "sherlock_selected_seed43",
+        "stream_split_seed": 43,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_sherlock_selected_seed43.txt",
+          "sha256": "e63696b00852e448bca582ef4033ae3d93193aa5a5dd77d51cc4a97fc5c03ec4",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_sherlock_selected_seed43.txt",
+          "sha256": "27cbb3e8567a9ace6d44508d98d946c8584082f45b47460cebfd904cf6d7032f",
+          "records": 1000
+        }
+      },
+      {
+        "pair_id": "sherlock_selected_seed44",
+        "stream_split_seed": 44,
+        "covers": 1000,
+        "gamma1": {
+          "filename": "gamma1_sherlock_selected_seed44.txt",
+          "sha256": "3b9cff4dd07a06de67c8f18a2c2c25d9c806602569b6ed6df7bb290dbdcfee2c",
+          "records": 1000
+        },
+        "gamma2": {
+          "filename": "gamma2_sherlock_selected_seed44.txt",
+          "sha256": "ea10bd570215b664f8af872c9facccd4468c6c255fc1c1d086bcf68aaf3e439e",
+          "records": 1000
+        }
+      }
+    ],
+    "design": "matched",
+    "cover_shuffle_seed": 20260605,
+    "covers_per_pair": 1000,
+    "assignments": 12000,
+    "stego_records": 36000,
+    "selection": "HMAC-labelled31-bit seed; Python random.Random shuffle without replacement; first1000 unique6-60-word reference lines"
+  },
+  "simulator": {
+    "epochs": 5000,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "loss": [
+      0,
+      0.01,
+      0.05
+    ],
+    "jitter_ms": [
+      0,
+      25,
+      50,
+      100
+    ],
+    "jitter_rule": "Gaussian SD=J/2 clipped[-J,J]",
+    "skew_ms": [
+      50,
+      100,
+      200
+    ],
+    "skew_rule": "per-frame/channel uniform[-S,S]",
+    "timeout_multipliers": [
+      2,
+      3
+    ],
+    "windows": [
+      3,
+      5,
+      10
+    ],
+    "heartbeat_spacing": [
+      5,
+      10,
+      20
+    ],
+    "ecc": [
+      false,
+      true
+    ],
+    "burst_entry_probability": [
+      0,
+      0.005
+    ],
+    "burst_length": 3,
+    "base_delay_ms": 20,
+    "emission_interval_ms": 100,
+    "message_bytes": 32,
+    "parameter_bytes": 32,
+    "header_nonce_bytes": 16,
+    "tag_bytes": 32,
+    "replay_probability": 0,
+    "tamper_probability": 0,
+    "scope": "historical synthetic byte abstraction; heartbeats bypass data scheduler; ECC is assumed erasure recovery"
+  },
+  "open_items": [
+    "Original SLIC launch overrides/complete package call state are not frozen; source defaults remain labelled defaults.",
+    "Original STC binary build hash was not preserved; the audited installation is not proof of the original immutable build.",
+    "A fully identical image format/bpp/full-public-view interface is not available across native generative and distributed baselines.",
+    "No claim of causal detectability benefit from every cost term or of a historically tuned/security-optimal fusion weight.",
+    "Deployment extensions: real benign traffic, byte-changing carrier transformations, crash/rollback/concurrent-state qualification.",
+    "Matched revised-carrier SRM continuation remains paused; no such completed panel is claimed."
+  ],
+  "completed_revision_evidence": "Completed studies and audit receipts are indexed in ../../reviewer_response_audit_20261024/evidence/completed_run_evidence.json; main Sections 5.3-5.6 and 5.8; Supplementary Appendices J-M.",
+  "final_manuscript_audit_20261024": {
+    "report": "revision_work/final_manuscript_audit_20261024/AUDIT_REPORT.md",
+    "qa": "revision_work/final_manuscript_audit_20261024/FINAL_QA.json",
+    "no_experiment_or_model_execution": true,
+    "scheduling_rate_scope": "Mean per-seed emission rate approximately 1 epoch/s, excluding receiver computation.",
+    "transport_summary_rows": 26191,
+    "transport_unique_parameter_seed_scenarios": 25920,
+    "identical_duplicate_rows": 271,
+    "raw_results_unchanged": true
+  }
+}

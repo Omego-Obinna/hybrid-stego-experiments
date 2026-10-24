@@ -1,0 +1,148 @@
+{
+  "scored_at": "2026-10-22T10:33:51.273504+00:00",
+  "panels": [
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "cpm",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_cpm_0.1_ensemble.npz",
+      "threshold": -0.03832561895251274,
+      "test_covers": 288
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "suniward",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_suniward_0.1_ensemble.npz",
+      "threshold": -0.03832561895251274,
+      "test_covers": 288
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "mipod",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_mipod_0.1_ensemble.npz",
+      "threshold": -0.03832561895251274,
+      "test_covers": 288
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "wow",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_wow_0.1_ensemble.npz",
+      "threshold": -0.03832561895251274,
+      "test_covers": 288
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "hill",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_hill_0.1_ensemble.npz",
+      "threshold": -0.03832561895251274,
+      "test_covers": 288
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "cpm",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_cpm_0.2_ensemble.npz",
+      "threshold": 0.0011197151616215706,
+      "test_covers": 289
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "suniward",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_suniward_0.2_ensemble.npz",
+      "threshold": 0.0011197151616215706,
+      "test_covers": 289
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "mipod",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_mipod_0.2_ensemble.npz",
+      "threshold": 0.0011197151616215706,
+      "test_covers": 289
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "wow",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_wow_0.2_ensemble.npz",
+      "threshold": 0.0011197151616215706,
+      "test_covers": 289
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "hill",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_hill_0.2_ensemble.npz",
+      "threshold": 0.0011197151616215706,
+      "test_covers": 289
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "cpm",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_cpm_0.4_ensemble.npz",
+      "threshold": -0.14628911018371582,
+      "test_covers": 294
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "suniward",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_suniward_0.4_ensemble.npz",
+      "threshold": -0.14628911018371582,
+      "test_covers": 294
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "mipod",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_mipod_0.4_ensemble.npz",
+      "threshold": -0.14628911018371582,
+      "test_covers": 294
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "wow",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_wow_0.4_ensemble.npz",
+      "threshold": -0.14628911018371582,
+      "test_covers": 294
+    },
+    {
+      "detector": "HSMNet equal-method mixture",
+      "method": "hill",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_hill_0.4_ensemble.npz",
+      "threshold": -0.14628911018371582,
+      "test_covers": 294
+    }
+  ],
+  "prediction_hashes": {
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_0.1_801.npz": "83ae13fdd561737198156b9c551b795c67fac6bce5c105088b545bd979271e07",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_0.1_802.npz": "99b46a5e15320d41884521458e5535099ceeb5fe0b5f1e7c64134ba00126f879",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_0.2_801.npz": "8cca6bd674366ae6949f14067f14ce291886006073a6b531bf4ec44188d353ad",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_0.2_802.npz": "b1bc3892bfd6bf6122cee65091e5bccfb91a2ebc40f2ffcd4ee14b6e29169027",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_0.4_801.npz": "076b095239e53940ea22353f4577f6dac4a7fddbc0fcb50d37fc26cef3f479b8",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_0.4_802.npz": "864a242a208fa4dc99bfe3363cb12b88f7ff13c3fe7d094cf3667c4ff397f7f6",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_cpm_0.1_ensemble.npz": "21a4575ee229cd7f7ab5da9a2ae521f4070afe15c858acbd7a99a20f3ab57fa2",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_cpm_0.2_ensemble.npz": "6eafcd656bd3001df8da943c14e2c491b2455b9baf2d422381b7a6eddca79def",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_cpm_0.4_ensemble.npz": "c1a4f9f2f160a48fd29c9a078bcee9a774fa9d7fb3eae311e31a80a0402fa3ac",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_hill_0.1_ensemble.npz": "1aa5e26aa6f513fa390d80edddc6fd8bf0aeab02d2fb28476984b157503db8d1",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_hill_0.2_ensemble.npz": "1b97c1502a9dd2d3be8b36d698e22d81ae48ea00d5db85c75d8f7a52ea4bc6a5",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_hill_0.4_ensemble.npz": "e9bbfecbaf788dfe40e7c4a52199a3ad05766657866b80062d5b1eb8f763c39e",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_mipod_0.1_ensemble.npz": "947aa54305bba1c378a8e7a8422723898bf3f65937ad607aa6f31330704b496d",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_mipod_0.2_ensemble.npz": "5486f3b456249e3ed8aae88ed43932ec39ed2cc41de566ae173e0348be81ccfd",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_mipod_0.4_ensemble.npz": "75b75712cf3782a87687f5e51981682e685e4b7df458b7e0aee58a583e75e650",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_suniward_0.1_ensemble.npz": "affae9c75ee61af4813fb3e8fd3688a856038cba55bd87599f9118c79603e7a2",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_suniward_0.2_ensemble.npz": "45203f23018d0c9d57dd3718e468a8bc1a5eb99ad7039635b051f517fea76493",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_suniward_0.4_ensemble.npz": "ed2ab491dd338d8d3dc704e05f5482d3f5a6b95606578e40b4a38ee3a0d5f892",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_wow_0.1_ensemble.npz": "a9648eb1460c9d39ed312cad2e28d2f55872996e320cbca4c45f99907e627e51",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_wow_0.2_ensemble.npz": "2a971c3de94a405a631d1872db9a724fda25aaa1a94fe964f9da27c41e0b34b5",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/predictions/hsm_wow_0.4_ensemble.npz": "09149cf32330108fda8a1a23d08a6372fb860c049c404e12fa40fed504b334f6"
+  }
+}

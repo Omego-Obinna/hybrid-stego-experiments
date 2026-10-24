@@ -1,0 +1,24 @@
+{
+  "applied_at": "2026-10-22T10:42:46.426913+00:00",
+  "script_sha256": "31b9eaf0752c56bd7c5f4f54e70d84be7c48690071553bb69729ca385a3b108e",
+  "original_hashes": {
+    "RESULTS.md": "cf051ac7945d751ee25f2cf7e428774bf8e1f26ff8374f27ab5597d3e7f10283",
+    "verified_summary.json": "70aa2ba9b53ba9246b0ac7e21ed690f944717c937699c978b2cd58ba40a026f0",
+    "completion.json": "e38a1c2cd855b736c4e923c7e88d133843825790829633b0d7d78fdb0536b94d",
+    "fresh_recovery_runtime.csv": "f5609b98193633ae661a4d90ac1fdd7419164976a26861fc13e2a7a8db146b95"
+  },
+  "updated_hashes": {
+    "RESULTS.md": "d65d24aac8dc0b03ff5c2d9c82671dca323fd424b7d2a2b32fda6d7e950c3536",
+    "verified_summary.json": "33321e31beb08cb2f71973a206d279c0d8c1689695859ce123bb39407961d4b6",
+    "completion.json": "f5437e3533a93713acff032d375f60bd5e8864fc3c00eddf4f567ec1d7afeca7",
+    "fresh_recovery_runtime.csv": "a632ae9296222e4a1d1cd1b16e1338e739117b4b072752fb3368f02896b7f3ef"
+  },
+  "changes": [
+    "Correct the baseline table core-time denominator using already saved cost_sec + stc_sec; the planned pure embedding-core metric excludes serialization. No trial or scientific result was rerun.",
+    "Expose retained pixel-limit deviations in RESULTS.md and verified_summary.json; no image is removed or changed."
+  ],
+  "scientific_design_changed": false,
+  "raw_trials_changed": false,
+  "model_or_test_selection_changed": false,
+  "test_scoring_repeated": false
+}

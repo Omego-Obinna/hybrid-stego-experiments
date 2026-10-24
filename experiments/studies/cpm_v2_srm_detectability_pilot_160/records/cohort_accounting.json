@@ -1,0 +1,25 @@
+{
+  "selected_source_groups": 160,
+  "saved_method_attempts": 960,
+  "valid_saved_images": 959,
+  "common_valid_counts": {
+    "0.1": {
+      "train": 100,
+      "validation": 20,
+      "test": 40
+    },
+    "0.2": {
+      "train": 100,
+      "validation": 20,
+      "test": 39
+    },
+    "0.4": {
+      "train": 100,
+      "validation": 20,
+      "test": 40
+    }
+  },
+  "full_study_test_groups_used": 0,
+  "native_images_generated": 0,
+  "failed_cases_replaced": 0
+}

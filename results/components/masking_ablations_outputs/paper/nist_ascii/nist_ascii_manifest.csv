@@ -1,0 +1,4 @@
+config_id,psi_mode,dither_mode,delta_scale,delta,payload_bpp,seed,message_class,path,target_bits,actual_bits,ascii_path
+cfg_01,hashid,cover_prf,1.0,0.25,0.1,42,zero,${ARTIFACT_ROOT}/masking_ablations_outputs/paper/generated/bitstreams/cfg_01_p010_seed42_zero.bin,2000000,1310700,${ARTIFACT_ROOT}/masking_ablations_outputs/paper/nist_ascii/cfg_01_p010_seed42_zero.txt
+cfg_01,hashid,cover_prf,1.0,0.25,0.1,43,zero,${ARTIFACT_ROOT}/masking_ablations_outputs/paper/generated/bitstreams/cfg_01_p010_seed43_zero.bin,2000000,1310700,${ARTIFACT_ROOT}/masking_ablations_outputs/paper/nist_ascii/cfg_01_p010_seed43_zero.txt
+cfg_01,hashid,cover_prf,1.0,0.25,0.1,44,zero,${ARTIFACT_ROOT}/masking_ablations_outputs/paper/generated/bitstreams/cfg_01_p010_seed44_zero.bin,2000000,1310700,${ARTIFACT_ROOT}/masking_ablations_outputs/paper/nist_ascii/cfg_01_p010_seed44_zero.txt

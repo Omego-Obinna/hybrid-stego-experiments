@@ -1,0 +1,11 @@
+{
+  "completed_at": "2026-10-22T10:42:46.077240+00:00",
+  "verified": true,
+  "report_sha256": "d65d24aac8dc0b03ff5c2d9c82671dca323fd424b7d2a2b32fda6d7e950c3536",
+  "selected_checkpoints_checked": 6,
+  "detectability_panels": 15,
+  "fresh_attempts": 450,
+  "report_quality_pass": "report_quality_v1/provenance.json",
+  "report_quality_passed": true,
+  "operational_continuation": "resume_20261021_v1/provenance.json"
+}

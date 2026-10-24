@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-10-20T03:42:44.165416+00:00",
+  "run_id": "cpm_v2_srm_detectability_pilot_160",
+  "full_study_root": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_matched_image_1200",
+  "full_study_remains_paused": true,
+  "cohort_selection_seed": 6102001,
+  "eligibility": "Full-study training covers with cached valid CPM/S-UNIWARD 0.10-bpp features; sample by fixed permutation, never by detector result.",
+  "eligible_training_covers": 494,
+  "source_groups": 160,
+  "split_counts": {
+    "train": 100,
+    "validation": 20,
+    "test": 40
+  },
+  "methods": [
+    "cpm",
+    "suniward"
+  ],
+  "payloads": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "minimum_complete_counts": {
+    "train": 80,
+    "validation": 15,
+    "test": 30
+  },
+  "feature": "Unchanged full sealwatch 2025.9 SRM, 34671 dimensions",
+  "feature_workers": 3,
+  "learners": 20,
+  "subspace": 128,
+  "seeds": [
+    801,
+    802
+  ],
+  "control_seed": 6102002,
+  "bootstrap_seed": 6102003,
+  "bootstrap_draws": 2000,
+  "training_rule": "Fixed L=20, d_sub=128 and two seeds; mean scores; orientation and balanced-accuracy threshold chosen on validation only. No hyperparameter search.",
+  "comparison_rule": "Common valid source cover/payload blocks for both methods; all 960 saved method records retained; no retry or replacement.",
+  "source_sha256": "737de2f3c9b57ece94d12df175fa6898ee8e56b4a309743878e0cdbdd4567189",
+  "input_hashes": {
+    "cohort.json": "0f281774a669ea4345c6c958aeab172d19dce973340e594b11742e62418da6d6",
+    "saved_image_records.json": "beff37ad82cb2b22d069dae25d25798d6f0e5b2837b79000b0761d62c058587f"
+  },
+  "full_image_manifest_sha256": "a878f5330aea6968d8313fdf70aded9efdc4ae6cf1a6291b369e4a46ecd919aa",
+  "full_config_sha256": "c31a4e6fcd2c0920359df8938e301df63d7b40ca58584238a74cdbf8c767fa22",
+  "limits": [
+    "Separate development pilot, not final confirmatory results or HSMNet evaluation.",
+    "Cache-availability cohort and reduced fixed training budget limit generality.",
+    "No native image generation or payload recovery rerun.",
+    "Do not alter the paused full study based on pilot test results.",
+    "Full-study original validation/test covers untouched.",
+    "Historical S-UNIWARD payload bytes not independently reconstructible; keep recorded implementation/version labels.",
+    "AUC and fixed-rule acceptance gaps are not cryptographic bounds."
+  ]
+}

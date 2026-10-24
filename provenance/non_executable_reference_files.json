@@ -1,0 +1,18 @@
+{
+  "experiments/studies/cpm_v2_hsmnet_detectability_pilot_300/source/HSMNet/train.py": {
+    "sha256": "9680df2a6af85e34483613d9b4ada169c01d2395ba6041e790ba1eb3f71fdd1e",
+    "reason": "Unused upstream example trainer with a syntax error; executed study trainers are separate"
+  },
+  "experiments/studies/cpm_v2_matched_image_1200/source/HSMNet/train.py": {
+    "sha256": "9680df2a6af85e34483613d9b4ada169c01d2395ba6041e790ba1eb3f71fdd1e",
+    "reason": "Unused upstream example trainer with a syntax error; executed study trainers are separate"
+  },
+  "experiments/studies/cpm_v2_hsmnet_matched_1200/original_source/HSMNet/train.py": {
+    "sha256": "9680df2a6af85e34483613d9b4ada169c01d2395ba6041e790ba1eb3f71fdd1e",
+    "reason": "Unused upstream example trainer with a syntax error; executed study trainers are separate"
+  },
+  "experiments/studies/cpm_v2_hsmnet_matched_1200/source/HSMNet/train.py": {
+    "sha256": "9680df2a6af85e34483613d9b4ada169c01d2395ba6041e790ba1eb3f71fdd1e",
+    "reason": "Unused upstream example trainer with a syntax error; executed study trainers are separate"
+  }
+}

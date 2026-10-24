@@ -1,0 +1,57 @@
+[
+  {
+    "run_id": "cpm_v2_pilot_100",
+    "status": "complete",
+    "scope": "Authenticated CPM recovery pilot; 100 covers, 300 attempts"
+  },
+  {
+    "run_id": "cpm_v2_fusion_sensitivity_25",
+    "status": "complete",
+    "scope": "Fixed-weight fusion sensitivity; 375 attempts"
+  },
+  {
+    "run_id": "cpm_v2_revised_linkage_300",
+    "status": "complete",
+    "scope": "Content-only cross-modal linkage; 10,800 attempts"
+  },
+  {
+    "run_id": "cpm_v2_fullview_cpunl_200",
+    "status": "complete",
+    "scope": "Full-public-view CP-UNL; 9,600 attempts"
+  },
+  {
+    "run_id": "cpm_v2_active_window",
+    "status": "complete",
+    "scope": "Bounded timed receiver; 110 controlled traces"
+  },
+  {
+    "run_id": "cpm_v2_native_generative",
+    "status": "complete",
+    "scope": "Native Pulsar comparison; matched application bytes"
+  },
+  {
+    "run_id": "cpm_v2_assemblage_local",
+    "status": "complete",
+    "scope": "Native local Assemblage comparison; 30 messages per method"
+  },
+  {
+    "run_id": "cpm_v2_hsmnet_matched_1200",
+    "status": "complete",
+    "scope": "Five-method HSMNet; 1,200 covers, 18,000 image records"
+  },
+  {
+    "run_id": "cpm_v2_srm_detectability_pilot_160",
+    "status": "bounded pilot",
+    "scope": "160-cover CPM/S-UNIWARD exploratory SRM pilot"
+  },
+  {
+    "run_id": "cpm_v2_hsmnet_detectability_pilot_300",
+    "status": "bounded pilot",
+    "scope": "300-cover CPM/S-UNIWARD exploratory HSMNet pilot"
+  },
+  {
+    "run_id": "cpm_v2_matched_image_1200",
+    "status": "paused",
+    "scope": "Matched SRM branch; incomplete, do not resume automatically"
+  }
+]

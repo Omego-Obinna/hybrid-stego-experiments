@@ -1,0 +1,82 @@
+{
+  "formal_mask_only": true,
+  "image_embedding_performed": false,
+  "covers": 50,
+  "payloads": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "configs": [
+    {
+      "psi_mode": "hashid",
+      "dither_mode": "cover_prf",
+      "delta_scale": 0.5
+    },
+    {
+      "psi_mode": "hashid",
+      "dither_mode": "cover_prf",
+      "delta_scale": 1.0
+    },
+    {
+      "psi_mode": "hashid",
+      "dither_mode": "cover_prf",
+      "delta_scale": 2.0
+    },
+    {
+      "psi_mode": "global",
+      "dither_mode": "cover_prf",
+      "delta_scale": 0.5
+    },
+    {
+      "psi_mode": "global",
+      "dither_mode": "cover_prf",
+      "delta_scale": 1.0
+    },
+    {
+      "psi_mode": "global",
+      "dither_mode": "cover_prf",
+      "delta_scale": 2.0
+    },
+    {
+      "psi_mode": "block",
+      "dither_mode": "cover_prf",
+      "delta_scale": 0.5
+    },
+    {
+      "psi_mode": "block",
+      "dither_mode": "cover_prf",
+      "delta_scale": 1.0
+    },
+    {
+      "psi_mode": "block",
+      "dither_mode": "cover_prf",
+      "delta_scale": 2.0
+    },
+    {
+      "psi_mode": "hashid",
+      "dither_mode": "key_only",
+      "delta_scale": 1.0
+    },
+    {
+      "psi_mode": "hashid",
+      "dither_mode": "zero",
+      "delta_scale": 1.0
+    }
+  ],
+  "message_classes": [
+    "zero",
+    "alternating",
+    "lowentropy",
+    "text",
+    "random"
+  ],
+  "base_delta": 0.25,
+  "qim_readout": "a_i=(2d_i-1)Delta/4; q_i=round((x_i-a_i)/Delta); mu_i=q_i mod 2",
+  "warning": "Operational instantiation of the formal mask layer; replace qim_mask() if the manuscript uses another exact QIM readout."
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-22T10:47:01.362246+00:00",
+  "scope": "Independent saved-score/count/interval/figure audit plus report-only interpretation and accounting; no training diagnosis",
+  "before": {
+    "RESULTS.md": "d65d24aac8dc0b03ff5c2d9c82671dca323fd424b7d2a2b32fda6d7e950c3536",
+    "verified_summary.json": "33321e31beb08cb2f71973a206d279c0d8c1689695859ce123bb39407961d4b6",
+    "completion.json": "cb4c4761db699e20bbbfd08eff0b0f0c7141dfdb04b84834e40e54a5cd0ad9ae",
+    "status.json": "3900e9dfa25c59256ac82c24c5d0c87f55d3ec944b9511399317e70a920dcbc0"
+  },
+  "after": {
+    "RESULTS.md": "9b00931f81801d7ccfdf2c65144bc103c8cd2e6b94c0e446375c7a865b057036",
+    "verified_summary.json": "a2a8bf9e76d66abb519b75f182b1464c068af004e49c01f4bd86abd60740c933",
+    "completion.json": "df0903c6115df3301195ab45e866136ca023a2375cbd06168c12379033f93dce",
+    "status.json": "9d1a21514d5d59dd41643abe99924bd672b3a7caa1c007940729fa721cf38a76"
+  },
+  "audit_sha256": "ed90a842123de69674847f404b3cb716426d9fe15d9c5edb4fd961482e4cf4be",
+  "report_diff_sha256": "a430e073a6377519c33848d83fa3ce002644a1aa889f17c5864859b466ccfd7f",
+  "frozen_source_models_selections_predictions_and_metric_tables_preserved": true,
+  "training_or_test_selection_repeated": false
+}

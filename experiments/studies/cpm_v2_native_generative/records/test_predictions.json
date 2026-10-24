@@ -1,0 +1,249 @@
+{
+  "scored_at": "2026-10-18T14:11:05.759505+00:00",
+  "panels": [
+    {
+      "method": "cpm",
+      "message_bytes": 128,
+      "family": "logistic",
+      "primary": true,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_logistic_ensemble.npz",
+      "threshold": -0.4983413024806293,
+      "test_groups": 55
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 128,
+      "family": "extra_trees",
+      "primary": false,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_ensemble.npz",
+      "threshold": 0.4951111111111109,
+      "test_groups": 55
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 128,
+      "family": "logistic",
+      "primary": true,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_logistic_ensemble.npz",
+      "threshold": 0.8881268327496661,
+      "test_groups": 55
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 128,
+      "family": "extra_trees",
+      "primary": false,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_ensemble.npz",
+      "threshold": 0.5037777777777778,
+      "test_groups": 55
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 256,
+      "family": "logistic",
+      "primary": false,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_logistic_ensemble.npz",
+      "threshold": 0.4936499604799903,
+      "test_groups": 53
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 256,
+      "family": "extra_trees",
+      "primary": true,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_ensemble.npz",
+      "threshold": 0.5061111111111111,
+      "test_groups": 53
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 256,
+      "family": "logistic",
+      "primary": false,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_logistic_ensemble.npz",
+      "threshold": -0.4606901739760602,
+      "test_groups": 53
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 256,
+      "family": "extra_trees",
+      "primary": true,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_ensemble.npz",
+      "threshold": 0.5383333333333332,
+      "test_groups": 53
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 384,
+      "family": "logistic",
+      "primary": true,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_logistic_ensemble.npz",
+      "threshold": -0.49990511894226247,
+      "test_groups": 45
+    },
+    {
+      "method": "cpm",
+      "message_bytes": 384,
+      "family": "extra_trees",
+      "primary": false,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_ensemble.npz",
+      "threshold": 0.517888888888889,
+      "test_groups": 45
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 384,
+      "family": "logistic",
+      "primary": true,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_logistic_ensemble.npz",
+      "threshold": 0.9999999984145667,
+      "test_groups": 45
+    },
+    {
+      "method": "pulsar",
+      "message_bytes": 384,
+      "family": "extra_trees",
+      "primary": false,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_ensemble.npz",
+      "threshold": -0.5127777777777778,
+      "test_groups": 45
+    }
+  ],
+  "checkpoint_checks": [
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_lr_1.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_logistic_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_901.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_902.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_1.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_128_et_903.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_2.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_lr_1.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_logistic_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_901.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_902.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_1.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_128_et_903.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_2.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_lr_1.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_logistic_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_901.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_902.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_1.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_256_et_903.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_2.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_lr_0.01.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_logistic_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_901.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_902.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_1.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_256_et_903.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_2.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_lr_0.01.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_logistic_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_901.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_902.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_1.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/cpm_384_et_903.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_2.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_lr_10.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_logistic_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_901.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_0.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_902.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_1.npz"
+    },
+    {
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/models/pulsar_384_et_903.joblib",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_2.npz"
+    }
+  ],
+  "prediction_hashes": {
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_0.npz": "ca44fb8c87e4750ebb3421ea16d37229971d8aa825825df46109e995d541a4a9",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_1.npz": "e64cb6879fd2dc2fc241c3d9b9fd2f3d637b838bdf971defa18e2fe6a53c4e17",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_2.npz": "1ee07f631bef50e28d28901cfff51b46737c544a3aef6d41a22bf9a057b7c179",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_extra_trees_ensemble.npz": "e3f1987ddfd931f64968168ccd62e788dc21dc9c4b6f4735424b33663a560e0b",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_logistic_0.npz": "a18f71d1b461941913120a69e667507499cc6ea0bdc213c9e71a26d1c1b58e4a",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_128_logistic_ensemble.npz": "6f54b762e438ffcfdff5b59dea6d33489a397c1c6dc25990ce43f2cc464f9494",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_0.npz": "b3fcd57caec7e6a3e5904b7940a59128c44ce2920f738cc67140597e55f1b1d5",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_1.npz": "3392a7975834938ec1ce84a9efdb980db15658bd2cfd3ffd1106aed2fad81ae9",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_2.npz": "b1f49c3967bf491434470d9c84bf6b33b1c1f57c5f4ac7fab8cdda5526c9b56f",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_extra_trees_ensemble.npz": "fabc0b14280deb212391786d76f327a38ed873e809218ef864adfbac4b8bbbf3",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_logistic_0.npz": "e0d07f69713de8c768524cb7f2bd7ed9fa86b9ed416fb648b5cdadf9cc9ff3c8",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_256_logistic_ensemble.npz": "dc1dd073e129202c8520b4f6e880ed8e9da29487bff0753140f7f6d05037468b",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_0.npz": "f41fccc562a00db9e3e3e931e2cff2841cf64d9be6a8cc07f304e3f6b4679132",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_1.npz": "71aa7a2a6b1d8207ae492c2fb1939588591ef908b491f2b1299fe4389aeca082",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_2.npz": "832ce62d0bb7fe7d50f32ee27c9716d00cc02300cc8aafc192194a62e9ce0767",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_extra_trees_ensemble.npz": "2a2fbc1d6e3c1050e70dd109688b16241e9b41e0bf7b0fb02df69a097ee5f488",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_logistic_0.npz": "167ff691c85888504c4a3b9116495bb28579bcdc6a1aa1215a096f21ad9487c8",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/cpm_384_logistic_ensemble.npz": "c49534c84ccadf24fcfdce80494576533f3f35dcb65b1e12e9ef815294d79cc3",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_0.npz": "38573e918493bbe91bd5ef95ecbc1b553c0d7f9883509e12ef469bf07cb2d28a",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_1.npz": "9ac860da494de4642666735e815876cf441429b2e68e7a9978a4d76b7c575fc6",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_2.npz": "01b84efa6058caf2f01274ff844e3f475f418a107df7e547fc7008ace630c712",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_extra_trees_ensemble.npz": "0b1d6641be7d48669b87e8a1dd58fc1e1978cdc2067d5a09ae0a727b5e214c75",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_logistic_0.npz": "605232ec1a2a6390211876dd8fc14931cf8b21206c1cfcdb8d33e43d63b9a02b",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_128_logistic_ensemble.npz": "8daa715b6b234ab310d26a98ebc956986b02c6c603a7fb8163e677a721a616fd",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_0.npz": "d11b2d73094338b4616c831caacdb1322587ab17f1528d751d573a0447747951",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_1.npz": "763848dd465c502a44cd6f5578651958de8dd348c2d12c38b5fbdb439a48a0d8",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_2.npz": "83843caf995d20ab48691a5156e2bece60eb9047d8bad3d2c987a26c143fc66f",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_extra_trees_ensemble.npz": "98c0218641085546417dd67d07a15b2c3944a1d25f49bb835a4721d66c5a256f",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_logistic_0.npz": "53acb1c40f7fc61c3f9a591efaba5a1b7c87f49d5bb77cc38a2fccc2a4655aae",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_256_logistic_ensemble.npz": "56a4395982bf58374a636c72579ab63cd80dba04d7ba299ec7cf81e80201078f",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_0.npz": "45c5817a5996cd7fd3edc99e73f3061576b1edd5a28660cc8d6d9fdcda08b648",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_1.npz": "00279c5c8802140e1574606f73f3acc6961a1e6674ae73e8809d5ae868a1386b",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_2.npz": "3091d36fd0dbe5982b9941473015577f6e1b8c6db66e9364d298104147ad5130",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_extra_trees_ensemble.npz": "4404ee5b9fc2e72213c3450fb03bd98998f996e13000e7ea785813c3c91cdd63",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_logistic_0.npz": "181915d03006d3ea90a62812a0234b921dee7e7660bfb38b2107e262958679be",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_native_generative/predictions/pulsar_384_logistic_ensemble.npz": "970e78b6ff6532e3a1f49fc3c9d450f26c7b0901ddd5cf1af2ec8712c264b4f2"
+  }
+}

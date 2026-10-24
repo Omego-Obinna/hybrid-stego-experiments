@@ -1,0 +1,18 @@
+{
+  "version": "2026-07-17-matched-linkability-warden-v1",
+  "dataset": "${ARTIFACT_ROOT}/linkability_probes/matched_outputs/prepared/linkability_binary_dataset.csv.gz",
+  "views": [
+    "image_only",
+    "text_only",
+    "cross_only",
+    "text_image"
+  ],
+  "classifiers": [
+    "logistic",
+    "extra_trees"
+  ],
+  "n_splits": 5,
+  "test_size": 0.3,
+  "seed": 20260605,
+  "n_estimators": 300
+}

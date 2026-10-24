@@ -1,0 +1,22 @@
+{
+  "state": "completed",
+  "phase": "completed",
+  "stage": "HSMNet comparison completed; final independent numeric and figure review pending",
+  "models_completed": 6,
+  "models_total": 6,
+  "test_panels_total": 15,
+  "report_ready": true,
+  "updated_at": "2026-10-22T10:42:46.466629+00:00",
+  "run_id": "cpm_v2_hsmnet_matched_1200",
+  "hsm_payload": 0.4,
+  "hsm_seed": 802,
+  "epoch": 100,
+  "epochs": 100,
+  "batch": 301,
+  "batches": 336,
+  "phase_elapsed_sec": 14499.71456540101,
+  "continuation": "resume_20261021_v1",
+  "test_panels_completed": 15,
+  "checkpoints_checked": 6,
+  "detectability_panels": 15
+}

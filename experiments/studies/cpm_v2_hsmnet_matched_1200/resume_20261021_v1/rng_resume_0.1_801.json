@@ -1,0 +1,8 @@
+{
+  "payload_bpp": 0.1,
+  "seed": 801,
+  "completed_epochs": 26,
+  "dropout_calls": 8866,
+  "validation_loader_rng_draws": 6,
+  "method": "Replay RNG calls on feature-shaped constant tensors only; no native image, forward pass, gradient or completed epoch repeated"
+}

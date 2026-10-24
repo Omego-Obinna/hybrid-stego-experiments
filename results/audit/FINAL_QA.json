@@ -1,0 +1,123 @@
+{
+  "checked_at": "2026-10-24T00:22:44.852063+00:00",
+  "passed": true,
+  "checks": {
+    "no_revision_stage_prose": true,
+    "no_placeholders": true,
+    "all_existing_labels_preserved": true,
+    "all_main_and_supplement_labels_resolve": true,
+    "all_citation_keys_exist": true,
+    "bibliography_unchanged": true,
+    "main_numeric_table_bodies_unchanged": true,
+    "only_identified_supplement_numeric_tables_changed": true,
+    "all_14_HSMNet_numeric_tables_preserved": true,
+    "all_main_and_supplement_figure_paths_preserved": true,
+    "all_figure_inputs_exist": true,
+    "single_HSMNet_explanatory_paragraph": true,
+    "15_HSMNet_AUC_and_pointwise_intervals_match_saved_scores": true,
+    "12_adjusted_contrasts_match_saved_scores": true,
+    "HSMNet_interpretation_matches_tables": true,
+    "HSMNet_fidelity_matches_saved_tables": true,
+    "all_completed_run_receipts_unchanged": true,
+    "all_cross_document_PDF_links_resolve": true,
+    "no_unresolved_PDF_references": true,
+    "no_revision_stage_words_in_rendered_prose": true,
+    "reviewer_bundle_preserved": true,
+    "no_undefined_references_citations_or_duplicate_labels_in_build": true
+  },
+  "unresolved_labels": {
+    "sn-article.tex": [],
+    "Supplementary.tex": []
+  },
+  "changed_numeric_tables": {
+    "sn-article.tex": [],
+    "Supplementary.tex": [
+      "tab:scheduling_cost",
+      "tab:qim_resync_robustness",
+      "tab:qim_resync_latency"
+    ]
+  },
+  "all_HSMNet_table_labels": [
+    "tab:hsm-config",
+    "tab:hsm-versions",
+    "tab:hsm-cohorts",
+    "tab:hsm-accounting",
+    "tab:hsm-images",
+    "tab:hsm-thresholds",
+    "tab:hsm-detection",
+    "tab:hsm-contrasts",
+    "tab:hsm-fidelity",
+    "tab:hsm-modifications",
+    "tab:hsm-fidelity-contrasts",
+    "tab:hsm-fresh-sender",
+    "tab:hsm-fresh-receiver",
+    "tab:hsm-fresh-bytes"
+  ],
+  "missing_citations": [],
+  "cited_keys": 83,
+  "cross_document_links_checked": 235,
+  "missing_cross_document_links": [],
+  "rendered_revision_terms": {
+    "sn-article.pdf": [],
+    "Supplementary.pdf": []
+  },
+  "figure_hashes": {
+    "Figure_1.pdf": "ef63c209defcf6660103cc3bcb202e21c8d34d818437ed843ba8b7edccafe5d9",
+    "figures_revision/revised_pilot.pdf": "5b7f22e6007a23553597d299485c97ebd64bcb6ab68ba915a7c55e4e76129384",
+    "figures_revision/fusion_paired.pdf": "c8ccc44558b642029380b5e9cf0be9ed4d73db15a15ff96e6bf8ed9161258785",
+    "Figure_2.pdf": "319e7e347c0228edfe871c990a8a1a34ef4c11229e1600dd4ef648705b620987",
+    "figures_revision/matched_hsmnet_comparison.pdf": "07e63d26d62fba6c39bef3a6ef9bb9551582babb2a0b3174ba0be2482aa3dce7",
+    "figures_revision/revised_content_linkage.pdf": "6330355e4af1c3a8fe75a079521c4d66e9635620dad0b04894b6fd8631e73abf",
+    "figures_revision/fullview_cpunl_primary.pdf": "dbad054468acf4ae046b05e4a947a031a37ee2929e33fef6e3aaea8429d98aa3",
+    "figures_revision/active_attack_delivery.pdf": "a5c278ecc49f7b420fdd7f6efefef7e1d1a63d3b2e9cf383620bb11f6ffa68c3",
+    "figures_revision/native_pulsar_comparison.pdf": "2a62f89ca26b1c66a6fc87b76edca1b5bcac987ce6c8358ac4e76c6880d207b8",
+    "figures_revision/native_distributed_comparison.pdf": "0e703ff6cee3b9b6b618eca8be3236ab6bcd43e67b93b3e6344f07bb505a643b",
+    "Figure_S4.png": "6c5ccee55792f9b5877986e7b5b5650ee78394a57335463e353ae87c78560496",
+    "Figure_S5.png": "08b6cfba9104196a0d8257ad6b83a47bcd709d2b00d196d028962a47e58f19d2",
+    "Figure_S6.png": "e1129ab45356482a50e5e90ab8fed9fc792ff52d612656c58cd7e05ded672ac0",
+    "Figure_4.pdf": "8609924921b49233b7437d84c9f556e9d1b8e1778d9e026b1e3e72f5503faf65"
+  },
+  "sources": {
+    "sn-article.tex": "b29458a8db10043293b86e6d43ab1ea3fc6294493d747f184f628c97224c7870",
+    "Supplementary.tex": "692a1dcf403a91840d32c8f97d624d87de90c80f121c8a5e8161c666fcb577f3"
+  },
+  "outputs": {
+    "sn-article.pdf": {
+      "path": "${WORKSPACE_ROOT}/output/pdf/sn-article.pdf",
+      "sha256": "80f439ef8b09d3fcb869e725701e3102fb1cb2dd4b899bac17de55c55da52746",
+      "pages": 68
+    },
+    "Supplementary.pdf": {
+      "path": "${WORKSPACE_ROOT}/output/pdf/Supplementary.pdf",
+      "sha256": "9adcee3bda4aa126d8082e7eafdb64906fc522a2f4d3ecf9549d8058b93f0d5f",
+      "pages": 40
+    },
+    "reviewer_responses.pdf": {
+      "path": "${WORKSPACE_ROOT}/output/pdf/reviewer_responses.pdf",
+      "sha256": "38f1012175916e7b381c48fa9446a934ccfec85ce226f6dccd0967fc9075a504",
+      "pages": 14
+    }
+  },
+  "experiment_artifacts_changed": [],
+  "new_experiment_or_model_execution": false,
+  "visual_review": {
+    "all_pages_contact_sheet_reviewed": {
+      "main": 68,
+      "supplement": 40
+    },
+    "detail_pages": {
+      "main": [
+        4,
+        18,
+        48
+      ],
+      "supplement": [
+        29,
+        38,
+        40
+      ]
+    },
+    "remaining_TeX_warning": "Supplement bibliography has a 0.66039 pt line-width warning, with no clipped content."
+  },
+  "boundary": "Manual mathematical and consistency review, plus deterministic saved-record/document checks; not formal machine verification or an audit of every external publication."
+}

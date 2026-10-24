@@ -1,0 +1,20 @@
+[
+  {
+    "payload_bpp": 0.1,
+    "control": "synthetic_pair_agreement",
+    "auc": 1.0,
+    "interpretation": "Engineered signal checks pipeline functionality, not sensitivity to every possible real leakage"
+  },
+  {
+    "payload_bpp": 0.2,
+    "control": "synthetic_pair_agreement",
+    "auc": 1.0,
+    "interpretation": "Engineered signal checks pipeline functionality, not sensitivity to every possible real leakage"
+  },
+  {
+    "payload_bpp": 0.4,
+    "control": "synthetic_pair_agreement",
+    "auc": 1.0,
+    "interpretation": "Engineered signal checks pipeline functionality, not sensitivity to every possible real leakage"
+  }
+]

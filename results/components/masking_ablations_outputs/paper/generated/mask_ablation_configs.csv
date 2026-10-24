@@ -1,0 +1,12 @@
+config_id,psi_mode,dither_mode,delta_scale,delta
+cfg_00,hashid,cover_prf,0.5,0.125
+cfg_01,hashid,cover_prf,1.0,0.25
+cfg_02,hashid,cover_prf,2.0,0.5
+cfg_03,global,cover_prf,0.5,0.125
+cfg_04,global,cover_prf,1.0,0.25
+cfg_05,global,cover_prf,2.0,0.5
+cfg_06,block,cover_prf,0.5,0.125
+cfg_07,block,cover_prf,1.0,0.25
+cfg_08,block,cover_prf,2.0,0.5
+cfg_09,hashid,key_only,1.0,0.25
+cfg_10,hashid,zero,1.0,0.25

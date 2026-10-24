@@ -1,0 +1,97 @@
+{
+  "scored_at": "2026-10-20T06:23:39.909724+00:00",
+  "checkpoint_checks": [
+    {
+      "payload_bpp": 0.1,
+      "seed": 801,
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.1_801_best.pt",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/0.1_801.npz",
+      "model_sha256": "4c2c5192b9c5630d1d13526751070b27fdae5b7a137b7a25fb4d0a185f28dee9",
+      "prediction_sha256": "678322b74fd948dbbc72114c6fe891ea4c71c3ea2126e46f6abbad267b04c048"
+    },
+    {
+      "payload_bpp": 0.1,
+      "seed": 802,
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.1_802_best.pt",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/0.1_802.npz",
+      "model_sha256": "68a49a58e5b929addbb20a583375b1456a8d0b0fbdf29ab00108aff86ccb7e67",
+      "prediction_sha256": "6bca60a0b699631f3f912db306e76d0780c8288422c302c0cf6f818e059e5a69"
+    },
+    {
+      "payload_bpp": 0.2,
+      "seed": 801,
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.2_801_best.pt",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/0.2_801.npz",
+      "model_sha256": "a93f42f32f34298dcee49fbe68db0f2c991f9d2807ca62cc50120938fd175bca",
+      "prediction_sha256": "6f83f701aadda8ab4c70d0c007f9b0545efb7a4e437630b5cd57d2eb5bae0d3f"
+    },
+    {
+      "payload_bpp": 0.2,
+      "seed": 802,
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.2_802_best.pt",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/0.2_802.npz",
+      "model_sha256": "6b4ba6a799ea2fcd6f5de5b4ea52a1c0d1e13df66eb6e922cc4f802c94a3779c",
+      "prediction_sha256": "e4618f333e3418c386ce3fee443f9fff9cffb34a369ae67561416834bf9dd6c1"
+    },
+    {
+      "payload_bpp": 0.4,
+      "seed": 801,
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.4_801_best.pt",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/0.4_801.npz",
+      "model_sha256": "8f795737e29e6eed6a4c63370927834e19c0e4d7200feb2a478737d90aac7694",
+      "prediction_sha256": "e059fdce1a5c7ee4f5a39300bbb33379fed145756d4129b10240baa10e9de0ba"
+    },
+    {
+      "payload_bpp": 0.4,
+      "seed": 802,
+      "model_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.4_802_best.pt",
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/0.4_802.npz",
+      "model_sha256": "8925b79740d720151bccc025ae839eeabe9ccee68fbb2a67fc02b717382750c0",
+      "prediction_sha256": "b4b20728018d35e13486f757124ebf017062973299b86a2d68f2fa3f493b1203"
+    }
+  ],
+  "panels": [
+    {
+      "method": "cpm",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/cpm_0.1_ensemble.npz",
+      "threshold": 0.0005325870588421822,
+      "test_groups": 60
+    },
+    {
+      "method": "suniward",
+      "payload_bpp": 0.1,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/suniward_0.1_ensemble.npz",
+      "threshold": 0.0005325870588421822,
+      "test_groups": 60
+    },
+    {
+      "method": "cpm",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/cpm_0.2_ensemble.npz",
+      "threshold": 0.019743435084819794,
+      "test_groups": 60
+    },
+    {
+      "method": "suniward",
+      "payload_bpp": 0.2,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/suniward_0.2_ensemble.npz",
+      "threshold": 0.019743435084819794,
+      "test_groups": 60
+    },
+    {
+      "method": "cpm",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/cpm_0.4_ensemble.npz",
+      "threshold": -0.0666109174489975,
+      "test_groups": 60
+    },
+    {
+      "method": "suniward",
+      "payload_bpp": 0.4,
+      "prediction_path": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/predictions/suniward_0.4_ensemble.npz",
+      "threshold": -0.0666109174489975,
+      "test_groups": 60
+    }
+  ]
+}

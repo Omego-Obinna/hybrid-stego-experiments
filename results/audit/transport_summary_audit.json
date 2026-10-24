@@ -1,0 +1,1963 @@
+{
+  "source": "${ARTIFACT_ROOT}/qim_resync_results/run_summary.csv",
+  "source_sha256": "f06b7167aee49166a418a1f6abc2a729c8b75bec56c6f71c26046bb503485c9f",
+  "input_rows": 26191,
+  "unique_parameter_seed_runs": 25920,
+  "duplicate_rows": 271,
+  "configuration_key": [
+    "seed",
+    "num_epochs",
+    "payload_bytes",
+    "gamma_bytes",
+    "loss_rate",
+    "jitter_ms",
+    "skew_ms",
+    "window_W",
+    "timeout_tau_ms",
+    "heartbeat_h",
+    "ecc_enabled",
+    "burst_loss_prob",
+    "burst_len",
+    "replay_rate",
+    "tamper_rate",
+    "base_delay_ms",
+    "epoch_interval_ms"
+  ],
+  "duplicate_metrics_identical": true,
+  "duplicate_details": [
+    {
+      "row": 273,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030443Z-ddfc9721"
+    },
+    {
+      "row": 274,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030446Z-67c225d5"
+    },
+    {
+      "row": 275,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030449Z-68cf67c8"
+    },
+    {
+      "row": 276,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030452Z-d36195f8"
+    },
+    {
+      "row": 277,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030455Z-c5766dd4"
+    },
+    {
+      "row": 278,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030458Z-61d3ff3e"
+    },
+    {
+      "row": 279,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030501Z-66ae0934"
+    },
+    {
+      "row": 280,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030504Z-a68b0fd1"
+    },
+    {
+      "row": 281,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030507Z-73c87d5d"
+    },
+    {
+      "row": 282,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030510Z-46fe7469"
+    },
+    {
+      "row": 283,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030513Z-0077fef1"
+    },
+    {
+      "row": 284,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030513Z-7940fe43"
+    },
+    {
+      "row": 285,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030514Z-6236be11"
+    },
+    {
+      "row": 286,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030514Z-4a392080"
+    },
+    {
+      "row": 287,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030516Z-4bb3cf52"
+    },
+    {
+      "row": 288,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030516Z-9ca6c8e0"
+    },
+    {
+      "row": 289,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030516Z-a6cc7e23"
+    },
+    {
+      "row": 290,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030517Z-b7db4458"
+    },
+    {
+      "row": 291,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030517Z-c246ec32"
+    },
+    {
+      "row": 292,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030517Z-4dfa649a"
+    },
+    {
+      "row": 293,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030517Z-c615af04"
+    },
+    {
+      "row": 294,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030520Z-08922078"
+    },
+    {
+      "row": 295,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030523Z-a9a8ad7a"
+    },
+    {
+      "row": 296,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030526Z-4d62fc6c"
+    },
+    {
+      "row": 297,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030529Z-52b2f9ce"
+    },
+    {
+      "row": 298,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030532Z-5e2a386d"
+    },
+    {
+      "row": 299,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030535Z-6a620416"
+    },
+    {
+      "row": 300,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030538Z-faab2c04"
+    },
+    {
+      "row": 301,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030541Z-6bf72cff"
+    },
+    {
+      "row": 302,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030544Z-6ec2d10d"
+    },
+    {
+      "row": 303,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030547Z-08bf4381"
+    },
+    {
+      "row": 304,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030548Z-eed17e2f"
+    },
+    {
+      "row": 305,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030550Z-9ffb7cb8"
+    },
+    {
+      "row": 306,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030553Z-666c5d84"
+    },
+    {
+      "row": 307,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030556Z-200e223f"
+    },
+    {
+      "row": 308,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030559Z-adb13d11"
+    },
+    {
+      "row": 309,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030602Z-111fac43"
+    },
+    {
+      "row": 310,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030605Z-395d3acb"
+    },
+    {
+      "row": 311,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030608Z-866bad5a"
+    },
+    {
+      "row": 312,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030611Z-497fa57b"
+    },
+    {
+      "row": 313,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030612Z-59100e3f"
+    },
+    {
+      "row": 314,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030614Z-044e1ac6"
+    },
+    {
+      "row": 315,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030617Z-9e3ba584"
+    },
+    {
+      "row": 316,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030620Z-5d5d4ef7"
+    },
+    {
+      "row": 317,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030623Z-c98b09ab"
+    },
+    {
+      "row": 318,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030626Z-08e8ba7e"
+    },
+    {
+      "row": 319,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030628Z-50005798"
+    },
+    {
+      "row": 320,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030631Z-890d4d94"
+    },
+    {
+      "row": 321,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030634Z-6a7657e6"
+    },
+    {
+      "row": 322,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030637Z-b8f0392c"
+    },
+    {
+      "row": 323,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030639Z-c89f3e18"
+    },
+    {
+      "row": 324,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030640Z-6e99e67b"
+    },
+    {
+      "row": 325,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030640Z-da659b52"
+    },
+    {
+      "row": 326,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030640Z-aa77faee"
+    },
+    {
+      "row": 327,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030642Z-3105bc53"
+    },
+    {
+      "row": 328,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030642Z-b76aadac"
+    },
+    {
+      "row": 329,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030642Z-aa4ac599"
+    },
+    {
+      "row": 330,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030643Z-7f223b2b"
+    },
+    {
+      "row": 331,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030643Z-1dfc4710"
+    },
+    {
+      "row": 332,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030643Z-f6aee325"
+    },
+    {
+      "row": 333,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030643Z-b5e98648"
+    },
+    {
+      "row": 334,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030646Z-71c65470"
+    },
+    {
+      "row": 335,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030649Z-7729288d"
+    },
+    {
+      "row": 336,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030652Z-2e01fd80"
+    },
+    {
+      "row": 337,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030654Z-0d1c3a2f"
+    },
+    {
+      "row": 338,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030657Z-c6ff4cda"
+    },
+    {
+      "row": 339,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030700Z-4b9f8863"
+    },
+    {
+      "row": 340,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030703Z-af130cc9"
+    },
+    {
+      "row": 341,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030705Z-dd1d39a3"
+    },
+    {
+      "row": 342,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030708Z-eb619363"
+    },
+    {
+      "row": 343,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030711Z-0bb976b5"
+    },
+    {
+      "row": 344,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030711Z-e77a27bd"
+    },
+    {
+      "row": 345,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030714Z-41f33473"
+    },
+    {
+      "row": 346,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030717Z-5a7c97bd"
+    },
+    {
+      "row": 347,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030720Z-4f513632"
+    },
+    {
+      "row": 348,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030722Z-ea2fc0e5"
+    },
+    {
+      "row": 349,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030725Z-e84d36c0"
+    },
+    {
+      "row": 350,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030728Z-60b7f300"
+    },
+    {
+      "row": 351,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030731Z-94732313"
+    },
+    {
+      "row": 352,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030734Z-d8368882"
+    },
+    {
+      "row": 353,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030734Z-543b8039"
+    },
+    {
+      "row": 354,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030736Z-35fced1e"
+    },
+    {
+      "row": 355,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030739Z-efed9adc"
+    },
+    {
+      "row": 356,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030742Z-73bd564b"
+    },
+    {
+      "row": 357,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030744Z-132cdfbe"
+    },
+    {
+      "row": 358,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030747Z-9ea95449"
+    },
+    {
+      "row": 359,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030750Z-ec04c6c3"
+    },
+    {
+      "row": 360,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030752Z-de5543f8"
+    },
+    {
+      "row": 361,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030755Z-e95051e6"
+    },
+    {
+      "row": 362,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030758Z-cf89444c"
+    },
+    {
+      "row": 363,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030800Z-9941d2b1"
+    },
+    {
+      "row": 364,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030801Z-eb38afe9"
+    },
+    {
+      "row": 365,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030801Z-8a18c8d4"
+    },
+    {
+      "row": 366,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030801Z-40a3f252"
+    },
+    {
+      "row": 367,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030803Z-62e66f17"
+    },
+    {
+      "row": 368,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030803Z-b26a947d"
+    },
+    {
+      "row": 369,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030803Z-f2628b14"
+    },
+    {
+      "row": 370,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030803Z-179a0a31"
+    },
+    {
+      "row": 371,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030803Z-84ddb1f4"
+    },
+    {
+      "row": 372,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030804Z-28a63e28"
+    },
+    {
+      "row": 373,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030804Z-12b9ba84"
+    },
+    {
+      "row": 374,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030806Z-09755fe2"
+    },
+    {
+      "row": 375,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030809Z-03b6a978"
+    },
+    {
+      "row": 376,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030812Z-5a9d9fa4"
+    },
+    {
+      "row": 377,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030814Z-90dd56b0"
+    },
+    {
+      "row": 378,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030817Z-edddc8c5"
+    },
+    {
+      "row": 379,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030820Z-5894d474"
+    },
+    {
+      "row": 380,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030822Z-68cfb46e"
+    },
+    {
+      "row": 381,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030825Z-09269abc"
+    },
+    {
+      "row": 382,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030828Z-c4ce6846"
+    },
+    {
+      "row": 383,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030830Z-9625dbbe"
+    },
+    {
+      "row": 384,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030830Z-da5edb06"
+    },
+    {
+      "row": 385,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030833Z-0dfbad35"
+    },
+    {
+      "row": 386,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030836Z-d7a2735d"
+    },
+    {
+      "row": 387,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030838Z-12d0398e"
+    },
+    {
+      "row": 388,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030841Z-3c725705"
+    },
+    {
+      "row": 389,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030843Z-600282e8"
+    },
+    {
+      "row": 390,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030846Z-260e91e0"
+    },
+    {
+      "row": 391,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030849Z-3c8895ad"
+    },
+    {
+      "row": 392,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030851Z-a35a937b"
+    },
+    {
+      "row": 393,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030852Z-2dd11c7c"
+    },
+    {
+      "row": 394,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030855Z-49e69e04"
+    },
+    {
+      "row": 395,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030857Z-a9b8b8d6"
+    },
+    {
+      "row": 396,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030901Z-c5c453af"
+    },
+    {
+      "row": 397,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030904Z-8da8c887"
+    },
+    {
+      "row": 398,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030907Z-5e91302c"
+    },
+    {
+      "row": 399,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030910Z-d4c0dbdd"
+    },
+    {
+      "row": 400,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030913Z-87ee4d3b"
+    },
+    {
+      "row": 401,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030916Z-0a1aa677"
+    },
+    {
+      "row": 402,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030919Z-f2cb88f7"
+    },
+    {
+      "row": 403,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030922Z-bf1f0f1c"
+    },
+    {
+      "row": 404,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030922Z-b9574092"
+    },
+    {
+      "row": 405,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030925Z-5b333926"
+    },
+    {
+      "row": 406,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030925Z-ef7de257"
+    },
+    {
+      "row": 407,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030926Z-567e41be"
+    },
+    {
+      "row": 408,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030927Z-f3eea9da"
+    },
+    {
+      "row": 409,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030927Z-0cdcc812"
+    },
+    {
+      "row": 410,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030927Z-7ee23ab2"
+    },
+    {
+      "row": 411,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030927Z-15cdf885"
+    },
+    {
+      "row": 412,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030930Z-fb9866b9"
+    },
+    {
+      "row": 413,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030931Z-4fac4d8e"
+    },
+    {
+      "row": 414,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030934Z-08527969"
+    },
+    {
+      "row": 415,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030937Z-38a0bd3a"
+    },
+    {
+      "row": 416,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030940Z-7f5ebf9a"
+    },
+    {
+      "row": 417,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030943Z-36d9a8bc"
+    },
+    {
+      "row": 418,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030946Z-dd3b84a9"
+    },
+    {
+      "row": 419,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030949Z-606cf1b3"
+    },
+    {
+      "row": 420,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030952Z-69fa228c"
+    },
+    {
+      "row": 421,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030955Z-93e10b32"
+    },
+    {
+      "row": 422,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T030958Z-c27cc289"
+    },
+    {
+      "row": 423,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031001Z-8a8c7c96"
+    },
+    {
+      "row": 424,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031001Z-a167957f"
+    },
+    {
+      "row": 425,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031004Z-a556438e"
+    },
+    {
+      "row": 426,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031007Z-ea7d92ee"
+    },
+    {
+      "row": 427,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031010Z-bb1366a7"
+    },
+    {
+      "row": 428,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031013Z-6f8ddccf"
+    },
+    {
+      "row": 429,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031016Z-5135c272"
+    },
+    {
+      "row": 430,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031019Z-e16a4df5"
+    },
+    {
+      "row": 431,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031022Z-90160952"
+    },
+    {
+      "row": 432,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031025Z-a2990c4e"
+    },
+    {
+      "row": 433,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031026Z-5d7201e8"
+    },
+    {
+      "row": 434,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031028Z-a2c201ee"
+    },
+    {
+      "row": 435,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031031Z-861b5b8e"
+    },
+    {
+      "row": 436,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031034Z-63c83291"
+    },
+    {
+      "row": 437,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031037Z-000423dc"
+    },
+    {
+      "row": 438,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031039Z-b100853e"
+    },
+    {
+      "row": 439,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031042Z-4f81cb14"
+    },
+    {
+      "row": 440,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031045Z-cda50c01"
+    },
+    {
+      "row": 441,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031048Z-38548362"
+    },
+    {
+      "row": 442,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031051Z-e733ba46"
+    },
+    {
+      "row": 443,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031053Z-61e5d3c2"
+    },
+    {
+      "row": 444,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031054Z-8f6b406c"
+    },
+    {
+      "row": 445,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031056Z-92a19173"
+    },
+    {
+      "row": 446,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031056Z-5c6b1d7c"
+    },
+    {
+      "row": 447,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031057Z-efbb4c9a"
+    },
+    {
+      "row": 448,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031058Z-d6608f3d"
+    },
+    {
+      "row": 449,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031058Z-eb2ac215"
+    },
+    {
+      "row": 450,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031058Z-484d26eb"
+    },
+    {
+      "row": 451,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031058Z-69201857"
+    },
+    {
+      "row": 452,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031101Z-89ab1981"
+    },
+    {
+      "row": 453,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031101Z-a043b5b4"
+    },
+    {
+      "row": 454,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031104Z-34a4dd37"
+    },
+    {
+      "row": 455,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031107Z-c89cfce0"
+    },
+    {
+      "row": 456,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031109Z-27718beb"
+    },
+    {
+      "row": 457,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031112Z-6a62ee0c"
+    },
+    {
+      "row": 458,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031115Z-18faa404"
+    },
+    {
+      "row": 459,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031118Z-2e05d206"
+    },
+    {
+      "row": 460,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031121Z-1b2a4b66"
+    },
+    {
+      "row": 461,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031123Z-c17fdf4b"
+    },
+    {
+      "row": 462,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031126Z-57c39d92"
+    },
+    {
+      "row": 463,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031129Z-9e46e281"
+    },
+    {
+      "row": 464,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031129Z-ec1aa0b6"
+    },
+    {
+      "row": 465,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031132Z-0ccc2818"
+    },
+    {
+      "row": 466,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031135Z-9a6dbbc8"
+    },
+    {
+      "row": 467,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031138Z-b9b7cb56"
+    },
+    {
+      "row": 468,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031141Z-14fb636a"
+    },
+    {
+      "row": 469,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031143Z-66a1d9ed"
+    },
+    {
+      "row": 470,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031146Z-35c6715f"
+    },
+    {
+      "row": 471,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031149Z-b12dbad6"
+    },
+    {
+      "row": 472,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031152Z-4a49e35e"
+    },
+    {
+      "row": 473,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031152Z-1ce28aa3"
+    },
+    {
+      "row": 474,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031154Z-5aa039ab"
+    },
+    {
+      "row": 475,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031157Z-23ece084"
+    },
+    {
+      "row": 476,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031200Z-a768c8c6"
+    },
+    {
+      "row": 477,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031202Z-ccf9e481"
+    },
+    {
+      "row": 478,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031205Z-2368abe7"
+    },
+    {
+      "row": 479,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031208Z-1c98712b"
+    },
+    {
+      "row": 480,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031210Z-1e180206"
+    },
+    {
+      "row": 481,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031213Z-cb69ab98"
+    },
+    {
+      "row": 482,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031216Z-a1e13f94"
+    },
+    {
+      "row": 483,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031218Z-5b06b486"
+    },
+    {
+      "row": 484,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031219Z-c7c3f809"
+    },
+    {
+      "row": 485,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031221Z-0fa568c3"
+    },
+    {
+      "row": 486,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031221Z-147d0d4e"
+    },
+    {
+      "row": 487,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031222Z-44f051ce"
+    },
+    {
+      "row": 488,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031222Z-ef8a8905"
+    },
+    {
+      "row": 489,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031223Z-e785e731"
+    },
+    {
+      "row": 490,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031223Z-f602cce9"
+    },
+    {
+      "row": 491,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031223Z-111720bf"
+    },
+    {
+      "row": 492,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031226Z-e950dafc"
+    },
+    {
+      "row": 493,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031226Z-b4bfd8c7"
+    },
+    {
+      "row": 494,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031228Z-bd9e7568"
+    },
+    {
+      "row": 495,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031231Z-6c65ae67"
+    },
+    {
+      "row": 496,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031234Z-6dcb0d27"
+    },
+    {
+      "row": 497,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031236Z-5d092d21"
+    },
+    {
+      "row": 498,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031239Z-4f485691"
+    },
+    {
+      "row": 499,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031242Z-5a111099"
+    },
+    {
+      "row": 500,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031244Z-f4595882"
+    },
+    {
+      "row": 501,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031247Z-8514397d"
+    },
+    {
+      "row": 502,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031250Z-17dfdf41"
+    },
+    {
+      "row": 503,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031252Z-7c76db76"
+    },
+    {
+      "row": 504,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031253Z-2e20c74e"
+    },
+    {
+      "row": 505,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031255Z-7658fab7"
+    },
+    {
+      "row": 506,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031258Z-9a4fc167"
+    },
+    {
+      "row": 507,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031301Z-6dc9cb23"
+    },
+    {
+      "row": 508,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031303Z-e8d9624c"
+    },
+    {
+      "row": 509,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031306Z-7ad0bfef"
+    },
+    {
+      "row": 510,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031309Z-b8f40525"
+    },
+    {
+      "row": 511,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031311Z-18826e76"
+    },
+    {
+      "row": 512,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031314Z-940ed17b"
+    },
+    {
+      "row": 513,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031314Z-b44fa6ab"
+    },
+    {
+      "row": 514,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031317Z-093ad9c1"
+    },
+    {
+      "row": 515,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031320Z-e3e7fb5d"
+    },
+    {
+      "row": 516,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031323Z-99ff2e02"
+    },
+    {
+      "row": 517,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031326Z-f2627015"
+    },
+    {
+      "row": 518,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031329Z-188d0e4e"
+    },
+    {
+      "row": 519,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031332Z-a5131092"
+    },
+    {
+      "row": 520,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031335Z-598d1038"
+    },
+    {
+      "row": 521,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031338Z-195e3661"
+    },
+    {
+      "row": 522,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031341Z-eb46f5e1"
+    },
+    {
+      "row": 523,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031344Z-ceb11044"
+    },
+    {
+      "row": 524,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031347Z-0ae8daac"
+    },
+    {
+      "row": 525,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031351Z-7c83ac65"
+    },
+    {
+      "row": 526,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031354Z-7ae1ca85"
+    },
+    {
+      "row": 527,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031357Z-9f9aa05f"
+    },
+    {
+      "row": 528,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031400Z-31860467"
+    },
+    {
+      "row": 529,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031403Z-aba54dfa"
+    },
+    {
+      "row": 530,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031406Z-b4400b04"
+    },
+    {
+      "row": 531,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031409Z-4bd7c8a4"
+    },
+    {
+      "row": 532,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031412Z-f7f57d97"
+    },
+    {
+      "row": 533,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031415Z-dfb9c39d"
+    },
+    {
+      "row": 534,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031418Z-ba3aca2b"
+    },
+    {
+      "row": 535,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031421Z-16037b63"
+    },
+    {
+      "row": 536,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031424Z-1b78c59d"
+    },
+    {
+      "row": 537,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031427Z-3e7fecde"
+    },
+    {
+      "row": 538,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031430Z-1d4e3e47"
+    },
+    {
+      "row": 539,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031434Z-a35c3d0c"
+    },
+    {
+      "row": 540,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031437Z-4c72ea7e"
+    },
+    {
+      "row": 541,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031440Z-0cace0a5"
+    },
+    {
+      "row": 542,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031443Z-535c6f81"
+    },
+    {
+      "row": 543,
+      "same_simulated_metrics": true,
+      "different_fields": [],
+      "run_id": "qim-resync-20260601T031446Z-2ad25b24"
+    }
+  ],
+  "loss_summary": [
+    {
+      "loss": 0.0,
+      "ecc": false,
+      "n": 4320,
+      "acceptance": [
+        82.2460462962963,
+        30.68110583503548
+      ],
+      "recovery": [
+        0.0,
+        0.0
+      ],
+      "resync": [
+        20.68705773148148,
+        22.55468847920885
+      ],
+      "integrity": [
+        0.0,
+        0.0
+      ],
+      "false_accepts": 0
+    },
+    {
+      "loss": 0.0,
+      "ecc": true,
+      "n": 4320,
+      "acceptance": [
+        97.26685185185185,
+        11.265173813472169
+      ],
+      "recovery": [
+        61.31109722222222,
+        7.272376131346505
+      ],
+      "resync": [
+        14.678325185185184,
+        20.312293044644008
+      ],
+      "integrity": [
+        0.0,
+        0.0
+      ],
+      "false_accepts": 0
+    },
+    {
+      "loss": 0.01,
+      "ecc": false,
+      "n": 4320,
+      "acceptance": [
+        73.08463888888889,
+        36.34599689139545
+      ],
+      "recovery": [
+        0.0,
+        0.0
+      ],
+      "resync": [
+        34.35449215277778,
+        14.306227718100912
+      ],
+      "integrity": [
+        0.0,
+        0.0
+      ],
+      "false_accepts": 0
+    },
+    {
+      "loss": 0.01,
+      "ecc": true,
+      "n": 4320,
+      "acceptance": [
+        88.11416666666668,
+        24.75968712736606
+      ],
+      "recovery": [
+        56.17605092592592,
+        15.826882171348691
+      ],
+      "resync": [
+        24.730273449074076,
+        17.776509727347346
+      ],
+      "integrity": [
+        0.0,
+        0.0
+      ],
+      "false_accepts": 0
+    },
+    {
+      "loss": 0.05,
+      "ecc": false,
+      "n": 4320,
+      "acceptance": [
+        53.40980555555556,
+        36.22378947559697
+      ],
+      "recovery": [
+        0.0,
+        0.0
+      ],
+      "resync": [
+        44.87594518518519,
+        7.914795281947165
+      ],
+      "integrity": [
+        0.0,
+        0.0
+      ],
+      "false_accepts": 0
+    },
+    {
+      "loss": 0.05,
+      "ecc": true,
+      "n": 4320,
+      "acceptance": [
+        78.30851851851853,
+        30.736799830797423
+      ],
+      "recovery": [
+        51.96426388888889,
+        20.403200645658025
+      ],
+      "resync": [
+        36.13046421296296,
+        11.689505803470462
+      ],
+      "integrity": [
+        0.0,
+        0.0
+      ],
+      "false_accepts": 0
+    }
+  ],
+  "jitter_summary": [
+    {
+      "jitter": 0.0,
+      "ecc": false,
+      "n": 3240,
+      "mean_latency": [
+        80.20824259444444,
+        32.93551710728008
+      ],
+      "p95_latency": [
+        132.6168455314815,
+        60.20944343828671
+      ],
+      "resync_delay": [
+        83.18301567296297,
+        23.071499296091098
+      ],
+      "throughput": [
+        6.642512353703704,
+        3.805906246004671
+      ]
+    },
+    {
+      "jitter": 0.0,
+      "ecc": true,
+      "n": 3240,
+      "mean_latency": [
+        49.99619608888889,
+        18.64535981799794
+      ],
+      "p95_latency": [
+        126.03151653333333,
+        56.69939334343394
+      ],
+      "resync_delay": [
+        75.19142270037037,
+        19.79406957129175
+      ],
+      "throughput": [
+        8.754345438888889,
+        2.517329555147384
+      ]
+    },
+    {
+      "jitter": 25.0,
+      "ecc": false,
+      "n": 3240,
+      "mean_latency": [
+        81.73823374444444,
+        32.66329883723596
+      ],
+      "p95_latency": [
+        139.30067609814816,
+        57.431618810032276
+      ],
+      "resync_delay": [
+        84.00822739573991,
+        25.07049454426676
+      ],
+      "throughput": [
+        7.118587162962963,
+        3.5878235688547764
+      ]
+    },
+    {
+      "jitter": 25.0,
+      "ecc": true,
+      "n": 3240,
+      "mean_latency": [
+        50.48029991666667,
+        18.442906279875412
+      ],
+      "p95_latency": [
+        128.49969653703704,
+        54.774569192388185
+      ],
+      "resync_delay": [
+        75.64485316554054,
+        19.74781392191401
+      ],
+      "throughput": [
+        8.845536320370371,
+        2.4470928897587303
+      ]
+    },
+    {
+      "jitter": 50.0,
+      "ecc": false,
+      "n": 3240,
+      "mean_latency": [
+        85.00297493425926,
+        31.369681905912202
+      ],
+      "p95_latency": [
+        152.9120846787037,
+        54.66682854109281
+      ],
+      "resync_delay": [
+        84.27403444323933,
+        22.153825215429276
+      ],
+      "throughput": [
+        7.1118109314814815,
+        3.58792715314148
+      ]
+    },
+    {
+      "jitter": 50.0,
+      "ecc": true,
+      "n": 3240,
+      "mean_latency": [
+        51.87675516851852,
+        17.76611767246114
+      ],
+      "p95_latency": [
+        136.59526732314814,
+        51.55537084503525
+      ],
+      "resync_delay": [
+        75.94873649927378,
+        17.946667209179147
+      ],
+      "throughput": [
+        8.834949447222222,
+        2.4508395008916546
+      ]
+    },
+    {
+      "jitter": 100.0,
+      "ecc": false,
+      "n": 3240,
+      "mean_latency": [
+        95.11633288734568,
+        28.51426159680009
+      ],
+      "p95_latency": [
+        184.93809985987653,
+        52.41480675470206
+      ],
+      "resync_delay": [
+        87.7164941748133,
+        18.538021745682762
+      ],
+      "throughput": [
+        6.959527165432099,
+        3.616089002575337
+      ]
+    },
+    {
+      "jitter": 100.0,
+      "ecc": true,
+      "n": 3240,
+      "mean_latency": [
+        56.76152666388889,
+        15.948440019600447
+      ],
+      "p95_latency": [
+        159.2709181882716,
+        47.109404697218245
+      ],
+      "resync_delay": [
+        78.17855928400137,
+        15.399083537619708
+      ],
+      "throughput": [
+        8.724288497530864,
+        2.5533511461419427
+      ]
+    }
+  ],
+  "representative_figure_rows_before": 480,
+  "representative_figure_rows_after": 480,
+  "representative_figure_data_unchanged": true,
+  "no_simulator_or_experiment_executed": true
+}

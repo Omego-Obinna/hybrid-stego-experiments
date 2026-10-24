@@ -1,0 +1,26 @@
+{
+  "summary_csv": "${ARTIFACT_ROOT}/qim_resync_results/run_summary.csv",
+  "n_input_rows": 26191,
+  "n_main_rows_after_filter": 26191,
+  "note": "This aggregation evaluates multichannel protocol robustness and re-synchronisation, not stego-object detectability. Rates are averaged over simulator runs; counts such as false accepts, replay rejections, and MAC failures are summed over the grouped runs.",
+  "optional_filters": {
+    "representative_window": null,
+    "representative_heartbeat": null,
+    "representative_skew_ms": null
+  },
+  "generated": [
+    "robustness_by_loss_ecc.csv",
+    "latency_by_jitter_ecc.csv",
+    "heatmap_acceptance_loss_jitter.csv",
+    "table_resync_robustness.tex",
+    "table_resync_latency.tex",
+    "figure_acceptance_vs_loss.pdf/png",
+    "figure_resync_success_vs_loss.pdf/png",
+    "figure_latency_vs_jitter.pdf/png",
+    "figure_acceptance_heatmap.pdf/png",
+    "active_interference_summary.csv",
+    "table_active_interference.tex"
+  ],
+  "attack_summary_csv": "${ARTIFACT_ROOT}/qim_resync_attack_results/run_summary.csv",
+  "n_attack_rows": 320
+}

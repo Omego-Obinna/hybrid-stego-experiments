@@ -1,0 +1,6 @@
+{
+  "classifier": "StandardScaler + L2 logistic regression",
+  "validation": "leave-one-seed-out",
+  "normalised_proxy": "2*abs(accuracy-0.5)",
+  "half_scale_advantage": "abs(accuracy-0.5)"
+}

@@ -1,0 +1,194 @@
+{
+  "protocol": "cpm-epoch-v2",
+  "authenticated_field_tests": [
+    {
+      "family": "C1 parameter",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "C2 parameter",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "C3 image",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "C1 nonce",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "C2 nonce",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "C3 nonce",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Header",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Epoch tag",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Payload length",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Fresh-epoch rebinding",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Channel swapping",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Cross-epoch C1 splice",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Cross-epoch C2 splice",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Cross-session transplant",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    },
+    {
+      "family": "Accepted-epoch replay",
+      "attempts": 36,
+      "rejected": 36,
+      "unauthorised_accepts": 0,
+      "rejected_before_decode": 36
+    }
+  ],
+  "attack_attempts": 540,
+  "unauthorised_accepts": 0,
+  "additional_checks": [
+    {
+      "case": "Wrong codec",
+      "passed": true
+    },
+    {
+      "case": "Wrong version",
+      "passed": true
+    },
+    {
+      "case": "Wrong channel label",
+      "passed": true
+    },
+    {
+      "case": "Unexpected JSON field",
+      "passed": true
+    },
+    {
+      "case": "Missing C2 frame",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_1_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_7_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_8_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_9_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_255_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_256_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_257_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_26214_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_52429_bits",
+      "passed": true
+    },
+    {
+      "case": "mask_inverse_104858_bits",
+      "passed": true
+    },
+    {
+      "case": "distinct_purpose_keys",
+      "passed": true
+    },
+    {
+      "case": "distinct_contexts_change_mask",
+      "passed": true
+    }
+  ],
+  "additional_passed": 17,
+  "sampler_counterexample": {
+    "ideal_sampler": "always A",
+    "benign_law": "always B",
+    "distinguisher": "accept exactly A",
+    "sampler_gap": 1.0,
+    "independent_uniform_mask_gap": 0.0,
+    "old_sampler_le_mask_claim_holds": false,
+    "acceptance_gap": 1.0,
+    "equal_prior_guessing_advantage": 0.5
+  },
+  "scope": "Deterministic engineering checks over 36 validated real-image epochs; not independent population attack trials"
+}

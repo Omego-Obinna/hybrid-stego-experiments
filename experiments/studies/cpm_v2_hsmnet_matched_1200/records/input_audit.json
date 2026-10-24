@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-21T09:41:15.301339+00:00",
+  "records": 18000,
+  "native_attempts": 3600,
+  "reused_baseline_records": 14400,
+  "common_valid_counts": {
+    "0.1": {
+      "train": 681,
+      "validation": 195,
+      "test": 288
+    },
+    "0.2": {
+      "train": 684,
+      "validation": 196,
+      "test": 289
+    },
+    "0.4": {
+      "train": 671,
+      "validation": 195,
+      "test": 294
+    }
+  },
+  "image_hashes_checked": 19089,
+  "invalid_images_retained": 111,
+  "parent_hsm_and_test_unattempted": true,
+  "original_hsm_settings_unchanged": true,
+  "training_diagnosis_performed": false
+}

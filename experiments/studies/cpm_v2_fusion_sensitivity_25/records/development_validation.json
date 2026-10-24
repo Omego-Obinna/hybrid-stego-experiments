@@ -1,0 +1,43 @@
+{
+  "all_five_weights_recover": true,
+  "lambda075_exactly_reproduces_frozen_training_fixture": true,
+  "training_cover_id": "2888",
+  "original_source_modified": false,
+  "results": [
+    {
+      "weight": 0,
+      "exact_recovery": true,
+      "masked_sha256": "207d0e7765de72cb3f08c24494ec314abb2548015082e8cde10050409f463b06",
+      "stego_sha256": "f07115a9832ae970c7c72c57897071c6b21d613f7972ab30f181ddc864bd5543",
+      "embed_time_sec": 2.4826949139969656
+    },
+    {
+      "weight": 0.25,
+      "exact_recovery": true,
+      "masked_sha256": "207d0e7765de72cb3f08c24494ec314abb2548015082e8cde10050409f463b06",
+      "stego_sha256": "446e31f7400ddaee7480599e2650712516970db73bc95134864d300cb00eb0a5",
+      "embed_time_sec": 2.398282308000489
+    },
+    {
+      "weight": 0.5,
+      "exact_recovery": true,
+      "masked_sha256": "207d0e7765de72cb3f08c24494ec314abb2548015082e8cde10050409f463b06",
+      "stego_sha256": "9810d3d6dbc68d865179d57a853b86093febb4a6b214ccceb6f2abf96f84c1c3",
+      "embed_time_sec": 2.3370189999986906
+    },
+    {
+      "weight": 0.75,
+      "exact_recovery": true,
+      "masked_sha256": "207d0e7765de72cb3f08c24494ec314abb2548015082e8cde10050409f463b06",
+      "stego_sha256": "168b2587063ff86dccb53c391e631ba55cff0ce875c10c4671434c4b0806cadd",
+      "embed_time_sec": 2.3580906099959975
+    },
+    {
+      "weight": 1,
+      "exact_recovery": true,
+      "masked_sha256": "207d0e7765de72cb3f08c24494ec314abb2548015082e8cde10050409f463b06",
+      "stego_sha256": "422cb6abe1bf45e1b6d18b30917911244efd41abb9deadbd3755f77b476b2b56",
+      "embed_time_sec": 2.4278519970030175
+    }
+  ]
+}

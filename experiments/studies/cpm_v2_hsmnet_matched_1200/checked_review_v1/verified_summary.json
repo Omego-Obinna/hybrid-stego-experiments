@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-22T10:42:18.189403+00:00",
+  "passed": true,
+  "attempted_records": 18000,
+  "new_native_attempts": 3600,
+  "reused_records": 14400,
+  "new_native_exact": 3595,
+  "fresh_attempts": 450,
+  "fresh_exact": 446,
+  "selected_checkpoint_predictions_checked": 6,
+  "all_saved_ensemble_scores_checked": true,
+  "definition_scope": "Finite image-content wardens. No full-view IND-STEGO or CP-UNL bound is inferred.",
+  "pixel_deviation_image_counts_by_method": {
+    "cpm": 0,
+    "suniward": 0,
+    "mipod": 0,
+    "wow": 0,
+    "hill": 1
+  },
+  "fresh_pixel_deviation_counts_by_method": {
+    "cpm": 0,
+    "suniward": 0,
+    "mipod": 0,
+    "wow": 0,
+    "hill": 0
+  },
+  "report_quality_provenance": "report_quality_v1/provenance.json"
+}

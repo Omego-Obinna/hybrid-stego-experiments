@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-20T04:33:23.343392+00:00",
+  "selected_checkpoint_predictions_checked": 12,
+  "image_records_retained": 960,
+  "source_input_and_feature_hashes_checked": true,
+  "full_study_test_groups_used": 0,
+  "native_trials_regenerated": 0,
+  "cohorts": {
+    "0.1": {
+      "train": 100,
+      "validation": 20,
+      "test": 40
+    },
+    "0.2": {
+      "train": 100,
+      "validation": 20,
+      "test": 39
+    },
+    "0.4": {
+      "train": 100,
+      "validation": 20,
+      "test": 40
+    }
+  },
+  "figure_data": "detectability.csv; paired_auc_contrasts.csv",
+  "independent_numeric_review": "checked_review_v1/audit.json"
+}

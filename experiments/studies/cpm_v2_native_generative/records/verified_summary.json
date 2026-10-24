@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-18T14:11:24.214126+00:00",
+  "attempts": 1200,
+  "exact": 1118,
+  "selected_checkpoint_predictions_checked": 24,
+  "all_native_file_hashes_checked": true,
+  "all_exact_recovered_bytes_checked": true,
+  "source_scope": "native format and benign distribution, finite within-source content classifiers, matched application bytes",
+  "evaluable": {
+    "128": true,
+    "256": true,
+    "384": true
+  },
+  "cpm_pixel_deviation_images": 0,
+  "report_quality_provenance": "report_quality_v1/provenance.json"
+}

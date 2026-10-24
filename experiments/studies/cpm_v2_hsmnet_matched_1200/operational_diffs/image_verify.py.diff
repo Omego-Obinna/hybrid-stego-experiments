@@ -1,0 +1,38 @@
+--- original_source/image_verify.py
++++ source/image_verify.py
+@@ -12,19 +12,13 @@
+         assert sha(r['cover_path'])==r['cover_sha256']
+         if r['valid_image']:assert sha(r['stego_path'])==r['stego_sha256']
+         if r['method']=='cpm' and r['exact_recovery']:
+-            folder=ROOT/'cases'/str(r['case_id']);expected=ep.truncate(Path(r['message_path']).read_bytes(),r['payload_bits']);assert (folder/'recovered.bin').read_bytes()==expected
++            folder=Path(r['stego_path']).parent;expected=ep.truncate(Path(r['message_path']).read_bytes(),r['payload_bits']);assert (folder/'recovered.bin').read_bytes()==expected
+             original=ep.read_frames(folder/'frames');tagged=ep.authenticate(Path(r['master_file']).read_bytes(),original);assert ep.transcript(original)==ep.transcript(tagged)
+             # authenticate() may return a replaced epoch; compare serialised tags too.
+             from dataclasses import asdict
+             assert asdict(original)==asdict(tagged),'saved native authentication mismatch'
+-    blocks=complete_blocks(rows);fm=json.loads((ROOT/'feature_manifest.json').read_text());test=json.loads((ROOT/'test_predictions.json').read_text());checked=0
++    blocks=complete_blocks(rows);test=json.loads((ROOT/'test_predictions.json').read_text());checked=0
+     for p,h in test['prediction_hashes'].items():assert sha(p)==h
+-    for s in json.loads((ROOT/'srm_selection.json').read_text())['panels']:
+-        pay=s['payload_bpp'];m=s['method'];ids=sorted(k[0] for k,v in blocks.items() if k[1]==pay and v['cpm']['partition']=='test');x=np.stack([np.load(fm[f'cover_{i}'],allow_pickle=False) for i in ids]+[np.load(fm[f'{m}_{i}_{pay}'],allow_pickle=False) for i in ids])
+-        scores=[]
+-        for seed,path in zip(cfg['srm']['seeds'],s['paths']):
+-            score=joblib.load(path).predict_confidence(x);saved=np.load(ROOT/'predictions'/f'srm_{m}_{pay}_{seed}.npz',allow_pickle=False);assert np.array_equal(score,saved['scores']);scores.append(score);checked+=1
+-        final=np.load(ROOT/'predictions'/f'srm_{m}_{pay}_ensemble.npz');assert np.array_equal(np.mean(scores,axis=0)*s['orientation'],final['scores'])
+     torch.set_num_threads(1)
+     for s in json.loads((ROOT/'hsm_selection.json').read_text())['panels']:
+         pay=s['payload_bpp'];loader=DataLoader(Pairs(blocks,pay,'test'),batch_size=cfg['hsmnet']['paired_batch_size'],shuffle=False,num_workers=2,pin_memory=True);scores=[]
+@@ -33,11 +27,12 @@
+         avg=np.mean(scores,axis=0)*s['orientation']
+         for m in cfg['methods']:
+             final=np.load(ROOT/'predictions'/f'hsm_{m}_{pay}_ensemble.npz');assert np.allclose(avg[ev['methods']==m],final['scores'],rtol=1e-5,atol=1e-5)
+-    assert checked==36
++    assert checked==6
+     fresh=[json.loads(x) for x in (ROOT/'fresh_results.jsonl').open()];assert len(fresh)==450
+     for r in fresh:
+         assert sha(r['cover_path'])==r['cover_sha256'] and sha(r['message_path'])==r['message_sha256']
+         if r['exact_recovery']:assert (Path(r['folder'])/'recovered.bin').read_bytes()==Path(r['message_path']).read_bytes()
++    for n,digest in {**cfg['source_hashes'],**cfg['input_hashes']}.items():assert sha(ROOT/n)==digest,n
+     save(ROOT/'verified_summary.json',dict(checked_at=now(),passed=True,attempted_records=18000,new_native_attempts=3600,reused_records=14400,new_native_exact=sum(r['method']=='cpm' and r['exact_recovery'] for r in rows),fresh_attempts=len(fresh),fresh_exact=sum(r['exact_recovery'] for r in fresh),selected_checkpoint_predictions_checked=checked,all_saved_ensemble_scores_checked=True,definition_scope='Finite image-content wardens. No full-view IND-STEGO or CP-UNL bound is inferred.'))
+     status(phase='report',stage='All selected checkpoints and saved-artifact checks passed; exporting statistics and figures',checkpoints_checked=checked)
+ if __name__=='__main__':main()

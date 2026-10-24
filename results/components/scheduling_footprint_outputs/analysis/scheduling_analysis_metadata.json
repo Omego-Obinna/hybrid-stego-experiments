@@ -1,0 +1,13 @@
+{
+  "trace_csv": "${ARTIFACT_ROOT}/scheduling_footprint_outputs/traces/scheduling_event_traces.csv",
+  "time_field": "send_time_ms",
+  "rho_ms": 100.0,
+  "skew_delta_ms": 100.0,
+  "bootstrap_repeats": 1000,
+  "mmd_estimator": "linear-time RBF MMD squared",
+  "mmd_permutations": 1000,
+  "classifier": "StandardScaler + LogisticRegression",
+  "classifier_validation": "leave-one-seed-out",
+  "classifier_advantage": "2*abs(accuracy-0.5)",
+  "interpretation": "empirical proxy, not direct total variation"
+}

@@ -1,0 +1,6 @@
+{
+  "weighted_auc_matches_sklearn": true,
+  "fractional_tie_baselines_correct": true,
+  "synthetic_known_leak_detected": true,
+  "synthetic_auc": 1.0
+}

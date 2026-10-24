@@ -1,0 +1,39 @@
+{
+  "selected_at": "2026-10-20T06:22:59.530399+00:00",
+  "panels": [
+    {
+      "payload_bpp": 0.1,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.1_801_best.pt",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.1_802_best.pt"
+      ],
+      "orientation": 1,
+      "threshold": 0.0005325870588421822,
+      "validation_auc": 0.5053125,
+      "rule": "Same two-seed mixture observer for both methods; checkpoint minimum joint validation loss, common orientation/threshold validation only."
+    },
+    {
+      "payload_bpp": 0.2,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.2_801_best.pt",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.2_802_best.pt"
+      ],
+      "orientation": 1,
+      "threshold": 0.019743435084819794,
+      "validation_auc": 0.5099999999999999,
+      "rule": "Same two-seed mixture observer for both methods; checkpoint minimum joint validation loss, common orientation/threshold validation only."
+    },
+    {
+      "payload_bpp": 0.4,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.4_801_best.pt",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_detectability_pilot_300/models/0.4_802_best.pt"
+      ],
+      "orientation": 1,
+      "threshold": -0.0666109174489975,
+      "validation_auc": 0.5315625,
+      "rule": "Same two-seed mixture observer for both methods; checkpoint minimum joint validation loss, common orientation/threshold validation only."
+    }
+  ],
+  "test_used": false
+}

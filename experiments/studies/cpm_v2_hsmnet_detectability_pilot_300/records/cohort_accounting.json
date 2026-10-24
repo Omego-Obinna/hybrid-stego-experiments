@@ -1,0 +1,26 @@
+{
+  "selected_source_groups": 300,
+  "saved_method_records": 1800,
+  "valid_saved_images": 1800,
+  "common_valid_counts": {
+    "0.1": {
+      "train": 200,
+      "validation": 40,
+      "test": 60
+    },
+    "0.2": {
+      "train": 200,
+      "validation": 40,
+      "test": 60
+    },
+    "0.4": {
+      "train": 200,
+      "validation": 40,
+      "test": 60
+    }
+  },
+  "full_study_validation_or_test_covers_used": 0,
+  "srm_pilot_covers_used": 0,
+  "native_images_generated": 0,
+  "failed_cases_replaced": 0
+}

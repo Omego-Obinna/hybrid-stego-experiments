@@ -1,0 +1,36 @@
+--- original_source/image_report.py
++++ source/image_report.py
+@@ -40,10 +40,10 @@
+             fresh_summary.append(out)
+     table(ROOT/'detectability.csv',metrics);table(ROOT/'auc_paired_contrasts.csv',contrasts);table(ROOT/'paired_fidelity.csv',fidelity);table(ROOT/'fidelity_contrasts.csv',fidelity_diffs);table(ROOT/'fresh_recovery_runtime.csv',fresh_summary)
+     plt.rcParams.update({'font.family':'DejaVu Serif','font.size':10,'axes.titlesize':11,'axes.labelsize':10,'legend.fontsize':8,'xtick.labelsize':9,'ytick.labelsize':9,'svg.fonttype':'none','pdf.fonttype':42})
+-    colors=dict(cpm='#007C83',suniward='#E69F00',mipod='#6B5B95',wow='#0072B2',hill='#A15A5A');fig,axes=plt.subplots(1,2,figsize=(9,3.6),layout='constrained')
++    colors=dict(cpm='#007C83',suniward='#E69F00',mipod='#6B5B95',wow='#0072B2',hill='#A15A5A');fig,one_ax=plt.subplots(figsize=(6.8,3.7),layout='constrained');axes=[one_ax]
+     for ax,det in zip(axes,dict.fromkeys(p['detector'] for p in metrics)):
+         for mi,m in enumerate(cfg['methods']):
+-            pp=sorted([p for p in metrics if p['method']==m and p['detector']==det],key=lambda p:p['payload_bpp']);x=np.array([p['payload_bpp'] for p in pp]);y=np.array([p['auc'] for p in pp]);lo=np.array([p['auc_ci_low'] for p in pp]);hi=np.array([p['auc_ci_high'] for p in pp]);ax.errorbar(x+(mi-2)*.003,y,yerr=[y-lo,hi-y],label=m.upper() if m=='cpm' else m,marker='o',markersize=4,lw=1.4,capsize=2,color=colors[m])
++            pp=sorted([p for p in metrics if p['method']==m and p['detector']==det],key=lambda p:p['payload_bpp']);x=np.array([p['payload_bpp'] for p in pp]);y=np.array([p['auc'] for p in pp]);lo=np.array([p['auc_ci_low'] for p in pp]);hi=np.array([p['auc_ci_high'] for p in pp]);xx=x+(mi-2)*.003;ax.vlines(xx,lo,hi,color=colors[m],lw=1.2);ax.hlines(lo,xx-.0015,xx+.0015,color=colors[m]);ax.hlines(hi,xx-.0015,xx+.0015,color=colors[m]);ax.plot(xx,y,label=m.upper() if m=='cpm' else m,marker='o',markersize=4,lw=1.4,color=colors[m])
+         ax.axhline(.5,color='.5',ls='--',lw=.8);ax.set(xlabel='Application payload (bits/pixel)',ylabel='Held-out detection AUC',title=det,xticks=[.1,.2,.4],ylim=(0,1.025));ax.grid(axis='y',alpha=.18);ax.spines[['top','right']].set_visible(False)
+     axes[-1].legend(loc='best');fig.savefig(ROOT/'matched_detectability.png',dpi=300);fig.savefig(ROOT/'matched_detectability.svg');plt.close(fig)
+     fig,axes=plt.subplots(1,2,figsize=(9,3.4),layout='constrained')
+@@ -51,9 +51,9 @@
+         pp=sorted([p for p in fidelity if p['method']==m],key=lambda p:p['payload_bpp'])
+         for ax,field,label in zip(axes,['psnr_db','ssim'],['PSNR (dB)','SSIM']):ax.plot([r['payload_bpp'] for r in pp],[r[field] for r in pp],marker='o',label=m,color=colors[m]);ax.set(xlabel='Application payload (bits/pixel)',ylabel=label,xticks=[.1,.2,.4]);ax.grid(alpha=.18);ax.spines[['top','right']].set_visible(False)
+     axes[-1].legend();fig.savefig(ROOT/'matched_fidelity.png',dpi=300);fig.savefig(ROOT/'matched_fidelity.svg');plt.close(fig)
+-    lines=['# Matched native image comparisons','',f'Independent saved-artifact verification passed for {verified["selected_checkpoint_predictions_checked"]} selected checkpoints.','',
++    lines=['# HSMNet matched image comparison','',f'Independent saved-artifact verification passed for {verified["selected_checkpoint_predictions_checked"]} selected checkpoints.','',
+       'Fixed BOSSBase panel: 700 training / 200 validation / 300 test covers; native 512 × 512 grayscale. Three application payloads: 0.10, 0.20 and 0.40 bpp. All source versions, failed attempts, symmetric common-valid exclusions and model choices are retained.','',
+-      'SRM uses method-specific ensembles; HSMNet uses the same equal-method mixture observer for all methods at each payload. HSMNet is the published architecture with a declared bounded training budget, not a reproduction of its original paper scores. Scores describe these image-content wardens and do not estimate IND-STEGO-MC or CP-UNL security bounds.','',
++      'Only HSMNet is evaluated in this continuation, using the same equal-method mixture observer for all methods at each payload; the original SRM job remains paused. HSMNet is the published architecture with a declared bounded training budget, not a reproduction of its original paper scores. Scores describe these image-content wardens and do not estimate IND-STEGO-MC or CP-UNL security bounds.','',
+       'The classical images are reused from the original study and labelled by their recorded implementations. In particular, the local MiPOD variance estimator is an approximation; these rows must not be described as certified reference-code results. Historical recovery is originally reported, whereas the separate 450-attempt fresh panel has saved known messages and independent native extraction.','',
+       '## Held-out detection','', '| Detector | Method | bpp | Covers | AUC (95% interval) | Balanced accuracy |','|---|---|---:|---:|---|---:|']
+     for p in metrics:lines.append(f'| {p["detector"]} | {p["method"]} | {p["payload_bpp"]:.2f} | {p["test_covers"]} | {p["auc"]:.4f} [{p["auc_ci_low"]:.4f}, {p["auc_ci_high"]:.4f}] | {p["balanced_accuracy"]:.4f} |')
+@@ -64,6 +64,6 @@
+       'Generative and distributed-carrier comparisons are a separate native-format panel; they are not mixed into this BOSSBase AUC table.','',
+       '![Matched detectability](matched_detectability.png)','', '![Matched fidelity](matched_fidelity.png)']
+     (ROOT/'RESULTS.md').write_text('\n'.join(lines)+'\n')
+-    save(ROOT/'completion.json',dict(completed_at=now(),verified=True,report_sha256=sha(ROOT/'RESULTS.md'),selected_checkpoints_checked=36,detectability_panels=30,fresh_attempts=450))
+-    status(state='completed',phase='completed',stage='Image comparison panel complete and independently checked; native generative panel tracked separately',report_ready=True,detectability_panels=30,checkpoints_checked=36)
++    save(ROOT/'completion.json',dict(completed_at=now(),verified=True,report_sha256=sha(ROOT/'RESULTS.md'),selected_checkpoints_checked=6,detectability_panels=15,fresh_attempts=450))
++    status(state='completed',phase='completed',stage='HSMNet comparison completed; final independent report review pending; SRM remains paused',report_ready=True,detectability_panels=15,checkpoints_checked=6)
+ if __name__=='__main__':main()

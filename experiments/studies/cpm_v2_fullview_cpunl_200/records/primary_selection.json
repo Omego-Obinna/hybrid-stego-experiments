@@ -1,0 +1,35 @@
+{
+  "frozen_at": "2026-10-17T21:56:11.223261+00:00",
+  "test_scored_at_selection": false,
+  "selections": {
+    "0.1": {
+      "payload_bpp": 0.1,
+      "view": "full_history",
+      "classifier": "logistic",
+      "tag": "p010_full_history_logistic",
+      "orientation": 1,
+      "raw_validation_auc": 0.5072425472398763,
+      "validation_auc": 0.5072425472398763
+    },
+    "0.2": {
+      "payload_bpp": 0.2,
+      "view": "full_history",
+      "classifier": "extra_trees",
+      "tag": "p020_full_history_extra_trees",
+      "orientation": -1,
+      "raw_validation_auc": 0.48026041666666663,
+      "validation_auc": 0.5197395833333334
+    },
+    "0.4": {
+      "payload_bpp": 0.4,
+      "view": "full_history",
+      "classifier": "extra_trees",
+      "tag": "p040_full_history_extra_trees",
+      "orientation": 1,
+      "raw_validation_auc": 0.5115281394675926,
+      "validation_auc": 0.5115281394675926
+    }
+  },
+  "rule": "Validation-only orientation; full_history validation AUC chooses family, exact tie logistic; freeze before first test scoring",
+  "validation_sha256": "64d5a125a850e8e167cb57406bae598e9c53065d2a52893be75f78980960fe31"
+}

@@ -1,0 +1,224 @@
+{
+  "attempted": 36,
+  "successful": 36,
+  "independent_receiver_recheck": true,
+  "receiver_given_original_cover": false,
+  "outcomes": [
+    {
+      "epoch": 0,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "f6afbb709eb1aec48aaf042847f856a4bc27ebebd760bebc3894b28e7b1a859c"
+    },
+    {
+      "epoch": 1,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "d1ea0abfa275d32e3ae6c6d5592f54092d2cb4ae8aacdd178ee8e8d6a68f6c54"
+    },
+    {
+      "epoch": 2,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "a2e2d6319d42e943dba062d08e165b31d42100ac66eaaa68c2d78da586405451"
+    },
+    {
+      "epoch": 3,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "701a70d8413b0257308ec089a54f19c21ec0eb75db66744e6278e2710f9743b4"
+    },
+    {
+      "epoch": 4,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "05e8386f9d2ffcc395858a5fa9545b902d36f9705ee86f6e1e7f408cf766e983"
+    },
+    {
+      "epoch": 5,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "541a4bc8c7714973f523eb9d6e44813902e084964dcce051d4fcfad09f6e2cf7"
+    },
+    {
+      "epoch": 6,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "c3a465a62e0e236bff04c073ee47d5479b3277baa74dd7006c4c289937b134f4"
+    },
+    {
+      "epoch": 7,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "7318b66fad4e764b75b28a083bb9ded7ffdc61e2d06ad3de24e9ddc39463e13a"
+    },
+    {
+      "epoch": 8,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "82bb5e65f4c0a8270c1d62c82fd7bb8765c890b84a5b9bc3941ff6afd9777efc"
+    },
+    {
+      "epoch": 9,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "0e05afaa3e9481ea39727a953ee4fefa0f5bec7c6afc7b583af9b08f264cd0d2"
+    },
+    {
+      "epoch": 10,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "0a772f39a40400be66e0f129f36cc52e97964fc1339e1f3d6bcdac3fe51abac1"
+    },
+    {
+      "epoch": 11,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "7cf03adce8737e33ba11c88e77bc520b31c24fecbe4961df92641719f808b0c1"
+    },
+    {
+      "epoch": 12,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "730c808ee9f7ae80af64f4259640bb66430b9929a6ae9b778b61d537079ae3be"
+    },
+    {
+      "epoch": 13,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "0458b231facaea7b17cfe19f95b28d17a4e4c9af81d0147da9f06e3b5fe2ff26"
+    },
+    {
+      "epoch": 14,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "36379111dbd39a4531780b93c7f1d9c05098754eec2aca41e7d15e135492134e"
+    },
+    {
+      "epoch": 15,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "01236fe36d2dbff1e25aa6cf1db4cd8584d9fe7de08a58f8469c431134d7818c"
+    },
+    {
+      "epoch": 16,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "bedbf03a2cb58336e5f773d872c7adaff8df096f5326fa162d49e8232cd683af"
+    },
+    {
+      "epoch": 17,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "21573f9f5f8687174fc6c3ecedfd45b7b41cacccc0b77d3335208a85e62e4110"
+    },
+    {
+      "epoch": 18,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "04ce3d183904a166b5a9f1347147999eb8f73b839f01b03b12d10a0f179135c2"
+    },
+    {
+      "epoch": 19,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "df356e6c30bbe099322101ef6d66343cbb4b759095a2ee321711b277a1d2cf51"
+    },
+    {
+      "epoch": 20,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "e9be62eabf9c5e440a95ff7d4fb618f7bd31bd3412443d084317415a1e7ab595"
+    },
+    {
+      "epoch": 21,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "c2940848a53ec03c1fabe66abecbecd649740c0b00f29a05ab9d10545f0288b8"
+    },
+    {
+      "epoch": 22,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "7599bf7bf86be0674b56c175593bbb2c2f71159c0b6ce9a8f72537ebc9834618"
+    },
+    {
+      "epoch": 23,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "f28b02c57a76d0458037b4efc413086934278ac3dbc5a44ce665256df548884e"
+    },
+    {
+      "epoch": 24,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "6263eb4fab905dbbe0cff954f764634ceb4ecc878b8840be705689ab9df45592"
+    },
+    {
+      "epoch": 25,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "300b6fa91641ed4d07cda76173aca03aa947f3e0e45aae9d9a4817807c092618"
+    },
+    {
+      "epoch": 26,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "72b45e2451bea012ce04bcc710e64abaa2f3449247e66c7761a80f8b9f077752"
+    },
+    {
+      "epoch": 27,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "2fada829844217a611096e8e9338c47bfaaed3c63a3e821760039bab420ff2b3"
+    },
+    {
+      "epoch": 28,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "214a80cf44cfe43e52d4e1f6159881cdf0614e472e101a1f9e0fcce9c68802a6"
+    },
+    {
+      "epoch": 29,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "1da562570890b0e7452544320cff1fbb33a27b39be11853f789526f24f15693c"
+    },
+    {
+      "epoch": 30,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "b52250020601f285858e96d634ac4ed94dc2699048c7bc78bc03c4ef8d4dfb41"
+    },
+    {
+      "epoch": 31,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "a0e41d72364c92ecd395950796d2be73e9ed8d5950eac2f080d2126f649cf33d"
+    },
+    {
+      "epoch": 32,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "e0b83751478f0bbd97a076615d4f09549dc37add468b507b14998d28503a297c"
+    },
+    {
+      "epoch": 33,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "e12e56df64cdd2a18dd89343f25198053fddd23176f34b15835c96610e2a9eb1"
+    },
+    {
+      "epoch": 34,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "2914e6d25efa6a4e485040cf37d3fccc721751b5f429a5262b2867eac0b907f2"
+    },
+    {
+      "epoch": 35,
+      "returncode": 0,
+      "exact_recovery": true,
+      "sha256": "26ae41cdb58d5e2465a2c092b47a4aaa2bd4d93973ca934a92e76e5ad333836f"
+    }
+  ]
+}

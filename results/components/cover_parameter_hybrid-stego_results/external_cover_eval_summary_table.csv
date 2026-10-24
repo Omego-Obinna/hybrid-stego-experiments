@@ -1,0 +1,7 @@
+test_book,stream,mauve_mean,mauve_std,mauve_count,roberta_accuracy_mean,roberta_accuracy_std,roberta_accuracy_count,roberta_auc_mean,roberta_auc_std,roberta_auc_count
+alice,gamma1,0.6377438092777128,,1,0.925,,1,0.975,,1
+alice,gamma2,0.6410399382184298,,1,0.9125,,1,0.9688,,1
+pride_prejudice,gamma1,0.8055598669821941,,1,0.8675,,1,0.9354,,1
+pride_prejudice,gamma2,0.8113921741565862,,1,0.8625,,1,0.9272,,1
+sherlock,gamma1,0.8199487991440123,,1,0.8125,,1,0.9097,,1
+sherlock,gamma2,0.8423554236009413,,1,0.8625,,1,0.9229,,1

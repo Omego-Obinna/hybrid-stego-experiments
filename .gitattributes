@@ -1,0 +1,6 @@
+# Keep release hashes stable across platforms, including frozen source bytes.
+* -text
+*.pdf binary
+*.png binary
+*.npy binary
+*.npz binary

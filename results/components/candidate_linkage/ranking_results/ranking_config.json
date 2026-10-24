@@ -1,0 +1,10 @@
+{
+  "version": "2026-07-17-matched-linkability-ranking-v1",
+  "dataset": "${ARTIFACT_ROOT}/linkability_probes/matched_outputs/prepared/linkability_binary_dataset.csv.gz",
+  "classifier": "extra_trees",
+  "view": "text_image",
+  "n_splits": 5,
+  "test_size": 0.3,
+  "seed": 20260605,
+  "n_candidates": 12
+}

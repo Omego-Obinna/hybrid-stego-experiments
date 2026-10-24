@@ -1,0 +1,41 @@
+{
+  "frozen_at": "2026-10-17T17:48:48.159519+00:00",
+  "selection_rule": "Choose logistic versus extra_trees on validation AUC for combined text_image view per payload; save before test scoring",
+  "selections": {
+    "0.1": {
+      "payload_bpp": 0.1,
+      "view": "text_image",
+      "classifier": "extra_trees",
+      "tag": "p010_text_image_extra_trees",
+      "orientation": -1,
+      "raw_validation_auc": 0.49767184343434345,
+      "validation_auc": 0.5023281565656565,
+      "validation_covers": 50,
+      "feature_count": 284
+    },
+    "0.2": {
+      "payload_bpp": 0.2,
+      "view": "text_image",
+      "classifier": "extra_trees",
+      "tag": "p020_text_image_extra_trees",
+      "orientation": -1,
+      "raw_validation_auc": 0.4991621212121212,
+      "validation_auc": 0.5008378787878788,
+      "validation_covers": 50,
+      "feature_count": 284
+    },
+    "0.4": {
+      "payload_bpp": 0.4,
+      "view": "text_image",
+      "classifier": "extra_trees",
+      "tag": "p040_text_image_extra_trees",
+      "orientation": 1,
+      "raw_validation_auc": 0.5043698232323233,
+      "validation_auc": 0.5043698232323233,
+      "validation_covers": 50,
+      "feature_count": 284
+    }
+  },
+  "validation_file_sha256": "f573cbd5d7a5413a6d5d552c9285ec09a13a8cdeeab07c6653ba9bdbe5017fcf",
+  "test_scored_at_selection": false
+}

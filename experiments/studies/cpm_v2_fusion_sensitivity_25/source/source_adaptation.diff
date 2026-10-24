@@ -1,0 +1,74 @@
+--- frozen/image_worker.py
++++ phase3/image_worker_weighted.py
+@@ -7,6 +7,9 @@
+ import json
+ import sys
+ import time
++import resource
++
++FUSION_WEIGHT = 0.75
+ from dataclasses import replace
+ from pathlib import Path
+ 
+@@ -21,7 +24,7 @@
+     saved = sys.argv
+     try:
+         sys.argv = ["legacy_embedder.py", "--base-cost", "fused",
+-                    "--fused-suniward-weight", "0.75", "--qim-texture-discount", "0.08",
++                    "--fused-suniward-weight", str(FUSION_WEIGHT), "--qim-texture-discount", "0.08",
+                     "--qim-smooth-penalty", "0.08", "--cf-use-slic",
+                     "--cluster-penalty", "1.02", "--cost-smooth-mix", "0.05",
+                     "--cf-complexity-discount", "0.03", "--cf-smooth-penalty", "0.03"]
+@@ -51,7 +54,7 @@
+     plus, minus, _ = old.apply_spreading_clustering_costs(
+         plus, minus, psi, maps["region_mask"], cover, args)
+     return plus.astype(np.float64), minus.astype(np.float64), dict(
+-        fused_weight=0.75, slic_segments=256, slic_compactness=10.0,
++        fused_weight=FUSION_WEIGHT, slic_segments=256, slic_compactness=10.0,
+         cost_smooth_mix=0.05, cluster_penalty=1.02, cf_complexity_discount=0.03,
+         cf_smooth_penalty=0.03, direction_mode="none",
+         feature_digest_used_only_for_sender_costs=digest.hex(),
+@@ -84,12 +87,16 @@
+     message = ep.truncate(Path(args.message).read_bytes(), bits)
+     masked = ep.mask_message(master, e, message)
+     start = time.perf_counter()
++    usage_start = resource.getrusage(resource.RUSAGE_SELF)
+     plus, minus, profile = costs(cover, master, e)
+     seed = ep.embedding_seed(master, e)
+     # The native API explicitly expects minus costs followed by plus costs.
+     stego = np.asarray(pystc.hide(masked, cover, minus, plus, seed, mx=255, mn=0),
+                        dtype=np.uint8)
+     embedded_time = time.perf_counter() - start
++    usage_end = resource.getrusage(resource.RUSAGE_SELF)
++    embedding_cpu_sec = ((usage_end.ru_utime + usage_end.ru_stime)
++                         - (usage_start.ru_utime + usage_start.ru_stime))
+     stream = io.BytesIO()
+     Image.fromarray(stego).save(stream, format="PPM")
+     data = stream.getvalue()
+@@ -107,7 +114,7 @@
+                    masked_sha256=hashlib.sha256(masked).hexdigest(),
+                    transcript_sha256=hashlib.sha256(ep.transcript(e)).hexdigest(),
+                    stego_sha256=hashlib.sha256(data).hexdigest(),
+-                   embed_time_sec=embedded_time,
++                   embed_time_sec=embedded_time, embedding_cpu_sec=embedding_cpu_sec,
+                    preflight_decode_time_sec=time.perf_counter() - check_start,
+                    source_cover_sha256=hashlib.sha256(Path(args.cover).read_bytes()).hexdigest(),
+                    backend="pystc", profile=profile)
+@@ -139,11 +146,17 @@
+         s.add_argument("--" + flag, required=True)
+     s.add_argument("--epoch", type=int, required=True)
+     s.add_argument("--payload", type=float, required=True)
++    s.add_argument("--fusion-weight", type=float, required=True)
+     r = sub.add_parser("receive")
+     for flag in ["frames", "master-file", "session", "state", "out"]:
+         r.add_argument("--" + flag, required=True)
+     args = p.parse_args()
+     try:
++        global FUSION_WEIGHT
++        if args.mode == "send":
++            if not 0.0 <= args.fusion_weight <= 1.0:
++                raise ep.ProtocolError("Fusion weight must lie in [0,1]")
++            FUSION_WEIGHT = args.fusion_weight
+         (send if args.mode == "send" else receive)(args)
+     except (ep.ProtocolError, ValueError, OSError) as exc:
+         print(json.dumps(dict(status="rejected_or_failed", reason=str(exc))))

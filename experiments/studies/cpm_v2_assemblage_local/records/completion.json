@@ -1,0 +1,7 @@
+{
+  "completed_at": "2026-10-18T10:01:26.694422+00:00",
+  "verified": true,
+  "report_sha256": "f0dd9fceae5bc9b1f017da040bbc469d12e1521f304f65c2c7e2a732e4a967f1",
+  "report_quality_pass": "report_quality_v1/provenance.json",
+  "independent_report_audit": "checked_report_audit_v2/audit.json"
+}

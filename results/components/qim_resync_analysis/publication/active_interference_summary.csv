@@ -1,0 +1,5 @@
+loss_rate,replay_rate,tamper_rate,ecc_enabled,n_runs,n_seeds,acceptance_rate_mean,acceptance_rate_std,acceptance_rate_n,integrity_failure_rate_mean,integrity_failure_rate_std,integrity_failure_rate_n,false_accepts_sum,mac_failures_sum,replay_rejections_sum,stale_epoch_rejections_sum,nonce_freshness_rejections_sum,out_of_window_rejections_sum,resync_events_sum,recovered_epochs_sum,accepted_epochs_sum,dropped_epochs_sum
+0.01,0.01,0.005,False,80,5,0.9691600000000001,0.0017884014501323314,80,0.0,0.0,80,0,380,9812,920,5204,0,36668,0,387664,12336
+0.01,0.01,0.005,True,80,5,0.9890000000000001,0.0011872742956724781,80,0.0,0.0,80,0,36,7672,1104,4752,0,25412,250568,395600,4400
+0.05,0.01,0.005,False,80,5,0.85867,0.002871968407146161,80,0.0,0.0,80,0,408,9640,974,4756,12,110034,0,343468,56416
+0.05,0.01,0.005,True,80,5,0.9482800000000001,0.003714576146664256,80,0.0,0.0,80,0,92,8268,1122,4364,0,55616,252768,379312,20576

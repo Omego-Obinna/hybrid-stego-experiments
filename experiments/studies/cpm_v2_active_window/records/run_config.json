@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-10-17T06:44:45.437759+00:00",
+  "phase": "timed-window active attacks",
+  "pilot": "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_pilot_100",
+  "source_sha256": {
+    "run_active.py": "b09cd9943a2389dd055dce211f67b7ee698ddd26fcd2e251b8e19660165269ef",
+    "window_receiver.py": "39fa2a2cce88f97844014233009ad96a9c29ec6470653e04babf8478d6f628a5"
+  },
+  "frozen_protocol_sha256": "3ffd0afbb6ee220c3530ed09fe7818c10f705867fb7597f0ae666f99122f7027",
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "scenarios": [
+    "honest",
+    "bounded_reordering",
+    "burst_delay",
+    "burst_suppression",
+    "persistent_C2_suppression",
+    "accepted_replay",
+    "tamper_and_splice",
+    "bounded_injection_flood",
+    "adaptive_injection",
+    "malformed_frames",
+    "restart_then_replay"
+  ],
+  "profiles": [
+    {
+      "name": "W3_T200",
+      "window": 3,
+      "timeout_ms": 200,
+      "epoch_count": 30,
+      "epoch_interval_ms": 100,
+      "skew_ms": 100,
+      "candidates_per_channel": 2,
+      "buffer_bytes": 8388608,
+      "failed_cache_per_epoch": 128
+    },
+    {
+      "name": "W5_T400",
+      "window": 5,
+      "timeout_ms": 400,
+      "epoch_count": 30,
+      "epoch_interval_ms": 100,
+      "skew_ms": 100,
+      "candidates_per_channel": 2,
+      "buffer_bytes": 8388608,
+      "failed_cache_per_epoch": 128
+    }
+  ],
+  "fixture_epoch_count": 30,
+  "unique_cover_count": 10,
+  "expected_trace_count": 110,
+  "trial_scope": "Repeated finite real-image fixtures; correlated seeded simulation traces, not independent cryptographic security trials",
+  "virtual_clock": "Known shared epoch origin; a(t)=max(0,floor((t-timeout)/100)+1); deadline equality expires; no heartbeat/ECC",
+  "receiver_inputs": [
+    "received frame bytes",
+    "virtual arrival time",
+    "shared configuration",
+    "fixture session and secret",
+    "protected replay state"
+  ],
+  "cpu_threads": 1,
+  "automatic_retry": false
+}

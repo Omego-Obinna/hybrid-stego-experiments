@@ -1,0 +1,160 @@
+{
+  "panel": "distributed",
+  "created_at": "2026-10-18T09:07:13.369939+00:00",
+  "run_id": "cpm_v2_assemblage_local",
+  "primary_source": "Assemblage FOCI 2026 official repository ce16a471ea0ae8c7dac284d38fedb8b090be23dd with exact Pulsar submodule ae39c51440b5925107d30c756cf3005701dba951",
+  "payload_bytes": [
+    1024,
+    2048,
+    4096
+  ],
+  "native_case_groups": 30,
+  "native_formats": {
+    "cpm": "512x512 lossless 8-bit grayscale PGM; three JSON/base64 frames and two 65536-byte public objects",
+    "pulsar": "256x256 RGB 16-bit lossless PNG; original 50-step DDIM eta=1 and native Sage region ECC"
+  },
+  "model": {
+    "repo": "google/ddpm-church-256",
+    "revision": "5a1118b5a35e744d59a4215a8c72a4d7619b9e04",
+    "path": "${USER_HOME}/.cache/cpm-comparison-models/ddpm-church-256/5a1118b5a35e744d59a4215a8c72a4d7619b9e04",
+    "files": [
+      {
+        "file": "config.json",
+        "size": 790,
+        "sha256": "32b2f0534ffcea4231d844a85087e1fd67d8f4d067e41c2149c38b079d8afaf5"
+      },
+      {
+        "file": "scheduler_config.json",
+        "size": 256,
+        "sha256": "af2d0e17f61f358ffe9e671f285334b9a01c3bc8740834e3709b1efd5a4cdae5"
+      },
+      {
+        "file": "model_index.json",
+        "size": 167,
+        "sha256": "16c2a1210d06e8730cd271275a781ae90a04e56ede9bfdd7b11a299cbb36650f"
+      },
+      {
+        "file": "diffusion_pytorch_model.bin",
+        "size": 454853117,
+        "sha256": "3111c176c9848d8d9b91d6fb8e2aa2945c220845aced8f47efb44f9deadd412c"
+      }
+    ]
+  },
+  "scheduler": "native DDIM, 50 steps",
+  "histogram_bins": 100,
+  "region_estimates": 1,
+  "split_counts": {
+    "train": 10
+  },
+  "classifier": {
+    "families": [
+      "logistic",
+      "extra_trees"
+    ],
+    "logistic_C": [
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "extra_trees": 500,
+    "min_samples_leaf": 2,
+    "seeds": [
+      901,
+      902,
+      903
+    ],
+    "standardization": "training only",
+    "selection": "One family per payload chosen by mean validation AUC across the two native sources; C per source on validation only. Threshold and orientation fixed on validation. Test used once."
+  },
+  "feature_schema": "Fixed 504-dimensional native pixel, residual, quantile, bitplane and cross-channel statistics. Image content only; no source covers, keys, seeds, hidden labels, masks, paths, success or native verification outcomes enter features.",
+  "minimum_complete": {
+    "train": 60,
+    "validation": 24,
+    "test": 36
+  },
+  "complete_policy": "CPM and Pulsar exactly recovered for the same source group/payload; exclusions symmetric; all capacity, encoding and recovery failures remain in all-attempt results. Below fixed minimum, detection panel is not evaluable; never relax or replace.",
+  "bootstrap": {
+    "draws": 3000,
+    "seed": 61019,
+    "unit": "source-group cover",
+    "adjustment": "Three primary payload contrasts, Bonferroni percentile intervals; all secondary panels retained"
+  },
+  "assemblage": {
+    "model": "church",
+    "mtu": 408,
+    "extra_repair_fraction": 0.5,
+    "message_groups": 10,
+    "loss_fractions": [
+      0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "loss_seeds": [
+      2101,
+      2102,
+      2103,
+      2104,
+      2105
+    ],
+    "native_receiver": "Official PDQ lookup plus saved local offline state; original region decoder. Native decoding exceptions abort a message, as upstream. No oracle filtering of incorrect packets.",
+    "network_scope": "Offline local native carriers and finite object-erasure traces; no uploads, network traffic or censorship/anonymity experiment."
+  },
+  "limitations": [
+    "Native format and benign source differ; compare common net bytes and declared within-source observers, not common BOSSBase bpp or universal AUC superiority.",
+    "No original-cover PSNR is assigned to synthesis; CPM fidelity is source-specific and separately labelled.",
+    "Pulsar and Assemblage do not expose CPM public-parameter CP-UNL interfaces. That score is not applicable, not zero.",
+    "Actual native carrier bytes, CPM serialized frames, and Assemblage setup/state/hash bytes are reported separately. No free equivalent protocol service is assumed.",
+    "All failed trials are retained without retry or replacement; no test tuning.",
+    "Adapters only change local model/temp paths, inject fresh fixture keys into supported native key configuration, and cast equivalent NumPy bool values to int for bitarray compatibility."
+  ],
+  "source_hashes": {
+    "source/assemblage/LICENSE": "29ca7b25d4d4d7ea3707252e710d02cf62b697e27db25d95fc191f764cb67f87",
+    "source/assemblage/README.md": "9e78b89c12c8e1a81f6bbe355ff8a7a9c5cfdde4916e502af11cbc3083cbbee8",
+    "source/assemblage/benchmark_raptor.py": "5cc272a1d7e1c703bf309daf26c8ad669c3484cfcfa54df5bfa31a02c000aea5",
+    "source/assemblage/benchmark_vector.py": "6de370595895aa724bad64d93d3867cd2855d4e5a6b310df5ec7f19ce7524bfd",
+    "source/assemblage/benchmarks/json2csv.py": "a9bed1155bef5c793be80708996df9a72d854857d69399de1b880c291fe62172",
+    "source/assemblage/offline.py": "5e416584f7af822e1ec6bb6853dab344fdeca9f94b9818fb3c4c954c28112000",
+    "source/assemblage/provenance.json": "fb208e8430847e8bd6f1184074c6fb2dd755114b0cc97f491416768b279ca149",
+    "source/assemblage/pulsar/LICENSE": "e43d3ed2458d6ed1691260133a8a6613b802cf7a80d7f641da8bf28139ef5e4e",
+    "source/assemblage/pulsar/README.md": "9f519828f04f98980c96b4e7dcb893dcc8c204210369b57274f345fad1e87028",
+    "source/assemblage/pulsar/benchmark.py": "317c595354a33d4583de7aa1ae2611c9d94e587a1e02aed79990d1d38121a866",
+    "source/assemblage/pulsar/coding.py": "ea9cbea8b6c92f7d487945303d35f7e918c57cd3926d8b98e08e90d56b918537",
+    "source/assemblage/pulsar/prg.py": "96ed9f1d710f335a50016d4ef65f17aa7612c03113ca4e5eaf4529182de5802f",
+    "source/assemblage/pulsar/provenance.json": "8d7c3b8ec741f52568088392eb8a2026b3c15771416c1a48a87a593fb1f5ae90",
+    "source/assemblage/pulsar/pulsar.py": "2099e2df5d917f998f773cdafc6a5ea61c66387fb1bb86ab8d605cb93e7fb138",
+    "source/assemblage/pulsar/requirements.txt": "c5a25bb6bf295b1390a39ef42ef7d0650624e7c567b1eaeb1192e86f5efad7bb",
+    "source/assemblage/pulsar/sage/cc_code.py": "9fbd5a3501b91a512ee3ff350ff800372cf0b2a2e453930ad3ca0128bb5c26f4",
+    "source/assemblage/pulsar/sage/cc_code.sage": "a2b6c2ef3f331a2b9623d898796c4dda600d1d5b912316c54d64b81b055af93d",
+    "source/assemblage/pulsar/sage/find_all_gc.sage": "601ba4316d0789813aa8783cd9708abdfe8e5678766517d4c0bc27131eb0db85",
+    "source/assemblage/pulsar/sage/sage_decode.sage": "14790bf5d511973e2b0f74c85d1a2d614adbcdb3062c2b390d596da8878c5e7e",
+    "source/assemblage/pulsar/sage/sage_encode.sage": "bdab62ef74f277c2cf8274fac0d90fcd740d38827cc043599b52188520fdee91",
+    "source/assemblage/pulsar/tree.json": "ceee7edf0cada74e62a4acfb034dcbc31d300fa3fba6d78030c05c985b460a7b",
+    "source/assemblage/raptor.py": "eb657feb143c4470bca4b17777554ad7ee4083b5423483f9aab4f192d6a076c7",
+    "source/assemblage/receive.py": "251ed7d2f1b8f9fcea5135bfb5f16f23d0688b9384920538eceac0a5a96bf509",
+    "source/assemblage/requirements.txt": "f56b80720c91865d0c743e7835bf2fb8a8cd72b7f85a2ae51fbcbe4c78fe0f55",
+    "source/assemblage/send.py": "60ddc714b19b4d2ee20f62f697efb77820c6299be39af411338055b0d0e65849",
+    "source/assemblage/tree.json": "1f6b8d57869cbe5be07fe51744244f73de71a95b677e0425e8baae338f8b7572",
+    "source/epoch_protocol.py": "3ffd0afbb6ee220c3530ed09fe7818c10f705867fb7597f0ae666f99122f7027",
+    "source/image_worker.py": "24ae81317705496fe449824e56a8934a7aa1a1b038a9b48e0585a0e4f10c4569",
+    "source/legacy_embedder.py": "2d418213b19373ed77f1b07e7c8cfe4b7d5ba73c0091f7ef71be965c69acaa92",
+    "source/native_common.py": "62e22bcd4f2ba62c621981c5bb9b4af3ef2a1ba45d4ef3036d5dcda351520c72",
+    "source/native_distributed.py": "3fdb89e854f8a20a97388f6b8ccd76a2142d9d438094e715c0efdf73c1f551a5",
+    "source/native_evaluate.py": "54edc53bca532b2a96d8b075a570adf2ba2754b86b1a5281b7f3130a56981bd5",
+    "source/native_features.py": "ec6b9571be777e81457731c6a50c815d04afb4b4aedf3955c831d7673e74e1c5",
+    "source/native_generate.py": "f73e59135df2b81b3843f0943627d1931133d00fea717a59e9a30ee67041af32",
+    "source/native_verify_report.py": "a1f949c012aaf985ebe15af95e5c7864df84d36e007ed3918aef4e7797b260a7",
+    "source/native_worker.py": "80b5f3d35f160ad274607f586bbbe4ef38e39c2160d62d28374cd495794d51bd",
+    "source/operational_adapters.diff": "6be846a67d2244c8f2b32f0ee38d9acd427e5e8a2ff16c5e530db231a5fc14ad",
+    "source/run_native_pipeline.py": "a4aa63e1b2bb85e720460f2b585aa7697992c8c8c9657a680b7c83d113f954c1",
+    "source/DESIGN.md": "3576b961645fe1902d179b94344372cc98f961fe91d0077bf52de330e2d789f8"
+  },
+  "input_hashes": {
+    "covers.json": "ddb56f72b215ca350fc194ceb820da4b4267597d0b2b6f46c91e0866efc0bb80",
+    "cases.json": "9f539fa48d8408e85bd13eef17e0ba830b59eeef74e94936a23cbb62e4bd191d",
+    "model_manifest.json": "4fbd1a4dcdc438a4aa96b7ae9f76bc9736ae664b786cd2d2ac1b7a542fb0ce23",
+    "parameter_bank.json": "a6e1110375ab6bf56149cbe430cbc7b7a9ff0a75083be99a814b2ca48cbd1870"
+  },
+  "preflight_evidence": "${WORKSPACE_ROOT}/revision_work/experimental_phase/phase6_matched_comparisons/development_native_harness"
+}

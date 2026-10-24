@@ -1,0 +1,39 @@
+{
+  "selected_at": "2026-10-22T10:25:50.236263+00:00",
+  "test_scored": false,
+  "panels": [
+    {
+      "payload_bpp": 0.1,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/models_hsm/0.1_801_best.pt",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/models_hsm/0.1_802_best.pt"
+      ],
+      "orientation": 1,
+      "threshold": -0.03832561895251274,
+      "validation_auc": 0.5075923734385274,
+      "selection": "mean validation cross-entropy across methods; no method-specific checkpoint selection"
+    },
+    {
+      "payload_bpp": 0.2,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/models_hsm/0.2_801_best.pt",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/models_hsm/0.2_802_best.pt"
+      ],
+      "orientation": 1,
+      "threshold": 0.0011197151616215706,
+      "validation_auc": 0.5081007913369429,
+      "selection": "mean validation cross-entropy across methods; no method-specific checkpoint selection"
+    },
+    {
+      "payload_bpp": 0.4,
+      "paths": [
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/models_hsm/0.4_801_best.pt",
+        "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/models_hsm/0.4_802_best.pt"
+      ],
+      "orientation": 1,
+      "threshold": -0.14628911018371582,
+      "validation_auc": 0.531508218277449,
+      "selection": "mean validation cross-entropy across methods; no method-specific checkpoint selection"
+    }
+  ]
+}

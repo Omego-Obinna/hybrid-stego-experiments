@@ -1,0 +1,146 @@
+{
+  "scheduling_rates": [
+    {
+      "condition": "cover",
+      "seed": 42,
+      "epochs": 10000,
+      "duration_s": 9999.0187614946,
+      "epochs_per_s": 1.0000981334797747
+    },
+    {
+      "condition": "cover",
+      "seed": 43,
+      "epochs": 10000,
+      "duration_s": 9999.07230184127,
+      "epochs_per_s": 1.0000927784229101
+    },
+    {
+      "condition": "cover",
+      "seed": 44,
+      "epochs": 10000,
+      "duration_s": 9998.986846111045,
+      "epochs_per_s": 1.0001013256547435
+    },
+    {
+      "condition": "shaped",
+      "seed": 42,
+      "epochs": 10000,
+      "duration_s": 9998.996246251407,
+      "epochs_per_s": 1.0001003854510866
+    },
+    {
+      "condition": "shaped",
+      "seed": 43,
+      "epochs": 10000,
+      "duration_s": 9999.016246097692,
+      "epochs_per_s": 1.0000983850689005
+    },
+    {
+      "condition": "shaped",
+      "seed": 44,
+      "epochs": 10000,
+      "duration_s": 9999.011302736386,
+      "epochs_per_s": 1.0000988795025507
+    },
+    {
+      "condition": "unshaped",
+      "seed": 42,
+      "epochs": 10000,
+      "duration_s": 9999.003052820734,
+      "epochs_per_s": 1.0000997046579545
+    },
+    {
+      "condition": "unshaped",
+      "seed": 43,
+      "epochs": 10000,
+      "duration_s": 9999.004025980676,
+      "epochs_per_s": 1.000099607322563
+    },
+    {
+      "condition": "unshaped",
+      "seed": 44,
+      "epochs": 10000,
+      "duration_s": 9999.002120212359,
+      "epochs_per_s": 1.0000997979373987
+    }
+  ],
+  "rates_rounded_3dp": {
+    "cover": 1.0,
+    "shaped": 1.0,
+    "unshaped": 1.0
+  },
+  "old_rate_problem": "Numerator counts (seed, epoch) across 3 overlapping simulated runs; denominator uses one shared maximum-minus-minimum span. It is not a per-run epoch rate.",
+  "HILL_native_failed_extractions": [
+    {
+      "case_id": 154,
+      "method": "hill",
+      "cover_id": 5728,
+      "payload_bpp": 0.1,
+      "exact_recovery": false,
+      "valid_image": true,
+      "sender_returncode": 0,
+      "receiver_returncode": 0,
+      "status": "payload_recovery_failure",
+      "plaintext_error_bits": 18927
+    },
+    {
+      "case_id": 285,
+      "method": "hill",
+      "cover_id": 6090,
+      "payload_bpp": 0.1,
+      "exact_recovery": false,
+      "valid_image": true,
+      "sender_returncode": 0,
+      "receiver_returncode": 0,
+      "status": "payload_recovery_failure",
+      "plaintext_error_bits": 44493
+    },
+    {
+      "case_id": 298,
+      "method": "hill",
+      "cover_id": 6090,
+      "payload_bpp": 0.4,
+      "exact_recovery": false,
+      "valid_image": true,
+      "sender_returncode": 0,
+      "receiver_returncode": 0,
+      "status": "payload_recovery_failure",
+      "plaintext_error_bits": 104864
+    },
+    {
+      "case_id": 379,
+      "method": "hill",
+      "cover_id": 9776,
+      "payload_bpp": 0.1,
+      "exact_recovery": false,
+      "valid_image": true,
+      "sender_returncode": 0,
+      "receiver_returncode": 0,
+      "status": "payload_recovery_failure",
+      "plaintext_error_bits": 50216
+    }
+  ],
+  "binary_overhead_is_analytical": {
+    "epoch_index_bytes": 8,
+    "epoch_auth_bytes": 32,
+    "nonce_bytes": 16,
+    "mac_bytes": 32,
+    "channel_id_bytes": 1,
+    "version_flags_bytes": 1,
+    "length_field_bytes": 4,
+    "heartbeat_cadence_epochs": 10,
+    "network_overhead_per_frame": 0
+  },
+  "runtime_summary_source": "${ARTIFACT_ROOT}/ours_qim_v3_2_fused075_payloads_FULL/logs/publication_tables/table_ours_qim_v32_runtime.csv",
+  "raw_payloads_discovered_by_original_export": [
+    0.3
+  ],
+  "source_sha256": {
+    "${ARTIFACT_ROOT}/scheduling_footprint_outputs/analysis/scheduling_epoch_features.csv": "cc9c1db6c62cf11dacb0f7c2e1e88fad3b7e17cb4bd9969cbcb40b7185b3ae2d",
+    "${ARTIFACT_ROOT}/scheduling_footprint/scheduling_footprint_package/02_analyze_scheduling_footprint.py": "10f9f7ef4a22a138617c19c3f64e7fc55e094f15e3bbdce00b8e18e120d84e7b",
+    "${ARTIFACT_ROOT}/scheduling_footprint_outputs/traces/scheduling_trace_metadata.json": "8eea65d8b7e7e0f0b13af4b4cb125aeed25bb025228f30ad0bc31921839928a9",
+    "${ARTIFACT_ROOT}/revision_20261017/runs/cpm_v2_hsmnet_matched_1200/fresh_results.jsonl": "6ab9637d2851b523f0ab350f41b214517ca43256b66df46d9c56db87d6f42959",
+    "${ARTIFACT_ROOT}/current_qim_runtime_overhead_outputs/analysis_metadata.json": "c9c78406023ec0ffb8823584e77a38731a2788e754e76ce2e8c6617d9a1b4693"
+  },
+  "no_experiment_execution": true
+}
