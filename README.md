@@ -83,12 +83,6 @@ The release checks never start scientific drivers or resume paused work.
 Read [PROVENANCE.md](docs/PROVENANCE.md) for path placeholders, hash semantics,
 source versions and the documented HSMNet continuation.
 
-## Manuscript and upload
-
-Upload the contents of `manuscript/` as an Overleaf project, keep `latexmkrc`,
-choose `sn-article.tex` and pdfLaTeX, then select `Supplementary.tex` to export
-the supplement. A separate ready-to-upload Overleaf ZIP accompanies this release.
-
 [GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md) gives upload commands. No GitHub
 credentials, datasets or experiment fixture master keys are included.
 
@@ -97,5 +91,4 @@ credentials, datasets or experiment fixture master keys are included.
 See [CITATION.md](CITATION.md), [LICENSING.md](LICENSING.md) and
 [THIRD_PARTY.md](docs/THIRD_PARTY.md). Original notices are retained. This
 package does not invent a blanket licence for author or third-party code.
-# hybrid-stego-experiments
 # hybrid-stego-experiments
